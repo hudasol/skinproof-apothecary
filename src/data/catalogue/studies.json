@@ -1,0 +1,1953 @@
+[
+  {
+    "id": "centella-legiawati-2020",
+    "botanicalId": "centella",
+    "citation": {
+      "authors": "Legiawati L et al.",
+      "title": "Oral and Topical Centella asiatica in Type 2 Diabetes Mellitus Patients with Dry Skin: A Three-Arm Prospective Randomized Double-Blind Controlled Trial.",
+      "journal": "Evid Based Complement Alternat Med",
+      "year": 2020,
+      "pmid": "32908567",
+      "doi": "10.1155/2020/7253560",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32908567/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "placebo",
+    "population": "Adults with type 2 diabetes and dry skin, Indonesia",
+    "n": 159,
+    "durationWeeks": 4,
+    "preparation": {
+      "part": "unspecified",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Centella asiatica 1% ointment made by the university pharmacy (plant part and standardisation not stated). Arms were oral CA (2 x 1,100 mg) plus topical CA, oral placebo plus topical CA, or double placebo (white petrolatum as topical placebo).",
+    "concentration": {
+      "percent": 1,
+      "wording": "Centella asiatica 1% ointment"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Dry-skin score (SRRC) and corneometer skin capacitance",
+        "finding": "no_effect",
+        "summary": "The topical-only arm did not differ significantly from placebo. Only oral plus topical Centella beat placebo, and only in a subgroup with well-controlled glucose."
+      }
+    ],
+    "limitations": "The positive arm combined oral and topical Centella, so a topical-only effect is not shown. Benefit came from subgroup analysis. Extract not characterised. Medical population.",
+    "funding": "Grant from Universitas Indonesia and Dr. Cipto Mangunkusumo Hospital; authors declare no conflicts (per PMC full text).",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "centella-anggraeni-2021",
+    "botanicalId": "centella",
+    "citation": {
+      "authors": "Anggraeni S et al.",
+      "title": "Role of Centella asiatica and ceramide in skin barrier improvement: a double blind clinical trial of Indonesian batik workers.",
+      "journal": "J Basic Clin Physiol Pharmacol",
+      "year": 2021,
+      "pmid": "34214362",
+      "doi": "10.1515/jbcpp-2020-0510",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34214362/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": true,
+    "blinded": "double",
+    "control": "active comparator (ceramide cream)",
+    "population": "Batik workers with dry hands/arms but no contact dermatitis, Indonesia",
+    "n": 30,
+    "durationWeeks": 4,
+    "preparation": {
+      "part": "unspecified",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Cream containing Centella asiatica (concentration not stated in abstract) made by PT Paragon Technology and Innovation, applied twice daily to hands and arms",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Corneometer hydration, TEWL, skin pH",
+        "finding": "supports",
+        "summary": "Centella cream significantly raised stratum corneum hydration on palms and backs of hands from baseline. It did not differ from the ceramide cream, and unlike ceramide it showed no significant TEWL change."
+      }
+    ],
+    "limitations": "Small sample. No vehicle control, so benefit is relative to baseline. Concentration not reported. Products came from a cosmetics manufacturer.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "centella-haftek-2008",
+    "botanicalId": "centella",
+    "citation": {
+      "authors": "Haftek M et al.",
+      "title": "Clinical, biometric and structural evaluation of the long-term effects of a topical treatment with ascorbic acid and madecassoside in photoaged human skin.",
+      "journal": "Exp Dermatol",
+      "year": 2008,
+      "pmid": "18503551",
+      "doi": "10.1111/j.1600-0625.2008.00732.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18503551/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": true,
+    "blinded": "double",
+    "control": "unclear",
+    "population": "Women with photoaged skin, France",
+    "n": 20,
+    "durationWeeks": 26,
+    "preparation": {
+      "part": "unspecified",
+      "form": "isolated_compound",
+      "compound": "madecassoside"
+    },
+    "preparationText": "Topical formula with 5% vitamin C (ascorbic acid) plus 0.1% madecassoside",
+    "concentration": {
+      "percent": 0.1,
+      "wording": "0.1% madecassoside (with 5% vitamin C)"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Clinical scores for deep and superficial wrinkles, firmness, suppleness; skin elasticity; elastic fibre histology",
+        "finding": "supports",
+        "summary": "After 6 months, wrinkle, firmness and suppleness scores improved significantly. Elasticity measurements and biopsies showing a restored elastic-fibre network supported this. About two-thirds of subjects improved."
+      },
+      {
+        "goal": "refine_texture",
+        "measure": "Clinical roughness score",
+        "finding": "supports",
+        "summary": "Roughness score improved significantly after 6 months of the vitamin C plus madecassoside formula."
+      },
+      {
+        "goal": "support_hydration",
+        "measure": "Clinical hydration score",
+        "finding": "supports",
+        "summary": "Skin hydration score improved significantly after 6 months."
+      }
+    ],
+    "limitations": "The formula pairs madecassoside with 5% vitamin C, so madecassoside's own contribution cannot be separated. The abstract does not describe the comparator. Very small sample.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "centella-su-2025",
+    "botanicalId": "centella",
+    "citation": {
+      "authors": "Su Z et al.",
+      "title": "The Effectiveness and Safety of a Skin Care Product With Centella asiatica Leaf Extract, Ceramide NP, and Panthenol in Subjects With Sensitive Skin: A Prospective, Observational Study.",
+      "journal": "J Cosmet Dermatol",
+      "year": 2025,
+      "pmid": "40682399",
+      "doi": "10.1111/jocd.70324",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40682399/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": false,
+    "blinded": "none",
+    "control": "none",
+    "population": "Chinese women with sensitive facial skin",
+    "n": 88,
+    "durationWeeks": 4,
+    "preparation": {
+      "part": "leaf",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Facial cream containing Centella asiatica leaf extract, ceramide NP and panthenol, applied to the whole face (concentrations not stated)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Erythema index, a* value, facial red area, self-rated redness",
+        "finding": "supports",
+        "summary": "Erythema index, a* value and red area fell quickly from baseline. Self-reported redness and irritation scores also dropped significantly over 4 weeks."
+      },
+      {
+        "goal": "support_hydration",
+        "measure": "Stratum corneum hydration and TEWL",
+        "finding": "supports",
+        "summary": "Hydration rose at every visit. TEWL fell at weeks 1 and 2 compared with baseline."
+      }
+    ],
+    "limitations": "Uncontrolled, single-centre study. Multi-ingredient product, so the Centella effect cannot be isolated. Women only. Short duration.",
+    "funding": "Authors declare no conflicts of interest.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "oat-kalaaji-2014",
+    "botanicalId": "oat",
+    "citation": {
+      "authors": "Kalaaji AN et al.",
+      "title": "A randomized controlled clinical study to evaluate the effectiveness of an active moisturizing lotion with colloidal oatmeal skin protectant versus its vehicle for the relief of xerosis.",
+      "journal": "J Drugs Dermatol",
+      "year": 2014,
+      "pmid": "25607563",
+      "doi": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25607563/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "vehicle",
+    "population": "People with xerosis (dry skin); details not given in abstract",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "kernel",
+      "form": "colloidal_flour",
+      "compound": null
+    },
+    "preparationText": "Commercial moisturising lotion with colloidal oatmeal skin protectant, compared with its own vehicle (concentration not in abstract)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Dermatological dryness parameters",
+        "finding": "supports",
+        "summary": "The colloidal oatmeal lotion beat its vehicle significantly on several measures of skin dryness."
+      }
+    ],
+    "limitations": "The abstract gives no sample size, duration, concentration or effect sizes, so the strength of the result cannot be judged from it.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "oat-ilnytska-2016",
+    "botanicalId": "oat",
+    "citation": {
+      "authors": "Ilnytska O et al.",
+      "title": "Colloidal Oatmeal (Avena Sativa) Improves Skin Barrier Through Multi-Therapy Activity.",
+      "journal": "J Drugs Dermatol",
+      "year": 2016,
+      "pmid": "27272074",
+      "doi": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27272074/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": false,
+    "blinded": "single",
+    "control": "none",
+    "population": "Healthy women with moderate-to-severe dry skin on lower legs",
+    "n": 50,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "kernel",
+      "form": "colloidal_flour",
+      "compound": null
+    },
+    "preparationText": "Colloidal oatmeal skin protectant lotion (concentration not in abstract). Separate in vitro tests used four solvent extracts of colloidal oatmeal.",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Clinical dryness, moisturisation and barrier measures",
+        "finding": "supports",
+        "summary": "In an investigator-blinded, uncontrolled clinical arm, the lotion significantly improved dryness, moisturisation and barrier measures. In vitro extracts raised expression of barrier-related genes."
+      }
+    ],
+    "limitations": "No control group. Duration not stated in abstract. Combined in vitro and clinical paper.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "oat-sobhan-2020",
+    "botanicalId": "oat",
+    "citation": {
+      "authors": "Sobhan M et al.",
+      "title": "The Efficacy of Colloidal Oatmeal Cream 1% as Add-on Therapy in the Management of Chronic Irritant Hand Eczema: A Double-Blind Study.",
+      "journal": "Clin Cosmet Investig Dermatol",
+      "year": 2020,
+      "pmid": "32273745",
+      "doi": "10.2147/CCID.S246021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32273745/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "vehicle",
+    "population": "Adults with chronic irritant hand eczema, Iran",
+    "n": 79,
+    "durationWeeks": 6,
+    "preparation": {
+      "part": "kernel",
+      "form": "colloidal_flour",
+      "compound": null
+    },
+    "preparationText": "1% colloidal oatmeal cream vs base cream for 4 weeks as monotherapy, after 2 weeks of fluocinolone 0.025% ointment in both groups",
+    "concentration": {
+      "percent": 1,
+      "wording": "Colloidal oatmeal cream 1%"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Hand eczema severity index, itch VAS, DLQI",
+        "finding": "supports",
+        "summary": "After steroid treatment stopped, symptoms returned in the base-cream group but not with oatmeal cream (p<0.001). Quality of life also improved more with oatmeal."
+      }
+    ],
+    "limitations": "Medical eczema population, not cosmetic dry skin. Large dropout (50 of 79 completed). Steroid co-treatment in the first phase.",
+    "funding": "Authors report no conflicts of interest.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "oat-draelos-2026",
+    "botanicalId": "oat",
+    "citation": {
+      "authors": "Draelos ZD",
+      "title": "Efficacy, Tolerance, and Safety of a Novel Botanical Anti-Inflammatory Moisturizer in Rosacea: Results From a Double-Blinded, Randomized Controlled Trial.",
+      "journal": "J Cosmet Dermatol",
+      "year": 2026,
+      "pmid": "42163060",
+      "doi": "10.1111/jocd.70910",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42163060/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": false,
+    "randomised": true,
+    "blinded": "double",
+    "control": "active comparator (metronidazole 0.75% cream)",
+    "population": "Adults with mild-to-severe rosacea",
+    "n": 60,
+    "durationWeeks": 12,
+    "preparation": {
+      "part": "unspecified",
+      "form": "unspecified",
+      "compound": null
+    },
+    "preparationText": "Anti-inflammatory moisturiser containing oat and aloe, applied daily (concentrations not in abstract)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Investigator global assessment of erythema",
+        "finding": "supports",
+        "summary": "From week 8, the oat-and-aloe moisturiser reduced erythema significantly more than metronidazole. At week 12 the reductions were 54% vs 23%."
+      }
+    ],
+    "limitations": "Multi-ingredient product, so the oat effect cannot be isolated. Single investigator. Sponsor not stated in abstract. No vehicle arm.",
+    "funding": "Author affiliated with Dermatology Consulting Services (contract research); sponsor not stated in abstract.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "licorice-kolbe-2006",
+    "botanicalId": "licorice",
+    "citation": {
+      "authors": "Kolbe L et al.",
+      "title": "Anti-inflammatory efficacy of Licochalcone A: correlation of clinical potency and in vitro effects.",
+      "journal": "Arch Dermatol Res",
+      "year": 2006,
+      "pmid": "16552540",
+      "doi": "10.1007/s00403-006-0654-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16552540/"
+    },
+    "design": "controlled_trial",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "unclear",
+    "control": "vehicle",
+    "population": "Volunteers in post-shave irritation and UV-erythema models",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "root",
+      "form": "isolated_compound",
+      "compound": "licochalcone A"
+    },
+    "preparationText": "Cosmetic formulations containing licochalcone A from Glycyrrhiza inflata (concentration not in abstract), compared with vehicle",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Erythema after shaving and after UV exposure",
+        "finding": "supports",
+        "summary": "Licochalcone A formulations cut induced redness significantly more than vehicle in both the shaving and UV erythema tests. In vitro work showed broad anti-inflammatory activity."
+      }
+    ],
+    "limitations": "Short-term induced-irritation models, not chronic redness. Sample sizes and concentration not given in abstract. Manufacturer-run.",
+    "funding": "Corresponding author at Beiersdorf (email domain in affiliation).",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "licorice-weber-2006",
+    "botanicalId": "licorice",
+    "citation": {
+      "authors": "Weber TM et al.",
+      "title": "Skin tolerance, efficacy, and quality of life of patients with red facial skin using a skin care regimen containing Licochalcone A.",
+      "journal": "J Cosmet Dermatol",
+      "year": 2006,
+      "pmid": "17177744",
+      "doi": "10.1111/j.1473-2165.2006.00261.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17177744/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": false,
+    "blinded": "none",
+    "control": "none",
+    "population": "Patients with mild-to-moderate facial redness / rosacea",
+    "n": 62,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "root",
+      "form": "isolated_compound",
+      "compound": "licochalcone A"
+    },
+    "preparationText": "Four-product skin care regimen containing licochalcone A, including tinted products with redness-neutralising pigments",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Clinical erythema score, cross-polarised photography",
+        "finding": "supports",
+        "summary": "Mean erythema scores improved significantly from baseline at weeks 4 and 8, and quality of life improved. Tinted products also hid redness visually."
+      }
+    ],
+    "limitations": "No control group. Concealing pigments confound visual redness outcomes. Multi-product regimen. Manufacturer-authored.",
+    "funding": "First author affiliated with Beiersdorf Inc.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "licorice-kulthanan-2020",
+    "botanicalId": "licorice",
+    "citation": {
+      "authors": "Kulthanan K et al.",
+      "title": "A Double-Blinded, Randomized, Vehicle-Controlled Study of the Efficacy of Moisturizer Containing Licochalcone A, Decanediol, L-Carnitine, and Salicylic Acid for Prevention of Acne Relapse in Asian Population.",
+      "journal": "Biomed Res Int",
+      "year": 2020,
+      "pmid": "33150170",
+      "doi": "10.1155/2020/2857812",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33150170/"
+    },
+    "design": "split_face",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": true,
+    "blinded": "single",
+    "control": "vehicle",
+    "population": "Thai patients with mild-to-moderate acne who responded to 8 weeks of adapalene/benzoyl peroxide",
+    "n": 50,
+    "durationWeeks": 12,
+    "preparation": {
+      "part": "root",
+      "form": "isolated_compound",
+      "compound": "licochalcone A"
+    },
+    "preparationText": "Moisturiser containing licochalcone A, 1,2-decanediol, L-carnitine and 1% salicylic acid on one half of the face, with the same moisturiser without actives on the other half, twice daily",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Inflammatory, non-inflammatory and total lesion counts",
+        "finding": "supports",
+        "summary": "During maintenance, the active side had significantly fewer lesions of every type than the vehicle side at week 12."
+      }
+    ],
+    "limitations": "Multi-active formula including salicylic acid, so licochalcone A's share is unknown. Investigator-masked only. Maintenance setting after drug therapy.",
+    "funding": "Supported by Beiersdorf (Thailand) per full text; authors declare no conflict.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "licorice-cantelli-2020",
+    "botanicalId": "licorice",
+    "citation": {
+      "authors": "Cantelli M et al.",
+      "title": "A new proprietary gel containing glabridin, andrographolide, and apolactoferrin improves the appearance of epidermal melasma in adult women: A 6-month pilot, uncontrolled open-label study.",
+      "journal": "J Cosmet Dermatol",
+      "year": 2020,
+      "pmid": "31541594",
+      "doi": "10.1111/jocd.13161",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31541594/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": false,
+    "blinded": "none",
+    "control": "none",
+    "population": "Caucasian women with epidermal melasma (Fitzpatrick II-VI), Italy",
+    "n": 40,
+    "durationWeeks": 26,
+    "preparation": {
+      "part": "root",
+      "form": "isolated_compound",
+      "compound": "glabridin"
+    },
+    "preparationText": "Non-prescription proprietary gel with glabridin, andrographolide and apolactoferrin, twice daily (concentrations not stated)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "even_tone",
+        "measure": "MASI score, colorimetry, reflectance confocal microscopy",
+        "finding": "supports",
+        "summary": "Melasma measures all improved significantly from baseline over 6 months. Mild temporary dryness occurred in three women."
+      }
+    ],
+    "limitations": "Uncontrolled pilot. Multi-ingredient gel, so glabridin cannot be isolated. Authors themselves call for placebo-controlled confirmation.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "green-tea-kim-2021",
+    "botanicalId": "green-tea",
+    "citation": {
+      "authors": "Kim S et al.",
+      "title": "The effects of green tea on acne vulgaris: A systematic review and meta-analysis of randomized clinical trials.",
+      "journal": "Phytother Res",
+      "year": 2021,
+      "pmid": "32812270",
+      "doi": "10.1002/ptr.6809",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32812270/"
+    },
+    "design": "systematic_review",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "unclear",
+    "population": "5 RCTs of acne patients (125 treated, 122 controls), topical and oral",
+    "n": 247,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "leaf",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Green tea extract, topical or oral (pooled; subgroup analysis by route)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Inflammatory and non-inflammatory lesion counts (meta-analysis)",
+        "finding": "supports",
+        "summary": "Topical green tea extract significantly reduced inflammatory and non-inflammatory lesion counts in subgroup analysis. Oral intake had minimal effect. The authors call for better trials."
+      }
+    ],
+    "limitations": "Only five small trials, with oral and topical pooled. Topical result relies on few studies. Search ran to August 2019.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "green-tea-elsaie-2009",
+    "botanicalId": "green-tea",
+    "citation": {
+      "authors": "Elsaie ML et al.",
+      "title": "The efficacy of topical 2% green tea lotion in mild-to-moderate acne vulgaris.",
+      "journal": "J Drugs Dermatol",
+      "year": 2009,
+      "pmid": "19363854",
+      "doi": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19363854/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": false,
+    "blinded": "none",
+    "control": "none",
+    "population": "Patients with mild-to-moderate acne",
+    "n": 20,
+    "durationWeeks": 6,
+    "preparation": {
+      "part": "leaf",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "2% green tea lotion applied twice daily",
+    "concentration": {
+      "percent": 2,
+      "wording": "2% green tea lotion"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Total lesion count (papules + pustules), severity index",
+        "finding": "supports",
+        "summary": "Mean lesion count fell from 24 to 10 (about 58%) over 6 weeks. The severity index also fell significantly from baseline."
+      }
+    ],
+    "limitations": "No control group. Small sample. Short duration. Extract type and vehicle not detailed in abstract.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "green-tea-mahmood-2010",
+    "botanicalId": "green-tea",
+    "citation": {
+      "authors": "Mahmood T et al.",
+      "title": "Outcomes of 3% green tea emulsion on skin sebum production in male volunteers.",
+      "journal": "Bosn J Basic Med Sci",
+      "year": 2010,
+      "pmid": "20846135",
+      "doi": "10.17305/bjbms.2010.2697",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20846135/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "none",
+    "population": "Healthy men aged 25-40",
+    "n": 10,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "leaf",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Water-in-oil emulsion with 3% ethanolic green tea extract (Abil EM90 emulsifier) applied to the cheeks",
+    "concentration": {
+      "percent": 3,
+      "wording": "3% ethanolic green tea extract"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "balance_oil",
+        "measure": "Sebumeter readings",
+        "finding": "mixed",
+        "summary": "The authors report lower sebum over 8 weeks compared with each subject's baseline. Per the full text there is no base comparison, and significance is reported only as 'p < 0.5'."
+      }
+    ],
+    "limitations": "Ten subjects with no vehicle control and unclear statistics. Healthy men only.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "green-tea-chiu-2005",
+    "botanicalId": "green-tea",
+    "citation": {
+      "authors": "Chiu AE et al.",
+      "title": "Double-blinded, placebo-controlled trial of green tea extracts in the clinical and histologic appearance of photoaging skin.",
+      "journal": "Dermatol Surg",
+      "year": 2005,
+      "pmid": "16029678",
+      "doi": "10.1111/j.1524-4725.2005.31731",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16029678/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": true,
+    "blinded": "double",
+    "control": "placebo",
+    "population": "Women with moderate photoaging",
+    "n": 40,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "leaf",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "10% green tea cream combined with 300 mg oral green tea supplement twice daily, vs placebo regimen",
+    "concentration": {
+      "percent": 10,
+      "wording": "10% green tea cream (with an oral supplement)"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Clinical photoaging grading; histology of elastic tissue",
+        "finding": "no_effect",
+        "summary": "Clinical grading did not differ from placebo. Biopsies showed more elastic tissue in the green tea group, but the authors saw no visible clinical change."
+      }
+    ],
+    "limitations": "Combined topical plus oral regimen, so not a pure topical test. Short duration. Small sample.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "bakuchiol-dhaliwal-2019",
+    "botanicalId": "bakuchiol",
+    "citation": {
+      "authors": "Dhaliwal S et al.",
+      "title": "Prospective, randomized, double-blind assessment of topical bakuchiol and retinol for facial photoageing.",
+      "journal": "Br J Dermatol",
+      "year": 2019,
+      "pmid": "29947134",
+      "doi": "10.1111/bjd.16918",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29947134/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "active comparator (retinol 0.5% cream once daily)",
+    "population": "Adults with facial photoageing, USA",
+    "n": 44,
+    "durationWeeks": 12,
+    "preparation": {
+      "part": "seed",
+      "form": "isolated_compound",
+      "compound": "bakuchiol"
+    },
+    "preparationText": "Bakuchiol 0.5% cream twice daily",
+    "concentration": {
+      "percent": 0.5,
+      "wording": "Bakuchiol 0.5% cream"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Wrinkle surface area by facial image analysis",
+        "finding": "supports",
+        "summary": "Bakuchiol significantly reduced wrinkle surface area from baseline, with no significant difference from retinol."
+      },
+      {
+        "goal": "even_tone",
+        "measure": "Hyperpigmentation by image analysis and blinded dermatologist grading",
+        "finding": "supports",
+        "summary": "Both bakuchiol and retinol significantly reduced hyperpigmentation, with no difference between them. Retinol users reported more scaling and stinging."
+      }
+    ],
+    "limitations": "No vehicle arm, and a non-inferiority-style comparison with modest n. Dosing frequency differed between arms.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "bakuchiol-brownell-2021",
+    "botanicalId": "bakuchiol",
+    "citation": {
+      "authors": "Brownell L et al.",
+      "title": "A Clinical Study Evaluating the Efficacy of Topical Bakuchiol (UP256) Cream on Facial Acne.",
+      "journal": "J Drugs Dermatol",
+      "year": 2021,
+      "pmid": "33683079",
+      "doi": "10.36849/JDD.5655",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33683079/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": false,
+    "blinded": "none",
+    "control": "none",
+    "population": "Adults with mild-to-moderate acne, enriched for Fitzpatrick III-VI",
+    "n": 13,
+    "durationWeeks": 12,
+    "preparation": {
+      "part": "seed",
+      "form": "isolated_compound",
+      "compound": "bakuchiol"
+    },
+    "preparationText": "UP256 cream containing 0.5% bakuchiol, twice daily",
+    "concentration": {
+      "percent": 0.5,
+      "wording": "UP256 cream with 0.5% bakuchiol"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Inflammatory and non-inflammatory lesion counts, global severity",
+        "finding": "supports",
+        "summary": "Inflammatory lesions fell significantly from baseline over 12 weeks."
+      },
+      {
+        "goal": "even_tone",
+        "measure": "Post-inflammatory hyperpigmentation grading",
+        "finding": "supports",
+        "summary": "Existing acne-related hyperpigmentation improved over the study."
+      }
+    ],
+    "limitations": "Thirteen subjects, no control, single centre. Product is a patented proprietary cream.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "bakuchiol-polakova-2015",
+    "botanicalId": "bakuchiol",
+    "citation": {
+      "authors": "Poláková K et al.",
+      "title": "A dermocosmetic containing bakuchiol, Ginkgo biloba extract and mannitol improves the efficacy of adapalene in patients with acne vulgaris: result from a controlled randomized trial.",
+      "journal": "Clin Cosmet Investig Dermatol",
+      "year": 2015,
+      "pmid": "25914553",
+      "doi": "10.2147/CCID.S81691",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25914553/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": false,
+    "randomised": true,
+    "blinded": "unclear",
+    "control": "vehicle",
+    "population": "Patients with acne vulgaris, all using adapalene 0.1% gel",
+    "n": 111,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "seed",
+      "form": "isolated_compound",
+      "compound": "bakuchiol"
+    },
+    "preparationText": "Cream with BGM complex (bakuchiol, Ginkgo biloba extract, mannitol) added to adapalene 0.1% gel, vs vehicle cream plus adapalene",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Inflammatory lesions, IGA",
+        "finding": "supports",
+        "summary": "Adding the BGM cream to adapalene gave significantly greater improvement in inflammatory lesions and IGA than vehicle plus adapalene."
+      },
+      {
+        "goal": "balance_oil",
+        "measure": "Seborrhoea intensity",
+        "finding": "supports",
+        "summary": "Seborrhoea intensity improved significantly more with the active cream than with vehicle."
+      }
+    ],
+    "limitations": "Adjunct to a retinoid drug. Multi-ingredient complex. Blinding not described in abstract. Two co-authors affiliated with a dermocosmetic company.",
+    "funding": "Two co-authors affiliated with Laboratoire Bioderma.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "bakuchiol-fanning-2024",
+    "botanicalId": "bakuchiol",
+    "citation": {
+      "authors": "Fanning JE et al.",
+      "title": "Human Clinical Trials Using Topical Bakuchiol Formulations for the Treatment of Skin Disorders: A Systematic Review.",
+      "journal": "J Drugs Dermatol",
+      "year": 2024,
+      "pmid": "38564402",
+      "doi": "10.36849/JDD.7763",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38564402/"
+    },
+    "design": "systematic_review",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "unclear",
+    "population": "15 human trials of topical bakuchiol (ageing, acne, post-inflammatory hyperpigmentation)",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "seed",
+      "form": "isolated_compound",
+      "compound": "bakuchiol"
+    },
+    "preparationText": "Various topical bakuchiol formulations, 10 of 15 as combinations",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Narrative synthesis of trial quality",
+        "finding": "mixed",
+        "summary": "Twelve of 15 trials were unblinded and uncontrolled. Most used combinations, and four did not state dose. The reviewers judged risk of bias high and did not attempt meta-analysis."
+      }
+    ],
+    "limitations": "Search ran to August 2022. Heterogeneous trials, so pooling was not possible.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "soy-wallo-2007",
+    "botanicalId": "soy",
+    "citation": {
+      "authors": "Wallo W et al.",
+      "title": "Efficacy of a soy moisturizer in photoaging: a double-blind, vehicle-controlled, 12-week study.",
+      "journal": "J Drugs Dermatol",
+      "year": 2007,
+      "pmid": "17941363",
+      "doi": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17941363/"
+    },
+    "design": "controlled_trial",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "double",
+    "control": "vehicle",
+    "population": "Women with moderate facial photodamage",
+    "n": 65,
+    "durationWeeks": 12,
+    "preparation": {
+      "part": "seed",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Moisturiser with non-denatured soy containing soybean trypsin inhibitor and Bowman-Birk inhibitor (concentration not in abstract), parallel-group vs vehicle",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "even_tone",
+        "measure": "Clinical grading of mottled pigmentation, blotchiness, skin tone; colorimetry",
+        "finding": "supports",
+        "summary": "Soy moisturiser beat vehicle significantly for mottled pigmentation, blotchiness and overall tone from week 2 to week 12."
+      },
+      {
+        "goal": "radiance",
+        "measure": "Clinical grading of dullness",
+        "finding": "supports",
+        "summary": "Dullness improved significantly more than with vehicle from week 4."
+      },
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Clinical grading of fine lines",
+        "finding": "supports",
+        "summary": "Fine lines improved significantly more than with vehicle."
+      },
+      {
+        "goal": "refine_texture",
+        "measure": "Clinical grading of overall texture",
+        "finding": "supports",
+        "summary": "Overall texture improved significantly more than with vehicle."
+      }
+    ],
+    "limitations": "Manufacturer-run. Randomisation not explicit in abstract. Soy concentration not stated. Mostly clinical grading.",
+    "funding": "Authors affiliated with Johnson & Johnson Consumer Companies.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "soy-hermanns-2002",
+    "botanicalId": "soy",
+    "citation": {
+      "authors": "Hermanns JF et al.",
+      "title": "Assessment of topical hypopigmenting agents on solar lentigines of Asian women.",
+      "journal": "Dermatology",
+      "year": 2002,
+      "pmid": "12077522",
+      "doi": "10.1159/000063359",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12077522/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "active comparator (20% azelaic acid; ascorbyl glucosamine/kojic acid/AHA formula)",
+    "population": "South-East Asian women with solar lentigines",
+    "n": 50,
+    "durationWeeks": 12,
+    "preparation": {
+      "part": "seed",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Stabilised soy extract formulation applied twice daily for 2-3 months (concentration not stated)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "even_tone",
+        "measure": "Reflectance spectrophotometry, UV imaging, corneomelametry",
+        "finding": "mixed",
+        "summary": "Soy gave a modest lightening of age spots on corneomelametry, better than the other two products, which failed. Faint mottled pigmentation responded better than distinct lentigines."
+      }
+    ],
+    "limitations": "Pilot study with limited design detail in abstract. Lightening effect described as modest. Group sizes per product not stated.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "soy-hsieh-2018",
+    "botanicalId": "soy",
+    "citation": {
+      "authors": "Hsieh MC et al.",
+      "title": "A Single-Center, Randomized, Double-Blind, Placebo-Controlled Clinical Trial of the Effectiveness of ANT1 Soybean Extract Cream on Skin Recovery After Nd: YAG Laser Treatment.",
+      "journal": "Ann Plast Surg",
+      "year": 2018,
+      "pmid": "29369914",
+      "doi": "10.1097/SAP.0000000000001287",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29369914/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "placebo",
+    "population": "Asian women aged 25-40 receiving three Nd:YAG laser sessions",
+    "n": 45,
+    "durationWeeks": 7,
+    "preparation": {
+      "part": "seed",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "ANT1 soybean extract cream at different concentrations (values not in abstract) after laser treatment",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "VISIA wrinkle score",
+        "finding": "supports",
+        "summary": "The higher-concentration soy cream reduced wrinkles significantly after laser treatment."
+      },
+      {
+        "goal": "even_tone",
+        "measure": "VISIA spots",
+        "finding": "supports",
+        "summary": "Spots improved significantly."
+      },
+      {
+        "goal": "calm_visible_redness",
+        "measure": "VISIA red area after laser",
+        "finding": "supports",
+        "summary": "The authors report less post-laser redness with the higher concentration. The abstract gives no statistics specific to redness."
+      }
+    ],
+    "limitations": "Post-laser setting, not everyday skin care. Outcomes from imaging only. Concentrations and comparisons are poorly described in abstract. Duration approximate.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "soy-natarelli-2023",
+    "botanicalId": "soy",
+    "citation": {
+      "authors": "Natarelli N et al.",
+      "title": "Clinical Efficacy of Topical or Oral Soy Supplementation in Dermatology: A Systematic Review.",
+      "journal": "J Clin Med",
+      "year": 2023,
+      "pmid": "37373864",
+      "doi": "10.3390/jcm12124171",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37373864/"
+    },
+    "design": "systematic_review",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "unclear",
+    "population": "30 studies (17 topical, 13 oral)",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "seed",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Various soy-based topical and oral products",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Narrative synthesis of wrinkle and ageing outcomes",
+        "finding": "mixed",
+        "summary": "Wrinkle and ageing outcomes were the most studied, and both routes reported benefits. Topical use more often improved barrier/TEWL. The reviewers say optimal formulations remain undefined."
+      }
+    ],
+    "limitations": "Narrative synthesis with no pooled effect. Mixed topical and oral evidence.",
+    "funding": "Authors disclose advisory and consulting roles with several skin care and pharmaceutical companies.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "tea-tree-enshaieh-2007",
+    "botanicalId": "tea-tree",
+    "citation": {
+      "authors": "Enshaieh S et al.",
+      "title": "The efficacy of 5% topical tea tree oil gel in mild to moderate acne vulgaris: a randomized, double-blind placebo-controlled study.",
+      "journal": "Indian J Dermatol Venereol Leprol",
+      "year": 2007,
+      "pmid": "17314442",
+      "doi": "10.4103/0378-6323.30646",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17314442/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "placebo",
+    "population": "Patients with mild-to-moderate acne, Iran",
+    "n": 60,
+    "durationWeeks": 6,
+    "preparation": {
+      "part": "leaf",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "5% tea tree oil gel vs placebo gel for 45 days",
+    "concentration": {
+      "percent": 5,
+      "wording": "5% tea tree oil gel"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Total lesion count and acne severity index",
+        "finding": "supports",
+        "summary": "Tea tree oil gel improved lesion count and severity significantly more than placebo. Side effects were similar in both groups."
+      }
+    ],
+    "limitations": "Short follow-up (45 days). Single centre. Modest sample.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "tea-tree-bassett-1990",
+    "botanicalId": "tea-tree",
+    "citation": {
+      "authors": "Bassett IB et al.",
+      "title": "A comparative study of tea-tree oil versus benzoylperoxide in the treatment of acne.",
+      "journal": "Med J Aust",
+      "year": 1990,
+      "pmid": "2145499",
+      "doi": "10.5694/j.1326-5377.1990.tb126150.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2145499/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "single",
+    "control": "active comparator (5% benzoyl peroxide lotion)",
+    "population": "Patients with mild-to-moderate acne, Australia",
+    "n": 124,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "leaf",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "5% tea tree oil gel",
+    "concentration": {
+      "percent": 5,
+      "wording": "5% tea tree oil gel"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Inflamed and non-inflamed lesion counts",
+        "finding": "supports",
+        "summary": "Both treatments significantly reduced inflamed and non-inflamed lesions. Tea tree oil worked more slowly than benzoyl peroxide but caused fewer side effects."
+      }
+    ],
+    "limitations": "No placebo arm. Single-blind. Duration not stated in abstract. Older trial.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "tea-tree-malhi-2017",
+    "botanicalId": "tea-tree",
+    "citation": {
+      "authors": "Malhi HK et al.",
+      "title": "Tea tree oil gel for mild to moderate acne; a 12 week uncontrolled, open-label phase II pilot study.",
+      "journal": "Australas J Dermatol",
+      "year": 2017,
+      "pmid": "27000386",
+      "doi": "10.1111/ajd.12465",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27000386/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": false,
+    "blinded": "none",
+    "control": "none",
+    "population": "Adults with mild-to-moderate facial acne, Australia",
+    "n": 18,
+    "durationWeeks": 12,
+    "preparation": {
+      "part": "leaf",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Tea tree oil gel (200 mg/g) plus tea tree oil face wash (7 mg/g), twice daily",
+    "concentration": {
+      "percent": 20,
+      "wording": "Tea tree oil gel 200 mg/g (with a 7 mg/g face wash)"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Total lesion count and IGA",
+        "finding": "supports",
+        "summary": "Mean lesion count fell from about 24 to 11 over 12 weeks, a significant change, and IGA also improved. Peeling, dryness and scaling were minor."
+      }
+    ],
+    "limitations": "Uncontrolled. Only 14 completers. High-strength gel differs from typical cosmetic levels.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "tea-tree-kairey-2023",
+    "botanicalId": "tea-tree",
+    "citation": {
+      "authors": "Kairey L et al.",
+      "title": "Efficacy and safety of Melaleuca alternifolia (tea tree) oil for human health-A systematic review of randomized controlled trials.",
+      "journal": "Front Pharmacol",
+      "year": 2023,
+      "pmid": "37033604",
+      "doi": "10.3389/fphar.2023.1116077",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37033604/"
+    },
+    "design": "systematic_review",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "unclear",
+    "population": "46 RCT articles across fields (9 dermatology)",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "leaf",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Various tea tree oil preparations",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Thematic synthesis of acne RCTs",
+        "finding": "mixed",
+        "summary": "The reviewers rated trial quality poor to modest. They concluded more evidence is needed to confirm acne benefits, and any skin anti-inflammatory effect remains unclear."
+      },
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Thematic synthesis of anti-inflammatory skin outcomes",
+        "finding": "mixed",
+        "summary": "The review found local anti-inflammatory effects on skin not established."
+      }
+    ],
+    "limitations": "No meta-analysis. Broad scope beyond skin.",
+    "funding": "Authors declare no commercial conflicts.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "aloe-dalbelo-2006",
+    "botanicalId": "aloe",
+    "citation": {
+      "authors": "Dal'Belo SE et al.",
+      "title": "Moisturizing effect of cosmetic formulations containing Aloe vera extract in different concentrations assessed by skin bioengineering techniques.",
+      "journal": "Skin Res Technol",
+      "year": 2006,
+      "pmid": "17026654",
+      "doi": "10.1111/j.0909-752X.2006.00155.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17026654/"
+    },
+    "design": "controlled_trial",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "vehicle",
+    "population": "Healthy women, volar forearm, Brazil",
+    "n": 20,
+    "durationWeeks": 2,
+    "preparation": {
+      "part": "leaf",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Emulsion (5% trilaureth-4 phosphate blend) with 0.10%, 0.25% or 0.50% freeze-dried Aloe barbadensis extract, applied daily",
+    "concentration": {
+      "percent": 0.1,
+      "wording": "0.10% freeze-dried Aloe barbadensis extract (lowest of three strengths)"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Corneometer stratum corneum water content",
+        "finding": "supports",
+        "summary": "After 2 weeks, all aloe concentrations raised skin water content above vehicle. After one application only 0.25% and 0.5% did."
+      },
+      {
+        "goal": "support_hydration",
+        "measure": "TEWL (barrier)",
+        "finding": "no_effect",
+        "summary": "Transepidermal water loss did not differ from vehicle at any time point, which suggests a humectant rather than barrier effect."
+      }
+    ],
+    "limitations": "Small sample of healthy forearm skin. Short duration. Randomisation and blinding not described in abstract.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "aloe-reuter-2008",
+    "botanicalId": "aloe",
+    "citation": {
+      "authors": "Reuter J et al.",
+      "title": "Investigation of the anti-inflammatory potential of Aloe vera gel (97.5%) in the ultraviolet erythema test.",
+      "journal": "Skin Pharmacol Physiol",
+      "year": 2008,
+      "pmid": "18253066",
+      "doi": "10.1159/000114871",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18253066/"
+    },
+    "design": "rct",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "placebo",
+    "population": "Healthy volunteers with skin types II-III",
+    "n": 40,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "leaf",
+      "form": "juice_or_gel",
+      "compound": null
+    },
+    "preparationText": "97.5% Aloe vera gel applied under occlusion for 2 days to UVB-irradiated back skin; positive controls were hydrocortisone and prednicarbate",
+    "concentration": {
+      "percent": 97.5,
+      "wording": "97.5% Aloe vera gel"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Photometric UV-induced erythema at 24 and 48 h",
+        "finding": "supports",
+        "summary": "Aloe gel significantly reduced UV redness at 48 h and beat 1% hydrocortisone in placebo gel. It was weaker than 1% hydrocortisone cream."
+      }
+    ],
+    "limitations": "Acute experimental erythema under occlusion. Says nothing about chronic redness or normal leave-on use.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "aloe-hajheydari-2014",
+    "botanicalId": "aloe",
+    "citation": {
+      "authors": "Hajheydari Z et al.",
+      "title": "Effect of Aloe vera topical gel combined with tretinoin in treatment of mild and moderate acne vulgaris: a randomized, double-blind, prospective trial.",
+      "journal": "J Dermatolog Treat",
+      "year": 2014,
+      "pmid": "23336746",
+      "doi": "10.3109/09546634.2013.768328",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23336746/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "vehicle",
+    "population": "Patients with mild-to-moderate acne, Iran",
+    "n": 60,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "leaf",
+      "form": "juice_or_gel",
+      "compound": null
+    },
+    "preparationText": "50% Aloe vera leaf gel combined with tretinoin 0.05% cream, vs tretinoin plus vehicle",
+    "concentration": {
+      "percent": 50,
+      "wording": "50% Aloe vera gel (with tretinoin)"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Inflammatory, non-inflammatory and total lesion scores",
+        "finding": "supports",
+        "summary": "Tretinoin plus aloe gel reduced all lesion types significantly more than tretinoin plus vehicle."
+      },
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Erythema (tolerability)",
+        "finding": "supports",
+        "summary": "At study end, erythema was significantly milder in the aloe-plus-tretinoin group (p = 0.046)."
+      }
+    ],
+    "limitations": "Adjunct to a prescription retinoid. Single centre. Short duration.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "aloe-west-2003",
+    "botanicalId": "aloe",
+    "citation": {
+      "authors": "West DP et al.",
+      "title": "Evaluation of aloe vera gel gloves in the treatment of dry skin associated with occupational exposure.",
+      "journal": "Am J Infect Control",
+      "year": 2003,
+      "pmid": "12548256",
+      "doi": "10.1067/mic.2003.12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12548256/"
+    },
+    "design": "controlled_trial",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": false,
+    "blinded": "single",
+    "control": "none",
+    "population": "Female factory workers with occupational dry hands, with or without irritant dermatitis",
+    "n": 30,
+    "durationWeeks": 4,
+    "preparation": {
+      "part": "leaf",
+      "form": "juice_or_gel",
+      "compound": null
+    },
+    "preparationText": "Examination glove dry-coated with aloe vera gel, worn 8 h/day on one hand; other hand untreated",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Blinded photo global assessment of dry skin",
+        "finding": "supports",
+        "summary": "Aloe-glove hands improved on blinded photo assessment while untreated hands did not (p<0.0001)."
+      }
+    ],
+    "limitations": "Open contralateral design with an untreated rather than vehicle (plain glove) control. Unblinded clinical assessment. Small sample.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "witch-hazel-hughes-formella-1998",
+    "botanicalId": "witch-hazel",
+    "citation": {
+      "authors": "Hughes-Formella BJ et al.",
+      "title": "Anti-inflammatory effect of hamamelis lotion in a UVB erythema test.",
+      "journal": "Dermatology",
+      "year": 1998,
+      "pmid": "9621139",
+      "doi": "10.1159/000017904",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9621139/"
+    },
+    "design": "controlled_trial",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "vehicle",
+    "population": "Healthy volunteers",
+    "n": 30,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "unspecified",
+      "form": "distillate",
+      "compound": null
+    },
+    "preparationText": "Aftersun lotion with 10% hamamelis distillate (Eucerin pH5), applied under occlusion for 48 h after UVB; compared with vehicle and an earlier aftersun",
+    "concentration": {
+      "percent": 10,
+      "wording": "10% hamamelis distillate"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Chromametry and visual erythema score",
+        "finding": "supports",
+        "summary": "Hamamelis lotion suppressed UVB redness by about 20-27%, compared with 11-15% for the comparison lotions. The difference was significant."
+      }
+    ],
+    "limitations": "Acute UV model under occlusion. Branded product tested by a contract research institute. Randomisation not described in abstract.",
+    "funding": "Conducted at BioSkin contract research institute; sponsor not stated in abstract.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "witch-hazel-hughes-formella-2002",
+    "botanicalId": "witch-hazel",
+    "citation": {
+      "authors": "Hughes-Formella BJ et al.",
+      "title": "Anti-inflammatory efficacy of topical preparations with 10% hamamelis distillate in a UV erythema test.",
+      "journal": "Skin Pharmacol Appl Skin Physiol",
+      "year": 2002,
+      "pmid": "11867970",
+      "doi": "10.1159/000049400",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11867970/"
+    },
+    "design": "controlled_trial",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "vehicle",
+    "population": "Healthy volunteers",
+    "n": 40,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "unspecified",
+      "form": "distillate",
+      "compound": null
+    },
+    "preparationText": "Three lotions with 10% hamamelis distillate from different suppliers, occlusive for 48 h; compared with two vehicles, dimetindene gel and hydrocortisone",
+    "concentration": {
+      "percent": 10,
+      "wording": "10% hamamelis distillate"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Chromametric and visual UV erythema",
+        "finding": "mixed",
+        "summary": "All hamamelis lotions and the vehicles reduced redness. Only one hamamelis lotion beat vehicle significantly, and only at one UV dose. Hydrocortisone was most effective."
+      }
+    ],
+    "limitations": "Vehicle itself was active. Acute model. Benefit over vehicle limited to one product at one dose.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "witch-hazel-korting-1993",
+    "botanicalId": "witch-hazel",
+    "citation": {
+      "authors": "Korting HC et al.",
+      "title": "Anti-inflammatory activity of hamamelis distillate applied topically to the skin. Influence of vehicle and dose.",
+      "journal": "Eur J Clin Pharmacol",
+      "year": 1993,
+      "pmid": "8513841",
+      "doi": "10.1007/BF00316465",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8513841/"
+    },
+    "design": "controlled_trial",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "vehicle",
+    "population": "Healthy volunteers (24 per test)",
+    "n": 24,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "unspecified",
+      "form": "distillate",
+      "compound": null
+    },
+    "preparationText": "Hamamelis distillate in O/W emulsion with or without phosphatidylcholine, at 0.64 or 2.56 mg hamamelis ketone/100 g; compared with chamomile cream, 1% hydrocortisone and bases",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Visual score and chromametry of UV- and tape-stripping erythema",
+        "finding": "mixed",
+        "summary": "Low-dose hamamelis in a phosphatidylcholine cream suppressed UV redness, but less than hydrocortisone. Hamamelis cream without phosphatidylcholine did no better than hydrocortisone, and quadrupling the dose added nothing."
+      }
+    ],
+    "limitations": "Vehicle-dependent effect. Acute experimental models. Older study.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "witch-hazel-piazza-2022",
+    "botanicalId": "witch-hazel",
+    "citation": {
+      "authors": "Piazza S et al.",
+      "title": "Anti-Inflammatory and Anti-Acne Effects of Hamamelis virginiana Bark in Human Keratinocytes.",
+      "journal": "Antioxidants (Basel)",
+      "year": 2022,
+      "pmid": "35740016",
+      "doi": "10.3390/antiox11061119",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35740016/"
+    },
+    "design": "in_vitro",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "none",
+    "control": "none",
+    "population": "Human keratinocytes (HaCaT) stimulated with C. acnes or TNF-alpha",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "bark",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Glycolic extract of Hamamelis virginiana bark (hamamelitannin 0.29%, proanthocyanidins 0.30% w/w)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "IL-6/IL-8 release, NF-kB, antibacterial and antibiofilm activity",
+        "finding": "mixed",
+        "summary": "Preclinical only. The extract reduced acne-bacteria-induced inflammatory signals in cells but had no antibacterial or antibiofilm effect. No human topical acne study was found."
+      }
+    ],
+    "limitations": "Cell culture only, so clinical relevance is unknown. Two co-authors work for a company selling Hamamelis products.",
+    "funding": "Two co-authors employed by Istituto Ganassini, which sells Hamamelis products; funder had no role per statement.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "calendula-crncevic-2025",
+    "botanicalId": "calendula",
+    "citation": {
+      "authors": "Crnčević MŠ et al.",
+      "title": "Double-blind randomised controlled trial of an emollient cream with and without 1 % supercritical CO(2) extract of Calendula officinalis in contact dermatitis.",
+      "journal": "Acta Pharm",
+      "year": 2025,
+      "pmid": "41527980",
+      "doi": "10.2478/acph-2025-0035",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41527980/"
+    },
+    "design": "rct",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "vehicle",
+    "population": "Healthy volunteers with experimentally irritated forearm skin, Croatia",
+    "n": 20,
+    "durationWeeks": 1,
+    "preparation": {
+      "part": "flower",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Emollient cream with 1% supercritical CO2 extract of Calendula officinalis, vs base emollient and untreated site after irritant exposure (~8 days)",
+    "concentration": {
+      "percent": 1,
+      "wording": "1% supercritical CO2 extract of Calendula officinalis"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Corneometer hydration and TEWL after irritant challenge",
+        "finding": "supports",
+        "summary": "The calendula site had significantly higher hydration than both base and untreated sites on days 4 and 8. TEWL beat the untreated site only, on day 3."
+      },
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Mexameter erythema",
+        "finding": "no_effect",
+        "summary": "Redness did not differ between the calendula, base and untreated sites."
+      }
+    ],
+    "limitations": "Twenty healthy subjects in an irritant model, forearm only. Very short duration.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "calendula-akhtar-2011",
+    "botanicalId": "calendula",
+    "citation": {
+      "authors": "Akhtar N et al.",
+      "title": "Calendula extract: effects on mechanical parameters of human skin.",
+      "journal": "Acta Pol Pharm",
+      "year": 2011,
+      "pmid": "21928714",
+      "doi": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21928714/"
+    },
+    "design": "controlled_trial",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "vehicle",
+    "population": "Healthy volunteers, cheeks, Pakistan",
+    "n": 21,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "unspecified",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Cream with Calendula officinalis extract vs base cream on cheeks (concentration not in abstract)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Cutometer R0-R8 (firmness/elasticity)",
+        "finding": "mixed",
+        "summary": "Only two of seven elasticity parameters (R0, R6) changed significantly. The authors interpret this as better firmness and hydration."
+      }
+    ],
+    "limitations": "Small sample. Randomisation and blinding unclear. Most parameters non-significant. Hydration was inferred from cutometry rather than measured directly.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "calendula-pommier-2004",
+    "botanicalId": "calendula",
+    "citation": {
+      "authors": "Pommier P et al.",
+      "title": "Phase III randomized trial of Calendula officinalis compared with trolamine for the prevention of acute dermatitis during irradiation for breast cancer.",
+      "journal": "J Clin Oncol",
+      "year": 2004,
+      "pmid": "15084618",
+      "doi": "10.1200/JCO.2004.07.063",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15084618/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "unclear",
+    "control": "active comparator (trolamine / Biafine)",
+    "population": "Women receiving postoperative breast radiotherapy, France",
+    "n": 254,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "flower",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Calendula ointment (Pommade au Calendula par Digestion, Boiron) applied after each radiotherapy session",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Acute radiation dermatitis grade 2 or higher (medical endpoint)",
+        "finding": "supports",
+        "summary": "Grade 2+ radiation dermatitis was significantly less frequent with calendula than trolamine (41% vs 63%). Pain was also lower. This is a medical endpoint, not cosmetic redness."
+      }
+    ],
+    "limitations": "Medical radiotherapy setting. Comparator rather than placebo. Blinding not described. A later trial did not replicate the benefit vs aqueous cream.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "calendula-sharp-2013",
+    "botanicalId": "calendula",
+    "citation": {
+      "authors": "Sharp L et al.",
+      "title": "No differences between Calendula cream and aqueous cream in the prevention of acute radiation skin reactions--results from a randomised blinded trial.",
+      "journal": "Eur J Oncol Nurs",
+      "year": 2013,
+      "pmid": "23245940",
+      "doi": "10.1016/j.ejon.2012.11.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23245940/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "single",
+    "control": "active comparator (Essex aqueous cream)",
+    "population": "Women receiving adjuvant breast radiotherapy, Sweden",
+    "n": 420,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "flower",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Calendula cream (Weleda)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Acute radiation skin reaction grade (RTOG/EORTC), symptoms",
+        "finding": "no_effect",
+        "summary": "Severe skin reaction rates were similar (23% calendula vs 19% aqueous cream). Patient-reported symptoms did not differ."
+      }
+    ],
+    "limitations": "Medical radiotherapy setting. The abstract says 'blinded' without specifying who, recorded here as single.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "feverfew-martin-2008",
+    "botanicalId": "feverfew",
+    "citation": {
+      "authors": "Martin K et al.",
+      "title": "Parthenolide-depleted Feverfew (Tanacetum parthenium) protects skin from UV irradiation and external aggression.",
+      "journal": "Arch Dermatol Res",
+      "year": 2008,
+      "pmid": "18071724",
+      "doi": "10.1007/s00403-007-0818-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18071724/"
+    },
+    "design": "controlled_trial",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "placebo",
+    "population": "Mainly in vitro and animal work, plus a small human UV-erythema test",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "unspecified",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Topical parthenolide-depleted feverfew extract (concentration and vehicle not stated in abstract)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "UV-induced erythema 24 h post-exposure (clinical)",
+        "finding": "supports",
+        "summary": "In the human test, the extract reduced UV redness significantly vs placebo at 24 h. The remaining findings, on antioxidant activity and DNA protection, are preclinical."
+      }
+    ],
+    "limitations": "Mostly preclinical, with a minimal clinical component (n not given). Acute model only. Manufacturer research.",
+    "funding": "Authors at Johnson & Johnson Skin Research Center.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "feverfew-sur-2009",
+    "botanicalId": "feverfew",
+    "citation": {
+      "authors": "Sur R et al.",
+      "title": "Anti-inflammatory activity of parthenolide-depleted Feverfew (Tanacetum parthenium).",
+      "journal": "Inflammopharmacology",
+      "year": 2009,
+      "pmid": "19112586",
+      "doi": "10.1007/s10787-008-8040-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19112586/"
+    },
+    "design": "controlled_trial",
+    "setting": "acute_model",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "unclear",
+    "control": "unclear",
+    "population": "Mainly in vitro and mouse models, plus a human methyl-nicotinate vasodilation test",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "unspecified",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Topical parthenolide-depleted feverfew extract (details not stated in abstract)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Erythema in methyl nicotinate-induced vasodilation model",
+        "finding": "supports",
+        "summary": "The authors report less chemically induced redness in a human model. The abstract gives no sample size or statistics, and the remaining findings are cell and mouse studies."
+      }
+    ],
+    "limitations": "Mostly preclinical. Human data are thin in the abstract. No chronic-use cosmetic trial. Manufacturer research.",
+    "funding": "Authors at Johnson & Johnson Consumer Companies.",
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "rosehip-aguirre-romero-2020",
+    "botanicalId": "rosehip",
+    "citation": {
+      "authors": "Aguirre-Romero AB et al.",
+      "title": "Efficacy and safety of a rosehip seed oil extract in the prevention and treatment of skin lesions in the hands of patients with type 1 diabetes mellitus caused by finger prick blood glucose monitoring; a randomized, open-label, controlled clinical trial.",
+      "journal": "Endocrinol Diabetes Nutr (Engl Ed)",
+      "year": 2020,
+      "pmid": "31235400",
+      "doi": "10.1016/j.endinu.2019.04.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31235400/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "single",
+    "control": "none",
+    "population": "Children aged 6-17 with type 1 diabetes and frequent finger pricks, Spain",
+    "n": 68,
+    "durationWeeks": 2,
+    "preparation": {
+      "part": "seed",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Rosehip seed oil extract applied to the hands for 12 days (80 hands) vs untreated control hands (56)",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "calm_visible_redness",
+        "measure": "Erythema score (0-3)",
+        "finding": "no_effect",
+        "summary": "Erythema did not differ between oil-treated and control hands."
+      },
+      {
+        "goal": "refine_texture",
+        "measure": "Skin thickening and loss of integrity scores; global assessment",
+        "finding": "no_effect",
+        "summary": "Rosehip oil did not improve skin lesions. Global assessment actually favoured the untreated control. The oil was safe."
+      }
+    ],
+    "limitations": "Open-label with untreated rather than vehicle control. Short duration. Special population of children with mild finger-prick lesions.",
+    "funding": null,
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "rosehip-fujii-2011",
+    "botanicalId": "rosehip",
+    "citation": {
+      "authors": "Fujii T et al.",
+      "title": "Inhibitory effect of rose hip (Rosa canina L.) on melanogenesis in mouse melanoma cells and on pigmentation in brown guinea pigs.",
+      "journal": "Biosci Biotechnol Biochem",
+      "year": 2011,
+      "pmid": "21389613",
+      "doi": "10.1271/bbb.100702",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21389613/"
+    },
+    "design": "in_vitro",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": null,
+    "blinded": "none",
+    "control": "none",
+    "population": "B16 mouse melanoma cells; brown guinea pigs given extract orally",
+    "n": null,
+    "durationWeeks": null,
+    "preparation": {
+      "part": "fruit",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Aqueous rose hip extract and fractions (procyanidin-rich) in cells; oral extract in guinea pigs. Not a seed-oil or topical preparation.",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "even_tone",
+        "measure": "Melanin production, tyrosinase activity; guinea-pig pigmentation",
+        "finding": "supports",
+        "summary": "Preclinical only. Rose hip proanthocyanidins lowered melanin and tyrosinase in cells, and the oral extract reduced pigmentation in guinea pigs. No human topical pigmentation data found."
+      }
+    ],
+    "limitations": "Cell and animal work with oral dosing, using a fruit extract rather than seed oil. First author contact email is at a company domain.",
+    "funding": "First author's contact email is at mikiprune.co.jp (company); funding not stated.",
+    "reviewedOn": "2026-10-18"
+  }
+]
