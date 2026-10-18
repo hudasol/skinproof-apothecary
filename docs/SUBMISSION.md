@@ -67,8 +67,12 @@ Clone the repository, then `npm ci`, `cp .env.example .env.local` and
 `npm run dev`. Fixture mode works with no API key and labels every placeholder
 result. For live mode, add a YouCam key and set `PROVIDER_MODE=live`.
 
-## Status to state honestly
+## Verification
 
-Update this section after the live checks: whether SkinProof's own Skin
-Analysis and try-on calls were verified against the live service, and on what
-date.
+Both integrations were verified against the live YouCam service on 18 October
+2026 on YouCam's own documentation sample portrait: one Skin Analysis
+(14 units), one lip try-on (1 unit), and one full journey in the app in live
+mode. The responses matched the documented shapes, the masks align with the
+photo, and the try-on changed only the mouth region. That is one portrait and
+one shade: it shows the integration works, not how the model behaves across
+faces. The full record is in `docs/API-VERIFICATION.md`.
