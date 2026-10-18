@@ -6,8 +6,9 @@ Every result here was run and observed. Nothing in this file spends YouCam units
 
 | Command | Result |
 | --- | --- |
-| `npm test` (Vitest) | 9 files, **83 passed** |
+| `npm test` (Vitest) | 8 files, **83 passed** |
 | `npm run typecheck` (`tsc --noEmit`, strict) | **clean** |
+| Fresh clone of the repository: `npm ci`, `npm test`, `npm run typecheck`, `npm run build` | **all pass** |
 | `npm run test:e2e` (Playwright, production build, fixture mode) | **18 passed** (6 desktop, 12 phone) |
 | `npm run catalogue:check` | all schema and cross-reference checks pass; 25 products (22 verified, 2 partial, 1 unverified) |
 | `npx tsx scripts/verify-citations.ts` | **44 of 44** citations match PubMed |
