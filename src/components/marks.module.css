@@ -1,0 +1,49 @@
+.grade {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--step--1);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.scale {
+  display: inline-flex;
+  gap: 2px;
+}
+.pip {
+  width: 0.55rem;
+  height: 0.85rem;
+  border: 1px solid var(--green-700);
+  border-radius: 1px;
+  background: transparent;
+}
+.on {
+  background: var(--green-700);
+}
+.split {
+  background: linear-gradient(135deg, var(--green-700) 50%, var(--amber-600) 50%);
+}
+.applic {
+  display: inline-block;
+  font-size: var(--step--1);
+  font-weight: 500;
+  padding: 0.15em 0.5em;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--rule-strong);
+  white-space: nowrap;
+}
+.close_match {
+  border-color: var(--green-700);
+  color: var(--green-800);
+}
+.concentration_unknown {
+  color: var(--ink-soft);
+}
+.weaker_match {
+  border-color: var(--amber-600);
+  color: var(--amber-700);
+}
+.different_preparation {
+  border-style: dashed;
+  color: var(--ink-faint);
+}

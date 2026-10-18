@@ -1,0 +1,84 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-5);
+}
+.study {
+  border-left: 2px solid var(--rule);
+  padding-left: var(--space-5);
+}
+.basis {
+  border-left-color: var(--green-700);
+}
+.cite {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.4;
+  margin-bottom: var(--space-3);
+  max-width: none;
+}
+.cite a {
+  color: var(--green-900);
+}
+.source {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+  margin-top: var(--space-1);
+}
+.meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-2) var(--space-5);
+  margin: 0 0 var(--space-3);
+  font-size: var(--step--1);
+}
+.meta dt {
+  color: var(--ink-faint);
+}
+.meta dd {
+  margin: 0;
+}
+.outcomes {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-3);
+  display: grid;
+  gap: var(--space-2);
+  max-width: var(--measure);
+}
+.finding {
+  font-size: var(--step--1);
+  font-weight: 600;
+  padding: 0.1em 0.45em;
+  border-radius: var(--radius-s);
+}
+.supports {
+  background: var(--sage-100);
+  color: var(--green-800);
+}
+.no_effect {
+  background: var(--slate-100);
+  color: var(--slate-600);
+}
+.mixed {
+  background: var(--amber-100);
+  color: var(--amber-700);
+}
+.goal {
+  font-weight: 600;
+}
+.limits {
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+  margin-bottom: var(--space-1);
+}
+.notCounted {
+  font-size: var(--step--1);
+  color: var(--amber-700);
+  font-weight: 600;
+  margin: 0;
+}

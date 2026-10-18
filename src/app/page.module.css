@@ -1,0 +1,160 @@
+.hero {
+  padding: var(--space-8) 0 var(--space-8);
+  border-bottom: 1px solid var(--rule);
+  background: linear-gradient(to bottom, var(--paper) 0%, var(--paper) 70%, var(--paper-sunk) 100%);
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+.heroText h1 {
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  line-height: 1.04;
+  max-width: 13ch;
+  margin-bottom: var(--space-5);
+}
+.heroText :global(.lede) {
+  max-width: 34rem;
+  margin-bottom: var(--space-6);
+}
+.heroNote {
+  margin-top: var(--space-4);
+}
+.heroPlate {
+  max-width: 26rem;
+  justify-self: end;
+  width: 100%;
+  animation: settle 0.9s var(--ease) both;
+}
+.plateCaption {
+  margin-top: var(--space-4);
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(10px) rotate(-0.6deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.method {
+  padding-top: var(--space-8);
+}
+.methodIntro {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  color: var(--ink-soft);
+  margin-bottom: var(--space-6);
+}
+.stages {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-7);
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  border-top: 2px solid var(--green-800);
+}
+.stages li {
+  padding: var(--space-3) var(--space-3) 0 0;
+  display: grid;
+  gap: var(--space-1);
+  border-right: 1px solid var(--rule);
+  padding-left: var(--space-3);
+}
+.stages li:first-child {
+  padding-left: 0;
+}
+.stages li:last-child {
+  border-right: 0;
+}
+.stageNo {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  color: var(--sage-500);
+  line-height: 1;
+}
+.stageName {
+  font-weight: 600;
+  font-size: var(--step--1);
+}
+.cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-7);
+}
+.case h3 {
+  font-size: var(--step-2);
+}
+.case p {
+  font-family: var(--font-serif);
+  line-height: 1.65;
+}
+
+.register {
+  padding-top: var(--space-8);
+}
+.registerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-5);
+}
+.registerLine {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.5;
+  border-top: 1px solid var(--rule-strong);
+  padding-top: var(--space-4);
+}
+.registerLine :global(.num) {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  color: var(--green-800);
+  line-height: 1;
+}
+
+.tools {
+  padding: var(--space-8) var(--space-5) var(--space-9);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-7);
+}
+.tool {
+  border-left: 2px solid var(--sage-500);
+  padding-left: var(--space-5);
+}
+
+@media (max-width: 900px) {
+  .heroGrid,
+  .cases,
+  .tools {
+    grid-template-columns: 1fr;
+  }
+  .heroPlate {
+    justify-self: start;
+  }
+  .registerGrid {
+    grid-template-columns: 1fr;
+  }
+  .stages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: var(--space-4);
+  }
+  .stages li {
+    border-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 640px) {
+  .tools {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}

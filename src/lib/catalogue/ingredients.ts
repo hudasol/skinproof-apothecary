@@ -16,10 +16,14 @@ export function splitIngredients(verbatim: string): string[] {
   const out: string[] = [];
   let depth = 0;
   let current = '';
-  for (const ch of text) {
+  const chars = [...text];
+  for (let i = 0; i < chars.length; i++) {
+    const ch = chars[i]!;
     if (ch === '(' || ch === '[') depth++;
     if (ch === ')' || ch === ']') depth = Math.max(0, depth - 1);
-    if ((ch === ',' || ch === '•' || ch === '·') && depth === 0) {
+    // A comma between digits belongs to a chemical name, as in 1,2-Hexanediol.
+    const inNumber = ch === ',' && /[0-9]/.test(chars[i - 1] ?? '') && /[0-9]/.test(chars[i + 1] ?? '');
+    if ((ch === ',' || ch === '•' || ch === '·') && depth === 0 && !inNumber) {
       out.push(current);
       current = '';
     } else {

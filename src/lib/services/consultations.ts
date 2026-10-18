@@ -62,7 +62,10 @@ export function currentPhoto(db: Db, consultationId: string) {
  */
 export async function savePhoto(db: Db, consultationId: string, bytes: Uint8Array, crop: Crop | null, now = new Date()) {
   const c = requireConsultation(db, consultationId);
-  if (!c.analysisConsentAt) throw new AppError('consent_required', 'Please read and accept how your photo is used before uploading it.');
+  // Either agreement covers sending this photo to YouCam; each feature still checks its own.
+  if (!c.analysisConsentAt && !c.previewConsentAt) {
+    throw new AppError('consent_required', 'Please read and accept how your photo is used before uploading it.');
+  }
   const photo = await normalisePhoto(bytes, crop);
   const old = db.select({ id: artifacts.id }).from(artifacts).where(eq(artifacts.consultationId, consultationId)).all();
   await deleteArtifacts(db, old.map((o) => o.id));

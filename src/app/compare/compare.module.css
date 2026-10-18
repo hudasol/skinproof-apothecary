@@ -1,0 +1,39 @@
+.table {
+  min-width: 46rem;
+}
+.table thead th {
+  vertical-align: bottom;
+  background: var(--paper-raised);
+  min-width: 13rem;
+}
+.table tbody th {
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--paper-sunk);
+  width: 13rem;
+}
+.rowHead {
+  width: 13rem;
+}
+.brand {
+  display: block;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+.name {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 400;
+  color: var(--green-900);
+  text-decoration: none;
+}
+.cell {
+  display: grid;
+  gap: var(--space-1);
+  justify-items: start;
+}
+.buy {
+  display: block;
+}

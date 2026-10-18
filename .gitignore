@@ -19,3 +19,5 @@ next-env.d.ts
 docs/live-checks/*-output.*
 docs/live-checks/*-mask-*
 demo-recordings/
+.next-shots/
+.data-shots/

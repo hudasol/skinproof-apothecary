@@ -8,9 +8,9 @@
     "node": ">=20.9"
   },
   "scripts": {
-    "dev": "next dev --port 3000",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start --port 3000",
+    "start": "next start",
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx --conditions=react-server scripts/migrate.ts",
@@ -20,7 +20,8 @@
     "verify:live": "tsx --conditions=react-server scripts/verify-live.ts",
     "check": "npm run typecheck && npm run test",
     "catalogue:check": "tsx scripts/check-catalogue.ts",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "screenshots": "playwright test -c playwright.shots.config.ts"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.0",
