@@ -171,11 +171,21 @@ function formatList(items: string[]): string {
   return u.length <= 1 ? (u[0] ?? '') : `${u.slice(0, -1).join(', ')} and ${u[u.length - 1]}`;
 }
 
-/** Assess every (ingredient, goal) link a product has to the person's goals. */
+/** The best (ingredient, goal) link per goal: the one the Ledger counts. */
 export function assessGoals(product: Product, goals: Goal[], studiesByBotanical: Map<string, Study[]>): GoalAssessment[] {
   const out: GoalAssessment[] = [];
   for (const goal of goals) {
-    let best: GoalAssessment | null = null;
+    const links = assessGoalLinks(product, [goal], studiesByBotanical);
+    const best = links.reduce<GoalAssessment | null>((b, c) => (!b || compareAssessments(c, b) < 0 ? c : b), null);
+    if (best) out.push(best);
+  }
+  return out;
+}
+
+/** Every (ingredient, goal) link, including the ones that do not count, for the dossier. */
+export function assessGoalLinks(product: Product, goals: Goal[], studiesByBotanical: Map<string, Study[]>): GoalAssessment[] {
+  const out: GoalAssessment[] = [];
+  for (const goal of goals) {
     for (const ing of product.botanicals) {
       const all = (studiesByBotanical.get(ing.botanicalId) ?? []).filter((s) => s.outcomes.some((o) => o.goal === goal));
       if (all.length === 0) continue;
@@ -203,9 +213,8 @@ export function assessGoals(product: Product, goals: Goal[], studiesByBotanical:
         applicabilityReasons: reasons,
         qualifies: applicability !== 'different_preparation' && QUALIFYING_GRADES.has(grade),
       };
-      if (!best || compareAssessments(candidate, best) < 0) best = candidate;
+      out.push(candidate);
     }
-    if (best) out.push(best);
   }
   return out;
 }
