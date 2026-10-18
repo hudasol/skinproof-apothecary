@@ -230,8 +230,9 @@ export type LabelReading = {
   asteraceae: IngredientMatch[];
 };
 
-export function readLabel(verbatim: string): LabelReading {
-  const ingredients = splitIngredients(verbatim);
+/** Read a label. Drug Facts actives are listed separately on the pack, so they are read too. */
+export function readLabel(verbatim: string, actives: string[] = []): LabelReading {
+  const ingredients = [...actives, ...splitIngredients(verbatim)];
   return {
     ingredients,
     fragrance: findFragrance(ingredients),
@@ -269,7 +270,7 @@ export function assessProduct(product: Product, input: LedgerInput, studiesByBot
   const factors: Factor[] = [];
   const c = input.constraints;
   const verbatim = product.ingredientsVerbatim;
-  const label = verbatim ? readLabel(verbatim) : null;
+  const label = verbatim ? readLabel(verbatim, product.actives.map((a) => a.name)) : null;
 
   // Stage 1: hard exclusions. They are checked first and nothing later can undo them.
   if (label) {

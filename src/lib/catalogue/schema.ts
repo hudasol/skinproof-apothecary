@@ -163,6 +163,8 @@ export const ProductSchema = z.object({
       preparation: Preparation,
       /** Only when the brand states it; never inferred from list position. */
       concentration: StatedConcentration.nullable(),
+      /** Curator's explanation of the mapping, with its basis (e.g. the brand naming the compound). */
+      note: z.string().nullable().optional(),
     }),
   ),
   /** Official purchase or product pages only. No prices: none were verifiable. */

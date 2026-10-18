@@ -63,7 +63,7 @@ export function product(id: string, over: Partial<Product> = {}): Product {
     ingredientsVerbatim: 'Aqua, Glycerin, Testus a Leaf Extract, Phenoxyethanol',
     actives: [],
     sourceConflicts: null,
-    botanicals: [{ inci: 'Testus a Leaf Extract', botanicalId: 'a', preparation: { part: 'leaf', form: 'extract', compound: null }, concentration: null }],
+    botanicals: [{ inci: 'Testus a Leaf Extract', botanicalId: 'a', preparation: { part: 'leaf', form: 'extract', compound: null }, concentration: null, note: null }],
     retailers: [],
     shades: [],
     description: 'Synthetic test record.',
