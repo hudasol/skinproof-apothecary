@@ -1,0 +1,42 @@
+.steps {
+  margin-bottom: var(--space-6);
+}
+.steps ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-bottom: 1px solid var(--rule);
+}
+.steps li {
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+.steps li > a,
+.steps li > span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4) var(--space-3) 0;
+  margin-right: var(--space-4);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  text-decoration: none;
+  color: inherit;
+}
+.no {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+}
+.done {
+  color: var(--green-700);
+}
+.current {
+  color: var(--green-900);
+  font-weight: 600;
+}
+.current > span {
+  border-bottom-color: var(--green-800);
+}
