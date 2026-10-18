@@ -63,7 +63,16 @@ from the author's earlier TryOn entry, as described in the README.
 
 ## Testing instructions
 
-Clone the repository, then `npm ci`, `cp .env.example .env.local` and
+A hosted copy is at https://skinproof-apothecary.onrender.com. It is free to
+use, needs no sign-up or access code, and will stay up until judging ends. It
+runs in fixture mode: it makes no YouCam calls, and every analysis and try-on
+result is a labelled placeholder. It is on a free hosting plan, so the first
+load after 15 minutes idle takes about a minute, and consultations are reset
+whenever the service sleeps or redeploys. What the real YouCam service returns
+is shown in the live screenshots (`docs/screenshots/live-*`) and the live
+verification record (`docs/API-VERIFICATION.md`).
+
+To run it yourself, clone the repository, then `npm ci`, `cp .env.example .env.local` and
 `npm run dev`. Fixture mode works with no API key and labels every placeholder
 result. For live mode, add a YouCam key and set `PROVIDER_MODE=live`.
 

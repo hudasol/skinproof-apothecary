@@ -152,6 +152,21 @@ judging copy, leave `PROVIDER_MODE=fixture`, or use live mode with a small
 `LIVE_DAILY_UNIT_BUDGET` and an `APP_ACCESS_CODE` shared in the testing
 instructions.
 
+The public judging copy is https://skinproof-apothecary.onrender.com (health
+check: https://skinproof-apothecary.onrender.com/api/health). It runs on
+Render's free plan in fixture mode, with no YouCam key and no access code, so
+it spends no units and every analysis and try-on result is a labelled
+placeholder. The free plan has no persistent disk, so it is set up differently
+from the advice above:
+
+- the first load after 15 minutes idle takes about a minute while the service
+  wakes;
+- consultations are reset whenever the service sleeps or redeploys.
+
+What the real YouCam service returns is shown in the live screenshots
+(`docs/screenshots/live-*`) and the live verification record
+(`docs/API-VERIFICATION.md`).
+
 ### Live mode
 
 Put a YouCam API key in `.env.local` (from
