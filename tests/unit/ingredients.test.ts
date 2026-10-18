@@ -17,6 +17,9 @@ describe('splitIngredients', () => {
       'Tocopherol',
     ]);
   });
+  it('keeps commas inside chemical names', () => {
+    expect(splitIngredients('Water, 1,2-Hexanediol, Glycerin')).toEqual(['Water', '1,2-Hexanediol', 'Glycerin']);
+  });
   it('drops a trailing footnote after the last ingredient', () => {
     expect(splitIngredients('Cocos Nucifera Oil*, Charcoal Powder *certified organic ingredient 71% organic Contains Hazelnut Oil.')).toEqual([
       'Cocos Nucifera Oil',
