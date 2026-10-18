@@ -7,7 +7,12 @@
 /** Split an INCI list on top-level commas, keeping parenthesised names intact. */
 export function splitIngredients(verbatim: string): string[] {
   // "May contain" / "+/-" colourant sections are still ingredients of some shades.
-  const text = verbatim.replace(/\r?\n/g, ' ').replace(/\[\s*\+\/-\s*/gi, ', ').replace(/\]/g, '');
+  const text = verbatim
+    .replace(/\r?\n/g, ' ')
+    // A trailing footnote such as "*certified organic ingredient…" or "Contains Hazelnut Oil." is not an ingredient.
+    .replace(/\s\*[A-Za-z][^,]*$/, '')
+    .replace(/\[\s*\+\/-\s*/gi, ', ')
+    .replace(/\]/g, '');
   const out: string[] = [];
   let depth = 0;
   let current = '';

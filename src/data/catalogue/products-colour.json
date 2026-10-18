@@ -1,0 +1,252 @@
+[
+  {
+    "id": "ilia-balmy-tint",
+    "brand": "ILIA",
+    "name": "Balmy Tint Hydrating Lip Balm",
+    "shelf": "colour",
+    "category": "lip",
+    "use": "leave_on",
+    "source": {
+      "url": "https://iliabeauty.com/products/balmy-tint-hydrating-lip-balm",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Ricinus Communis (Castor) Seed Oil, Cera Alba/Beeswax/Cire d'abeille, Helianthus Annuus (Sunflower) Seed Oil, Octyldodecanol, Butyrospermum Parkii (Shea) Butter, Polyhydroxystearic Acid, Candelilla Cera/Euphorbia Cerifera (Candelilla) Wax/Cire de Candelilla, Mica, Oryza Sativa (Rice) Bran Extract, Jojoba Esters, Rosa Canina Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Caprylic/Capric Triglyceride, Helianthus Annuus (Sunflower) Seed Wax, Theobroma Cacao (Cocoa) Seed Butter, Citrus Aurantium Dulcis (Orange) Peel Cera/Wax, Olea Europaea (Olive) Fruit Oil, Persea Gratissima (Avocado) Oil, Helianthus Annuus (Sunflower) Extract, Vanillin, Caprylyl Glycol, Ethylhexylglycerin, Tocopheryl Acetate, Rosmarinus Officinalis (Rosemary) Leaf Extract, Tocopherol, Acacia Decurrens Flower Cera/Wax, Polyglycerin-3, Salicornia Herbacea Extract. May Contain/Peut Contenir (±): CI 15850 (Red 7 Lake), CI 73360 (Red 30 Lake), CI 77491, CI 77492, CI 77499 (Iron Oxides), CI 77891 (Titanium Dioxide), CI 77742 (Manganese Violet), CI 16035 (Red 40 Lake).",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [],
+    "retailers": [
+      {
+        "label": "ILIA",
+        "url": "https://iliabeauty.com/products/balmy-tint-hydrating-lip-balm"
+      }
+    ],
+    "shades": [
+      {
+        "id": "lullaby",
+        "name": "Lullaby",
+        "colourWords": "Cool Rose Pink",
+        "colourWordsSource": "brand",
+        "swatch": {
+          "imageUrl": "https://iliabeauty.com/cdn/shop/files/lullaby-swatch.jpg?v=1723166148&width=640",
+          "pageUrl": "https://iliabeauty.com/products/balmy-tint-hydrating-lip-balm"
+        },
+        "render": {
+          "hex": "#8E3144",
+          "method": "measured_from_brand_swatch",
+          "measuredOn": "2026-10-18",
+          "detail": "Median of the densest 5530 of 76800 pixels in the brand's swatch image (smear on white), with the darkest tenth dropped. An approximation: the brand publishes no colour value."
+        },
+        "ingredientsVerbatim": null
+      },
+      {
+        "id": "heartbeats",
+        "name": "Heartbeats",
+        "colourWords": "Warm Red",
+        "colourWordsSource": "brand",
+        "swatch": {
+          "imageUrl": "https://iliabeauty.com/cdn/shop/files/heartbeats-swatch.jpg?v=1723165170&width=640",
+          "pageUrl": "https://iliabeauty.com/products/balmy-tint-hydrating-lip-balm"
+        },
+        "render": {
+          "hex": "#881C22",
+          "method": "measured_from_brand_swatch",
+          "measuredOn": "2026-10-18",
+          "detail": "Median of the densest 5530 of 76800 pixels in the brand's swatch image (smear on white), with the darkest tenth dropped. An approximation: the brand publishes no colour value."
+        },
+        "ingredientsVerbatim": null
+      },
+      {
+        "id": "lady",
+        "name": "Lady",
+        "colourWords": "Neutral Cranberry",
+        "colourWordsSource": "brand",
+        "swatch": {
+          "imageUrl": "https://iliabeauty.com/cdn/shop/files/lady-swatch.jpg?v=1723166007&width=640",
+          "pageUrl": "https://iliabeauty.com/products/balmy-tint-hydrating-lip-balm"
+        },
+        "render": {
+          "hex": "#612126",
+          "method": "measured_from_brand_swatch",
+          "measuredOn": "2026-10-18",
+          "detail": "Median of the densest 5530 of 76800 pixels in the brand's swatch image (smear on white), with the darkest tenth dropped. An approximation: the brand publishes no colour value."
+        },
+        "ingredientsVerbatim": null
+      },
+      {
+        "id": "hold-me",
+        "name": "Hold Me",
+        "colourWords": "Warm Peachy Nude",
+        "colourWordsSource": "brand",
+        "swatch": {
+          "imageUrl": "https://iliabeauty.com/cdn/shop/files/holdme-swatch.jpg?v=1723165330&width=640",
+          "pageUrl": "https://iliabeauty.com/products/balmy-tint-hydrating-lip-balm"
+        },
+        "render": {
+          "hex": "#A8544D",
+          "method": "measured_from_brand_swatch",
+          "measuredOn": "2026-10-18",
+          "detail": "Median of the densest 5530 of 76800 pixels in the brand's swatch image (smear on white), with the darkest tenth dropped. An approximation: the brand publishes no colour value."
+        },
+        "ingredientsVerbatim": null
+      }
+    ],
+    "description": "A sheer tinted lip balm built on castor, sunflower, jojoba and rosehip seed oils with beeswax and candelilla. It also contains synthetic emollients and lake pigments, and Vanillin for a light vanilla scent."
+  },
+  {
+    "id": "hurraw-tinted-lip-balm",
+    "brand": "Hurraw!",
+    "name": "Tinted Lip Balm",
+    "shelf": "colour",
+    "category": "lip",
+    "use": "leave_on",
+    "source": {
+      "url": "https://hurrawbalm.com/products/black-cherry",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": null,
+    "actives": [],
+    "sourceConflicts": "The Hazelnut page says “Contains Hazelnut Oil.” but hazelnut oil is not in that shade’s ingredient list. The Black Cherry page notes the tint can vary in colour between batches.",
+    "botanicals": [],
+    "retailers": [
+      {
+        "label": "Hurraw! · Black Cherry",
+        "url": "https://hurrawbalm.com/products/black-cherry"
+      },
+      {
+        "label": "Hurraw! · Raspberry",
+        "url": "https://hurrawbalm.com/products/raspberry-tinted-lip-balm"
+      },
+      {
+        "label": "Hurraw! · Hazelnut",
+        "url": "https://hurrawbalm.com/products/hazelnut-tinted-lip-balm"
+      }
+    ],
+    "shades": [
+      {
+        "id": "black-cherry",
+        "name": "Black Cherry",
+        "colourWords": "a gorgeous red sheer tint",
+        "colourWordsSource": "brand",
+        "swatch": {
+          "imageUrl": "https://cdn.shopify.com/s/files/1/1766/5095/files/Hurraw_ColorSwatch_BC_Web_0bb6a754-7a30-4755-a538-5f8b18adf66e.png?v=1524085678",
+          "pageUrl": "https://hurrawbalm.com/products/black-cherry"
+        },
+        "render": {
+          "hex": "#C8524E",
+          "method": "measured_from_brand_swatch",
+          "measuredOn": "2026-10-18",
+          "detail": "Median of the densest 1336 of 18560 pixels in the brand's swatch image (smear on white), with the darkest tenth dropped. An approximation: the brand publishes no colour value."
+        },
+        "ingredientsVerbatim": "Carthamus tinctorius (safflower) seed oil*, Euphorbia cerifera (candelilla) wax, Cocos nucifera (coconut) oil*, Ricinus communis (castor) seed oil*, Theobroma cacao (cacao) seed butter*, Limnanthes alba (meadowfoam) seed oil, Simmondsia chinensis (jojoba) seed oil*, Olea europaea (olive) fruit oil*, Flavor/Aroma, Tocopherol, Maltodextrin, Raphanus sativus (radish) root extract, Citric acid, Helianthus annuus (sunflower) seed oil, Charcoal powder *certified organic ingredient 71% organic 14% wild grown 100% natural"
+      },
+      {
+        "id": "raspberry",
+        "name": "Raspberry",
+        "colourWords": "sheer berry tint",
+        "colourWordsSource": "brand",
+        "swatch": {
+          "imageUrl": "https://cdn.shopify.com/s/files/1/1766/5095/files/Hurraw_ColorSwatch_ER_Web_23f5d1b8-c74a-46e1-8562-9ae257e25d56.png?v=1525820978",
+          "pageUrl": "https://hurrawbalm.com/products/raspberry-tinted-lip-balm"
+        },
+        "render": {
+          "hex": "#D5547B",
+          "method": "measured_from_brand_swatch",
+          "measuredOn": "2026-10-18",
+          "detail": "Median of the densest 1336 of 18560 pixels in the brand's swatch image (smear on white), with the darkest tenth dropped. An approximation: the brand publishes no colour value."
+        },
+        "ingredientsVerbatim": "Carthamus tinctorius (safflower) seed oil*, Euphorbia cerifera cera (candellia) wax, Cocos nucifera (coconut) oil*, Ricinus communis (castor) seed oil*, Theobroma cacao (cacao) seed butter*, Simmondsia chinensis (jojoba) seed oil*, Olea europaea (olive) fruit oil*, Maltodextrin, Daucus carota sativa (carrot) root extract, Flavor/Aroma, Tocopherol, Citric Acid, Helianthus annuus (sunflower) seed oil *certified organic ingredient 74% organic 14% wild grown 100% natural"
+      },
+      {
+        "id": "hazelnut",
+        "name": "Hazelnut",
+        "colourWords": "sheer sunset-brown tint",
+        "colourWordsSource": "brand",
+        "swatch": {
+          "imageUrl": "https://cdn.shopify.com/s/files/1/1766/5095/files/Hurraw_ColorSwatches_HN_web_a36cb639-35eb-4a54-b876-65f472806efc.png?v=1570051337",
+          "pageUrl": "https://hurrawbalm.com/products/hazelnut-tinted-lip-balm"
+        },
+        "render": {
+          "hex": "#8C4836",
+          "method": "measured_from_brand_swatch",
+          "measuredOn": "2026-10-18",
+          "detail": "Median of the densest 1336 of 18560 pixels in the brand's swatch image (smear on white), with the darkest tenth dropped. An approximation: the brand publishes no colour value."
+        },
+        "ingredientsVerbatim": "Carthamus tinctorius (safflower) seed oil*, Euphorbia cerifera cera (candellia) wax, Cocos nucifera (coconut) oil*, Ricinus communis (castor) seed oil*, Theobroma cacao (cacao) seed paste*, Simmondsia chinensis (jojoba) seed oil*, Olea europaea (olive) fruit oil*, Theobroma cacao (cacao) seed butter*, Flavor/Aroma, Tocopherol, Helianthus annuus (sunflower) seed oil, Eclipta prostrata (bhringraj) extract *certified organic ingredient 79% organic 14% wild grown 100% natural Contains Hazelnut Oil."
+      }
+    ],
+    "description": "Plant-oil and candelilla-wax balms tinted with plant extracts (radish, carrot, cacao) rather than mineral pigments. Each shade has its own formula, and all list Flavor/Aroma. The brand notes that the tint can vary between batches."
+  },
+  {
+    "id": "burts-bees-tinted-lip-balm",
+    "brand": "Burt's Bees",
+    "name": "Tinted Lip Balm",
+    "shelf": "colour",
+    "category": "lip",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.burtsbees.ca/product/tinted-lip-balm/",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "partial",
+    "verificationNote": "The ingredient list is from Burt's Bees Canada; US labels sold at Target list a different formula (olive husk oil, no flower waxes, per-shade colourants). burtsbees.com could not be read. The brand publishes no swatch, so these shades cannot be previewed.",
+    "ingredientsVerbatim": "Cocos nucifera (coconut) oil, olus oil (vegetable oil), cera alba (beeswax, cire d’abeille), olea europaea (olive) fruit oil, candelilla cera (euphorbia cerifera wax, cire de candelilla), helianthus annuus (sunflower) seed oil, aroma (flavour)*, lanolin, butyrospermum parkii (shea) butter, ricinus communis (castor) seed oil, cananga odorata flower wax, jasminum officinale (jasmine) flower wax, ammonium glycyrrhizinate, tocopherol, rosmarinus officinalis (rosemary) leaf extract, glycine soja (soybean) oil, canola oil (huile de colza). May contain / peut container: alumina, CI 77891 (titanium dioxide), CI 75470 (carmine), CI 77491, CI 77492, CI 77499 (iron oxides) *natural flavour / arôme naturel",
+    "actives": [],
+    "sourceConflicts": "US labels (Target listings) and the Canadian brand page give different ingredient lists.",
+    "botanicals": [],
+    "retailers": [
+      {
+        "label": "Burt's Bees Canada",
+        "url": "https://www.burtsbees.ca/product/tinted-lip-balm/"
+      }
+    ],
+    "shades": [
+      {
+        "id": "rose",
+        "name": "Rose",
+        "colourWords": "a warm, neutral rosy tone with just the right amount of color to enhance lips",
+        "colourWordsSource": "retailer",
+        "swatch": null,
+        "render": null,
+        "ingredientsVerbatim": null
+      },
+      {
+        "id": "hibiscus",
+        "name": "Hibiscus",
+        "colourWords": "a warm, neutral pink tone with just the right amount of color to enhance lips for a natural everyday look",
+        "colourWordsSource": "retailer",
+        "swatch": null,
+        "render": null,
+        "ingredientsVerbatim": null
+      },
+      {
+        "id": "red-dahlia",
+        "name": "Red Dahlia",
+        "colourWords": "a warm, neutral, deep red tone",
+        "colourWordsSource": "retailer",
+        "swatch": null,
+        "render": null,
+        "ingredientsVerbatim": null
+      },
+      {
+        "id": "pink-blossom",
+        "name": "Pink Blossom",
+        "colourWords": null,
+        "colourWordsSource": null,
+        "swatch": null,
+        "render": null,
+        "ingredientsVerbatim": null
+      }
+    ],
+    "description": "A classic beeswax-and-plant-oil tinted balm with lanolin and carmine, so it is not vegan. Listed here to show how SkinProof handles a product whose labels differ between markets."
+  }
+]

@@ -453,7 +453,10 @@ export function checkColourShade(product: Product, shadeId: string, constraints:
   if (excl.length) return { productId: product.id, shadeId, outcome: 'excluded', factors: excl };
   const factors: Factor[] = [];
   if (product.verification === 'partial' && product.verificationNote) {
-    factors.push({ rule: 'V2_partial', effect: 'cautions', message: product.verificationNote });
+    factors.push({ rule: 'V2_partial', effect: 'cautions', message: product.verificationNote, sources: [product.source.url] });
+  }
+  if (product.sourceConflicts) {
+    factors.push({ rule: 'V3_source_conflict', effect: 'cautions', message: product.sourceConflicts, sources: [product.source.url] });
   }
   return { productId: product.id, shadeId, outcome: 'passes', factors };
 }

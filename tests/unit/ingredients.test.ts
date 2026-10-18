@@ -17,6 +17,12 @@ describe('splitIngredients', () => {
       'Tocopherol',
     ]);
   });
+  it('drops a trailing footnote after the last ingredient', () => {
+    expect(splitIngredients('Cocos Nucifera Oil*, Charcoal Powder *certified organic ingredient 71% organic Contains Hazelnut Oil.')).toEqual([
+      'Cocos Nucifera Oil',
+      'Charcoal Powder',
+    ]);
+  });
   it('keeps "may contain" colourants as ingredients', () => {
     expect(splitIngredients('Ricinus Communis Seed Oil, Cera Alba [+/- CI 77491 (Iron Oxides), CI 15850]')).toEqual([
       'Ricinus Communis Seed Oil',
