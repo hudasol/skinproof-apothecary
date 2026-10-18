@@ -1,0 +1,55 @@
+.wrap {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  outline: 1px solid var(--rule);
+  outline-offset: 3px;
+  padding: var(--space-5);
+}
+.title {
+  font-size: var(--step-1);
+  margin-bottom: var(--space-3);
+}
+.actives {
+  font-size: var(--step--1);
+}
+.list {
+  font-size: var(--step--1);
+  line-height: 1.85;
+  max-width: none;
+  margin-bottom: var(--space-4);
+}
+.list mark,
+.legend mark {
+  background: transparent;
+  color: inherit;
+  padding: 0 0.15em;
+  border-radius: 2px;
+}
+.botanical {
+  box-shadow: inset 0 -0.45em 0 var(--sage-300);
+  font-weight: 600;
+}
+.scent {
+  box-shadow: inset 0 -0.45em 0 #ecd39a;
+}
+.eo {
+  outline: 1px dashed var(--amber-600);
+}
+.daisy {
+  text-decoration: underline wavy var(--sage-500);
+  text-underline-offset: 0.25em;
+}
+.botanical.scent {
+  box-shadow: inset 0 -0.45em 0 var(--sage-300), inset 0 -0.15em 0 #ecd39a;
+}
+.legend {
+  list-style: none;
+  padding: var(--space-3) 0 0;
+  margin: 0;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
