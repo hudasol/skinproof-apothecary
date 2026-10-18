@@ -17,6 +17,15 @@ const prefix = process.env.SHOT_PREFIX ?? 'fixture';
 const out = path.join(process.cwd(), 'docs', 'screenshots');
 
 async function portrait(): Promise<Buffer> {
+  // Live mode needs a real face: the YouCam documentation's own sample portrait, cropped so the face fills the frame.
+  const url = process.env.SHOT_PORTRAIT_URL;
+  if (url) {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('Could not fetch the sample portrait');
+    const img = sharp(Buffer.from(await res.arrayBuffer()));
+    const { width = 0, height = 0 } = await img.metadata();
+    return img.extract({ left: Math.round(width * 0.15), top: Math.round(height * 0.12), width: Math.round(width * 0.73), height: Math.round(height * 0.85) }).jpeg({ quality: 93 }).toBuffer();
+  }
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200"><rect width="100%" height="100%" fill="#8a9a91"/><ellipse cx="450" cy="560" rx="300" ry="400" fill="#d9b49c"/><ellipse cx="450" cy="790" rx="90" ry="30" fill="#b5675f"/></svg>`;
   return sharp(Buffer.from(svg)).jpeg({ quality: 90 }).toBuffer();
 }

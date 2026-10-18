@@ -21,3 +21,4 @@ docs/live-checks/*-mask-*
 demo-recordings/
 .next-shots/
 .data-shots/
+.data-shots-live/
