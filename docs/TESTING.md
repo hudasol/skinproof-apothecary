@@ -57,8 +57,25 @@ Every result here was run and observed. Only the live checks section spent YouCa
 | `SHOT_MODE=live SHOT_PREFIX=live npm run screenshots` | full journey in live mode, 15 units, 15 screenshots |
 | `npm run verify:live -- credits` | 1,000 units after |
 
+## Hosted copy (18 October 2026, fixture mode, no units)
+
+https://skinproof-apothecary.onrender.com, Render free plan, built from `main`
+at `2d49bfc`.
+
+| Check | Result |
+| --- | --- |
+| `GET /api/health` | `ok: true`, fixture mode; database, image store, catalogue and provider all ok |
+| The 18 e2e tests run against the hosted URL | 17 passed; the try-on test failed 3 times out of 3 |
+| The try-on test with a wait for the page to finish loading before choosing the photo | passed: consent, photo, placeholder render, divider, no second render on reload |
+| Browser console on `/`, `/consult`, `/products`, `/colour/…`, `/system` | no errors |
+| Server logs | no errors and no 5xx responses; one expected warning from the dark-photo test |
+
+The try-on test sets the photo straight after a full page load. Over the
+internet, React has not finished hydrating by then, so the change event is
+lost and "Use this photo" stays disabled. A person choosing a file by hand is
+much slower than that; this is a race in the test, not a fault in the app.
+
 ## Not yet verified
 
 * Behaviour across faces, skin tones, ages and lighting. The live checks used
   one portrait and one shade.
-* Hosted deployment: no public copy is running yet.
