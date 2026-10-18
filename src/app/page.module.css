@@ -15,7 +15,7 @@
   max-width: 13ch;
   margin-bottom: var(--space-5);
 }
-.heroText .lede {
+.heroText :global(.lede) {
   max-width: 34rem;
   margin-bottom: var(--space-6);
 }

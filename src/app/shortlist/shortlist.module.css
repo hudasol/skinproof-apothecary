@@ -125,7 +125,7 @@
   display: grid;
   gap: var(--space-2);
 }
-.asideList .small {
+.asideList :global(.small) {
   display: block;
 }
 .provenance {

@@ -1,0 +1,48 @@
+.wrap {
+  margin: 0;
+}
+.stage {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-sunk);
+}
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.after {
+  position: absolute;
+  inset: 0;
+}
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--paper);
+  box-shadow: 0 0 0 1px rgba(20, 38, 29, 0.35);
+  transform: translateX(-1px);
+}
+.tag {
+  position: absolute;
+  bottom: var(--space-3);
+  font-size: var(--step--1);
+  font-weight: 600;
+  background: rgba(248, 247, 240, 0.9);
+  color: var(--green-900);
+  padding: 0.2em 0.55em;
+  border-radius: var(--radius-s);
+}
+.tagLeft {
+  left: var(--space-3);
+}
+.tagRight {
+  right: var(--space-3);
+}
+.control input {
+  width: 100%;
+  margin-top: var(--space-3);
+  accent-color: var(--green-800);
+}
