@@ -1,0 +1,63 @@
+.form {
+  max-width: 46rem;
+}
+.cropArea {
+  display: grid;
+  grid-template-columns: minmax(0, 22rem) minmax(0, 1fr);
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
+  align-items: start;
+}
+.frame {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+}
+.frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.box {
+  position: absolute;
+  border: 2px solid var(--paper);
+  box-shadow: 0 0 0 9999px rgba(20, 38, 29, 0.45);
+  cursor: move;
+}
+.box:focus-visible {
+  outline: 3px solid var(--amber-600);
+  outline-offset: 0;
+}
+.boxWarn {
+  border-color: var(--amber-600);
+}
+.oval {
+  position: absolute;
+  inset: 12% 18% 8%;
+  border: 1px dashed rgba(248, 247, 240, 0.85);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.handle {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 18px;
+  height: 18px;
+  background: var(--paper);
+  border: 2px solid var(--green-800);
+  cursor: nwse-resize;
+}
+.cropInfo {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+@media (max-width: 700px) {
+  .cropArea {
+    grid-template-columns: 1fr;
+  }
+}
