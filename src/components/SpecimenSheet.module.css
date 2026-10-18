@@ -1,0 +1,86 @@
+.sheet {
+  position: relative;
+  margin: 0;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow-plate);
+  padding: var(--space-6) var(--space-6) var(--space-5);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  aspect-ratio: 3 / 4;
+}
+.plate {
+  width: 100%;
+  height: 100%;
+  max-height: 34rem;
+  margin: 0 auto;
+}
+.label {
+  justify-self: end;
+  width: min(100%, 17.5rem);
+  margin-top: calc(-1 * var(--space-7));
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  outline: 1px solid var(--rule);
+  outline-offset: 3px;
+  padding: var(--space-3) var(--space-4);
+  color: var(--ink);
+}
+.labelLink {
+  justify-self: end;
+  text-decoration: none;
+  color: inherit;
+  width: min(100%, 17.5rem);
+}
+.labelLink .label {
+  width: 100%;
+}
+.labelLink:hover .binomial {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.binomial {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--step-1);
+  color: var(--green-900);
+  margin: 0;
+  line-height: 1.25;
+}
+.common {
+  margin: var(--space-1) 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+.facts {
+  margin: var(--space-3) 0 0;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+  display: grid;
+  gap: var(--space-1);
+  font-size: var(--step--1);
+}
+.facts div {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: var(--space-2);
+}
+.facts dt {
+  color: var(--ink-faint);
+}
+.facts dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.small {
+  padding: var(--space-4) var(--space-4) var(--space-3);
+}
+.small .label,
+.small .labelLink {
+  width: 100%;
+  margin-top: calc(-1 * var(--space-5));
+}
+.small .facts div {
+  grid-template-columns: 1fr auto;
+}
