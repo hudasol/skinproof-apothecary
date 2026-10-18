@@ -36,12 +36,28 @@ verified against the real service by TryOn (records in that repository's
 
 ## SkinProof live verification status
 
+All on 18 October 2026, with the owner's approval for up to 44 units. Input:
+YouCam's own documentation sample portrait (`sample_Image_7`, 1080 × 1437),
+cropped to x 0.15, y 0.12, w 0.73, h 0.85 so the face fills the frame.
+
 | Check | Status | Evidence |
 | --- | --- | --- |
-| Skin Analysis task (`/s2s/v2.0/task/skin-analysis`, SD, `format: json`) | **Not yet run** | needs an approved live check |
-| Skin Analysis result shape | Documented only | — |
-| Skin Analysis masks (`mask_urls`) download and alignment | Documented only | — |
-| Makeup VTO `lip_color` from SkinProof's own adapter | **Not yet run** (shared client verified by TryOn) | — |
+| Skin Analysis task (`/s2s/v2.0/task/skin-analysis`, 12 SD concerns, `format: json`) | **Verified live**: File API 200, upload 200, submit 200, `running` then `success` in 3 polls, 14.1 s | [skin record](live-checks/2026-10-18T07-52-52-568Z-skin.json) |
+| Skin Analysis result shape | **Verified live**: `data.results.output[]` exactly as the OpenAPI json example; 17 items: 11 scored concerns (`region: "whole"`), `skin_type` for `whole`, `t_zone` and `u_zone`, plus `skin_age`, `all` and `resize_image` (ignored by design). No invalid, duplicate or out-of-range items | same |
+| Score range | **Observed live**: `raw_score` can be exactly 100 (the docs say 1–100) | same |
+| Skin Analysis masks | **Verified live**: 11 RGBA PNG masks, each exactly the input size (788 × 1221), so they overlay without resampling. Several were near-empty for this face (nothing detected) | same; images git-ignored |
+| Units, Skin Analysis | **Verified live**: 14 units for 12 SD concerns, as the unit table states (1,030 → 1,016) | same |
+| Makeup VTO `lip_color` from SkinProof's adapter | **Verified live**: Hurraw! Black Cherry `#C8524E`, gloss texture, skin smoothing 0; 3 polls, 9.4 s; `results.url` shape; PNG 810 × 1078 for an 810 × 1078 input | [try-on record](live-checks/2026-10-18T07-53-30-642Z-tryon.json) |
+| Skin left untouched by the try-on | **Measured live**: 1.35 % of pixels changed by more than 12/255 on any channel, all inside one 200 × 100 px box over the mouth (2.3 % of the image) | same output, measured locally |
+| Units, try-on | **Verified live**: 1 unit (1,016 → 1,015) | same |
+| Full in-app journey in live mode | **Verified live**: one analysis and one try-on through the app's own services and pages, captured as `docs/screenshots/live-*.png`; 15 units (1,015 → 1,000) | screenshots |
+
+Total spent on SkinProof's verification: **30 units**. Balance afterwards: 1,000.
+
+What this does and does not show: the integration works end to end on one
+portrait and one shade. The sample portrait has very even skin and scored near
+the top of every scale; it says nothing about how the model behaves across
+skin tones, ages or lighting.
 
 ## Skin Analysis contract (what the adapter implements)
 
@@ -99,6 +115,14 @@ The makeup API has **no product or SKU catalogue**: every shade is sent as a
 hex colour. Brands do not publish hex values, so SkinProof's shade colours are
 measured from the brand's own swatch image and labelled as approximations
 (`docs/CATALOGUE-METHOD.md`).
+
+### What the live run changed
+
+* Analysis masks now open on the first suggested focus area and are ordered
+  lowest score first. Live, the first mask by fixed order (redness) was empty
+  for this face, which made the overlay look broken.
+* Nothing in the adapters needed changing: the live responses matched the
+  documented shapes the contract tests encode.
 
 ## Discrepancies in the official docs
 
