@@ -141,6 +141,18 @@ Production: `npm run build` then `npm start`. Behind plain http on a non-local
 host, set `SKINPROOF_INSECURE_COOKIES=1` or the session cookie will not be set;
 use https instead where you can.
 
+### Deploying
+
+SkinProof keeps its database and images on disk and runs analysis jobs inside
+the server process, so deploy it as one long-running Node service with a
+persistent disk (a VM, or a container host such as Render or Railway with a
+volume mounted at `DATA_DIR`). Serverless platforms that discard the
+filesystem between requests are not suitable. Build with `npm run build`, start
+with `npm start` (it honours `PORT`), and check `GET /api/health`. For a public
+judging copy, leave `PROVIDER_MODE=fixture`, or use live mode with a small
+`LIVE_DAILY_UNIT_BUDGET` and an `APP_ACCESS_CODE` shared in the testing
+instructions.
+
 ### Live mode
 
 Put a YouCam API key in `.env.local` (from
