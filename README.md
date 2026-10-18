@@ -26,15 +26,14 @@ Entry for the [YouCam API Skin AI & eCommerce VTO Hackathon](https://youcam-api-
 
 | | |
 | --- | --- |
-| Skin Analysis adapter | Built and contract-tested against the documented request and response shapes. **Not yet run against the live service from SkinProof.** |
-| Makeup try-on adapter | Built on the shared client that the same author's TryOn project verified live on 18 October 2026 (upload, task, poll, download). **SkinProof's own adapter has not yet made a live call.** |
-| Everything else | Implemented and tested end to end with a clearly labelled offline fixture provider |
-| Screenshots below | **Fixture mode.** Analysis scores and try-on tints in them are placeholders, labelled as such on screen |
+| YouCam integration | **Verified live on 18 October 2026.** One Skin Analysis (12 SD concerns, 14 units) and one lip try-on (1 unit) through SkinProof’s own adapters, then one full journey in the app in live mode. Responses matched the documented shapes; detection masks align with the photo; the try-on changed 1.35 % of pixels, all over the mouth. 30 units in total. Record: [docs/API-VERIFICATION.md](docs/API-VERIFICATION.md) |
+| Scope of that check | One portrait (YouCam’s own documentation sample) and one shade. It shows the integration works, not how the model behaves across faces, skin tones or light |
+| Everything else | Implemented and tested end to end, also with a clearly labelled offline fixture provider for development and judging without a key |
+| Screenshots below | The analysis and try-on images are **live YouCam output** on the documentation sample portrait. A full fixture-mode set is in `docs/screenshots/fixture-*` |
 | Catalogue | 12 botanicals, 44 PubMed-verified topical studies, 22 skincare products and 3 lip tints, ingredient lists checked against brand pages on 18 October 2026 |
 
 Live checks spend YouCam units and are run only with the owner's explicit
-approval (`npm run verify:live`, see below). Results are recorded in
-[docs/API-VERIFICATION.md](docs/API-VERIFICATION.md).
+approval (`npm run verify:live`, see below).
 
 ## The journey
 
@@ -82,18 +81,18 @@ Three assessments are kept separate:
 Full rules: [docs/LEDGER.md](docs/LEDGER.md), the in-app `/ledger` page, and
 [src/lib/ledger/engine.ts](src/lib/ledger/engine.ts).
 
-## Screenshots (fixture mode)
+## Screenshots
 
 | | |
 | --- | --- |
 | ![Landing](docs/screenshots/fixture-01-landing.png) | ![Library](docs/screenshots/fixture-02-library.png) |
 | Landing: a herbarium plate whose label carries real catalogue counts | Botanical library, graded per preparation |
-| ![Analysis](docs/screenshots/fixture-06-analysis.png) | ![Shortlist](docs/screenshots/fixture-08-shortlist.png) |
-| Analysis results (fixture scores, labelled) | The Ledger's shortlist with provenance |
-| ![Dossier](docs/screenshots/fixture-10-excluded-dossier.png) | ![Try-on](docs/screenshots/fixture-13-tryon.png) |
-| A dossier: excluded at stage one by a hard limit | Lip try-on studio (fixture placeholder tint) |
+| ![Analysis](docs/screenshots/live-06-analysis.png) | ![Shortlist](docs/screenshots/live-08-shortlist.png) |
+| Live YouCam Skin Analysis: raw scores, focus, skin type, masks | The Ledger's shortlist from that analysis, with provenance |
+| ![Dossier](docs/screenshots/live-10-excluded-dossier.png) | ![Try-on](docs/screenshots/live-13-tryon.png) |
+| A dossier: excluded at stage one by a hard limit | Live YouCam lip try-on, skin smoothing off |
 
-More in [docs/screenshots](docs/screenshots).
+The portrait is the sample image from YouCam's own API documentation. More in [docs/screenshots](docs/screenshots).
 
 ## Architecture
 
@@ -225,7 +224,7 @@ page and the design system.
 
 ## Known limitations
 
-* SkinProof's adapters have not yet made a live call (see Status).
+* Live behaviour has been checked on one portrait and one shade only.
 * The catalogue is small and curated by hand. Product formulas change, so each
   record carries the date it was checked.
 * Most botanical evidence is weak. The Ledger shows that rather than hiding it,
