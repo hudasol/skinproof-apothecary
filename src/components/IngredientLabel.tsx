@@ -53,7 +53,7 @@ export function IngredientLabel({ product, verbatim, title = 'Ingredients as pub
         <ul className={styles.legend} aria-label="Key">
           {legend.map((l) => (
             <li key={l.label}>
-              <mark className={l.cls}>{l.n}</mark> {l.label}
+              <mark className={l.cls}>{l.label}</mark> ({l.n})
             </li>
           ))}
         </ul>
