@@ -63,6 +63,19 @@ export const StudySchema = z.object({
     url: httpsUrl,
   }),
   design: z.enum(STUDY_DESIGNS),
+  /**
+   * cosmetic: everyday use on healthy or cosmetically concerned skin.
+   * acute_model: short induced-irritation tests (UV, shaving, tape stripping).
+   * medical: disease, radiotherapy, post-procedure or add-on to a prescription drug.
+   * Medical-setting studies are shown but do not count towards cosmetic grades.
+   */
+  setting: z.enum(['cosmetic', 'acute_model', 'medical']),
+  /**
+   * Whether the design separates this botanical's effect: the botanical alone,
+   * or a comparison against the same formula without it. Multi-ingredient
+   * products tested as a whole do not.
+   */
+  isolatesBotanical: z.boolean(),
   randomised: z.boolean().nullable(),
   blinded: z.enum(['double', 'single', 'none', 'unclear']),
   control: z.string().min(1),

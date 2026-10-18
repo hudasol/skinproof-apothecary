@@ -77,8 +77,8 @@ export const RULES: RuleDoc[] = [
     id: 'E1_grade',
     stage: '4 · Evidence strength',
     title: 'Grading the research',
-    rule: 'For each botanical preparation and goal: strong = a supporting systematic review, or two or more supporting randomised trials with none against; moderate = one supporting randomised trial and none against; conflicting = randomised trials on both sides; limited = only non-randomised human studies support it; not supported = trials found no effect; preclinical = only lab or animal work.',
-    why: 'Grades are ordered categories. SkinProof does not turn research into a precise-looking score.',
+    rule: 'For each botanical preparation and goal. A trial counts as a full trial only if it is randomised, in everyday cosmetic use, and isolates the botanical (alone, or against the same formula without it); a supporting systematic review counts as one. Strong = two or more, with none against. Moderate = one, or two with a systematic review that does not support the use. Conflicting = full trials on both sides. Limited = only non-randomised studies, acute irritation tests or whole multi-ingredient products support it. Not supported = human studies found no effect. Preclinical = only lab or animal work. Studies in medical settings (radiotherapy, eczema, after laser, alongside prescription drugs) are shown but not counted.',
+    why: 'Grades are ordered categories. SkinProof does not turn research into a precise-looking score, and a study of a whole product says little about one of its ingredients.',
   },
   {
     id: 'A1_applicability',

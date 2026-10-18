@@ -12,8 +12,20 @@ describe('evidence strength (E1)', () => {
     expect(gradeEvidence([study('a')], goal)).toBe('moderate');
     expect(gradeEvidence([study('a'), study('a')], goal)).toBe('strong');
   });
-  it('grades a supporting systematic review as strong', () => {
-    expect(gradeEvidence([study('a', { design: 'systematic_review' })], goal)).toBe('strong');
+  it('counts a supporting systematic review as one trial', () => {
+    expect(gradeEvidence([study('a', { design: 'systematic_review' })], goal)).toBe('moderate');
+    expect(gradeEvidence([study('a', { design: 'systematic_review' }), study('a')], goal)).toBe('strong');
+  });
+  it('caps the grade at moderate when a systematic review does not support it', () => {
+    expect(gradeEvidence([study('a'), study('a'), study('a', { design: 'systematic_review', outcomes: out('mixed') })], goal)).toBe('moderate');
+  });
+  it('treats trials of whole multi-ingredient products and acute models as limited', () => {
+    expect(gradeEvidence([study('a', { isolatesBotanical: false }), study('a', { isolatesBotanical: false })], goal)).toBe('limited');
+    expect(gradeEvidence([study('a', { setting: 'acute_model' })], goal)).toBe('limited');
+  });
+  it('does not count medical-setting studies towards a cosmetic grade', () => {
+    expect(gradeEvidence([study('a', { setting: 'medical' }), study('a', { setting: 'medical' })], goal)).toBe('none');
+    expect(gradeEvidence([study('a', { setting: 'medical' }), study('a', { design: 'open_label' })], goal)).toBe('limited');
   });
   it('calls RCTs on both sides conflicting, not an average', () => {
     expect(gradeEvidence([study('a'), study('a', { outcomes: out('no_effect') })], goal)).toBe('conflicting');

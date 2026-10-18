@@ -29,6 +29,8 @@ export function study(botanicalId: string, over: Partial<Study> = {}): Study {
     botanicalId,
     citation: { authors: 'Test A', title: 'Synthetic', journal: 'Test J', year: 2020, pmid: null, doi: null, url: 'https://example.org/s' },
     design: 'rct',
+    setting: 'cosmetic',
+    isolatesBotanical: true,
     randomised: true,
     blinded: 'double',
     control: 'vehicle',

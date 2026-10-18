@@ -74,23 +74,37 @@ export function catalogueVersion(catalogue: Catalogue): string {
 
 // ---------------------------------------------------------------- evidence strength
 
+/** Human studies of this goal that count towards a cosmetic grade (not medical settings). */
+export function countedStudies(studies: Study[], goal: Goal): Study[] {
+  return studies.filter((s) => HUMAN_DESIGNS.has(s.design) && s.setting !== 'medical' && s.outcomes.some((o) => o.goal === goal));
+}
+
+/**
+ * Trial-grade evidence is a randomised trial in a cosmetic setting that
+ * isolates the botanical. Non-randomised studies, acute irritation models and
+ * trials of whole multi-ingredient products count as supporting evidence only
+ * up to "limited". A systematic review that does not support the use caps the
+ * grade at moderate; a supporting review counts as one trial.
+ */
 export function gradeEvidence(studies: Study[], goal: Goal): EvidenceGrade {
   const relevant = studies.flatMap((s) => s.outcomes.filter((o) => o.goal === goal).map((o) => ({ s, o })));
   if (relevant.length === 0) return 'none';
-  const human = relevant.filter(({ s }) => HUMAN_DESIGNS.has(s.design));
-  const rcts = human.filter(({ s }) => s.design === 'rct');
-  const rctFor = rcts.filter(({ o }) => o.finding === 'supports').length;
-  const rctAgainst = rcts.filter(({ o }) => o.finding !== 'supports').length;
-  const reviewFor = human.some(({ s, o }) => s.design === 'systematic_review' && o.finding === 'supports');
-  const otherHumanFor = human.some(({ s, o }) => s.design !== 'rct' && s.design !== 'systematic_review' && o.finding === 'supports');
+  const counted = relevant.filter(({ s }) => HUMAN_DESIGNS.has(s.design) && s.setting !== 'medical');
+  const isTrial = (s: Study) => s.design === 'rct' && s.setting === 'cosmetic' && s.isolatesBotanical;
+  const trialFor = counted.filter(({ s, o }) => isTrial(s) && o.finding === 'supports').length;
+  const trialAgainst = counted.filter(({ s, o }) => isTrial(s) && o.finding !== 'supports').length;
+  const reviewFor = counted.some(({ s, o }) => s.design === 'systematic_review' && o.finding === 'supports');
+  const reviewAgainst = counted.some(({ s, o }) => s.design === 'systematic_review' && o.finding !== 'supports');
+  const otherFor = counted.some(({ s, o }) => !isTrial(s) && s.design !== 'systematic_review' && o.finding === 'supports');
 
-  if (rctFor > 0 && rctAgainst > 0) return 'conflicting';
-  if (rctAgainst > 0) return otherHumanFor || reviewFor ? 'conflicting' : 'not_supported';
-  if (reviewFor || rctFor >= 2) return 'strong';
-  if (rctFor === 1) return 'moderate';
-  if (otherHumanFor) return 'limited';
-  if (human.length > 0) return 'not_supported';
-  return relevant.some(({ o }) => o.finding === 'supports') ? 'preclinical' : 'none';
+  if (trialFor > 0 && trialAgainst > 0) return 'conflicting';
+  if (trialAgainst > 0) return otherFor || reviewFor ? 'conflicting' : 'not_supported';
+  if (trialFor + (reviewFor ? 1 : 0) >= 2) return reviewAgainst ? 'moderate' : 'strong';
+  if (trialFor === 1 || reviewFor) return 'moderate';
+  if (otherFor) return 'limited';
+  if (counted.length > 0) return 'not_supported';
+  const preclinical = relevant.some(({ s, o }) => (s.design === 'in_vitro' || s.design === 'animal') && o.finding === 'supports');
+  return preclinical ? 'preclinical' : 'none';
 }
 
 // ---------------------------------------------------------------- applicability
@@ -175,7 +189,9 @@ export function assessGoals(product: Product, goals: Goal[], studiesByBotanical:
         }
       }
       const grade = matched.length ? gradeEvidence(matched, goal) : gradeEvidence(all, goal);
-      const { applicability, reasons } = assessApplicability(ing, product.use, matched, partUnconfirmed);
+      // Compare concentration and use against the studies that carry the grade, when there are any.
+      const counted = countedStudies(matched, goal);
+      const { applicability, reasons } = assessApplicability(ing, product.use, counted.length ? counted : matched, partUnconfirmed);
       const candidate: GoalAssessment = {
         goal,
         botanicalId: ing.botanicalId,
