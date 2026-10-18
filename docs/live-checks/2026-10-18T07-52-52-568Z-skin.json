@@ -1,0 +1,234 @@
+{
+  "check": "skin",
+  "checkedAt": "2026-10-18T07:52:51.460Z",
+  "baseUrl": "https://yce-api-01.makeupar.com",
+  "input": {
+    "source": "https://plugins-media.makeupar.com/strapi/assets/sample_Image_7_fa28b2618a.jpg",
+    "crop": {
+      "x": 0.15,
+      "y": 0.12,
+      "width": 0.73,
+      "height": 0.85
+    },
+    "normalised": {
+      "width": 788,
+      "height": 1221,
+      "sha256": "50c8da9e876e64ec479dce05fc4b66bcaab097ab9a57a6992fb96c1a09d49043"
+    }
+  },
+  "request": {
+    "endpoint": "/s2s/v2.0/task/skin-analysis",
+    "body": {
+      "src_file_id": "<file id>",
+      "dst_actions": [
+        "redness",
+        "oiliness",
+        "moisture",
+        "texture",
+        "pore",
+        "acne",
+        "radiance",
+        "age_spot",
+        "wrinkle",
+        "firmness",
+        "dark_circle_v2",
+        "skin_type"
+      ],
+      "format": "json",
+      "miniserver_args": {
+        "enable_mask_overlay": false
+      }
+    }
+  },
+  "outcome": {
+    "ok": true,
+    "latencyMs": 14110,
+    "taskIdPrefix": "fmqwb3p8",
+    "result": {
+      "scores": [
+        {
+          "concern": "redness",
+          "rawScore": 100,
+          "uiScore": 99,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "oiliness",
+          "rawScore": 92.5677490234375,
+          "uiScore": 89,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "moisture",
+          "rawScore": 88.11306357383728,
+          "uiScore": 84,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "texture",
+          "rawScore": 99.76619482040405,
+          "uiScore": 99,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "pore",
+          "rawScore": 99.86935555934906,
+          "uiScore": 99,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "acne",
+          "rawScore": 100,
+          "uiScore": 99,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "radiance",
+          "rawScore": 98.98496866226196,
+          "uiScore": 98,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "age_spot",
+          "rawScore": 99.24141693115234,
+          "uiScore": 98,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "wrinkle",
+          "rawScore": 97.39426374435425,
+          "uiScore": 94,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "firmness",
+          "rawScore": 96.09255194664001,
+          "uiScore": 94,
+          "maskArtifactId": null
+        },
+        {
+          "concern": "dark_circle_v2",
+          "rawScore": 81.13594949245453,
+          "uiScore": 77,
+          "maskArtifactId": null
+        }
+      ],
+      "skinType": {
+        "whole": "Normal",
+        "t_zone": "Normal",
+        "u_zone": "Normal"
+      },
+      "missing": [],
+      "ignoredTypes": [
+        "all",
+        "resize_image",
+        "skin_age"
+      ]
+    },
+    "masks": [
+      {
+        "concern": "redness",
+        "mimeType": "image/png",
+        "bytes": 16891
+      },
+      {
+        "concern": "pore",
+        "mimeType": "image/png",
+        "bytes": 16891
+      },
+      {
+        "concern": "firmness",
+        "mimeType": "image/png",
+        "bytes": 23864
+      },
+      {
+        "concern": "oiliness",
+        "mimeType": "image/png",
+        "bytes": 29330
+      },
+      {
+        "concern": "radiance",
+        "mimeType": "image/png",
+        "bytes": 114436
+      },
+      {
+        "concern": "dark_circle_v2",
+        "mimeType": "image/png",
+        "bytes": 44698
+      },
+      {
+        "concern": "texture",
+        "mimeType": "image/png",
+        "bytes": 24670
+      },
+      {
+        "concern": "age_spot",
+        "mimeType": "image/png",
+        "bytes": 17841
+      },
+      {
+        "concern": "acne",
+        "mimeType": "image/png",
+        "bytes": 16891
+      },
+      {
+        "concern": "wrinkle",
+        "mimeType": "image/png",
+        "bytes": 23595
+      },
+      {
+        "concern": "moisture",
+        "mimeType": "image/png",
+        "bytes": 219576
+      }
+    ]
+  },
+  "diagnostics": {
+    "provider": "youcam",
+    "endpoint": "/s2s/v2.0/task/skin-analysis",
+    "concerns": 12,
+    "fileApiStatus": 200,
+    "uploadStatus": 200,
+    "submitStatus": 200,
+    "polls": 3,
+    "statusesSeen": [
+      "running",
+      "success"
+    ],
+    "itemsReturned": 17,
+    "invalidItems": 0,
+    "subRegions": 0,
+    "duplicates": 0,
+    "outOfRange": 0,
+    "scoresKept": 11,
+    "mask_rednessStatus": 200,
+    "mask_rednessBytes": 16891,
+    "mask_poreStatus": 200,
+    "mask_poreBytes": 16891,
+    "mask_firmnessStatus": 200,
+    "mask_firmnessBytes": 23864,
+    "mask_oilinessStatus": 200,
+    "mask_oilinessBytes": 29330,
+    "mask_radianceStatus": 200,
+    "mask_radianceBytes": 114436,
+    "mask_dark_circle_v2Status": 200,
+    "mask_dark_circle_v2Bytes": 44698,
+    "mask_textureStatus": 200,
+    "mask_textureBytes": 24670,
+    "mask_age_spotStatus": 200,
+    "mask_age_spotBytes": 17841,
+    "mask_acneStatus": 200,
+    "mask_acneBytes": 16891,
+    "mask_wrinkleStatus": 200,
+    "mask_wrinkleBytes": 23595,
+    "mask_moistureStatus": 200,
+    "mask_moistureBytes": 219576,
+    "masksDownloaded": 11,
+    "totalMs": 14110
+  },
+  "units": {
+    "before": 1030,
+    "after": 1016,
+    "spent": 14
+  }
+}

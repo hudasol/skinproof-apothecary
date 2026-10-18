@@ -69,7 +69,7 @@ export default async function AnalysisPage() {
         const focusConcerns = new Set(focus.map((f) => f.concern));
         const sorted = result.scores.slice().sort((x, y) => x.rawScore - y.rawScore);
         const masks = photo
-          ? result.scores.filter((s) => s.maskArtifactId).map((s) => ({ concern: s.concern, label: CONCERN_LABELS[s.concern].label, url: `/api/artifacts/${s.maskArtifactId}` }))
+          ? sorted.filter((s) => s.maskArtifactId).map((s) => ({ concern: s.concern, label: CONCERN_LABELS[s.concern].label, url: `/api/artifacts/${s.maskArtifactId}` }))
           : [];
         return (
           <>
@@ -161,7 +161,7 @@ export default async function AnalysisPage() {
                 </Link>
                 {masks.length > 0 && photo && (
                   <div style={{ marginTop: 'var(--space-6)' }}>
-                    <MaskViewer photoUrl={`/api/artifacts/${photo.id}`} masks={masks} />
+                    <MaskViewer photoUrl={`/api/artifacts/${photo.id}`} masks={masks} initial={focus[0]?.concern} />
                   </div>
                 )}
               </aside>

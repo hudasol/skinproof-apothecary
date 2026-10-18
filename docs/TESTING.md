@@ -1,6 +1,6 @@
 # Test record
 
-Every result here was run and observed. Nothing in this file spends YouCam units.
+Every result here was run and observed. Only the live checks section spent YouCam units, with the owner’s approval.
 
 ## 18 October 2026
 
@@ -47,8 +47,18 @@ Every result here was run and observed. Nothing in this file spends YouCam units
   consent and re-use, refusal for excluded or unmeasured shades, phone menu
   and no sideways scrolling on 11 pages.
 
+## Live checks (approved, 30 units in total)
+
+| Run | Result |
+| --- | --- |
+| `npm run verify:live -- credits` | 1,030 units before |
+| `npm run verify:live -- skin --image-url <YouCam sample 7> --crop 0.15,0.12,0.73,0.85 --spend` | success, 14 units, 11 scores, skin type in 3 zones, 11 aligned masks |
+| `npm run verify:live -- tryon --image-url <YouCam sample 7> --shade hurraw-tinted-lip-balm/black-cherry --spend` | success, 1 unit, output aligned, 1.35 % of pixels changed, all over the mouth |
+| `SHOT_MODE=live SHOT_PREFIX=live npm run screenshots` | full journey in live mode, 15 units, 15 screenshots |
+| `npm run verify:live -- credits` | 1,000 units after |
+
 ## Not yet verified
 
-* SkinProof's Skin Analysis and Makeup adapters against the live YouCam
-  service (requires approved unit spend; see `docs/API-VERIFICATION.md`).
-* Behaviour on real faces of the fixture-free pipeline (masks, scores).
+* Behaviour across faces, skin tones, ages and lighting. The live checks used
+  one portrait and one shade.
+* Hosted deployment: no public copy is running yet.

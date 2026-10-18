@@ -17,9 +17,10 @@ export const metadata: Metadata = { title: 'Integration status' };
  * verified. The verification table mirrors docs/API-VERIFICATION.md.
  */
 const VERIFIED: { check: string; status: string }[] = [
-  { check: 'File upload, makeup try-on task, polling and download (shared client)', status: 'Verified live on 18 October 2026 by TryOn, the same author’s earlier project, on the same account' },
-  { check: 'SkinProof’s Skin Analysis adapter against the live service', status: 'Not yet run: needs an approved live check' },
-  { check: 'SkinProof’s makeup try-on adapter against the live service', status: 'Not yet run: needs an approved live check' },
+  { check: 'Skin Analysis: upload, 12 SD concerns as JSON, polling, scores, skin type, masks', status: 'Verified live on 18 October 2026: 14 units, responses matched the documented shapes, masks align with the photo' },
+  { check: 'Makeup try-on: lip_color with skin smoothing at 0', status: 'Verified live on 18 October 2026: 1 unit; 1.35% of pixels changed, all over the mouth' },
+  { check: 'The full journey in the app in live mode', status: 'Verified live on 18 October 2026: one analysis and one try-on' },
+  { check: 'Scope', status: 'One portrait (YouCam’s documentation sample) and one shade: the integration works; behaviour across faces is not measured' },
   { check: 'Both adapters against the documented request and response shapes', status: 'Contract tests pass (no network)' },
 ];
 

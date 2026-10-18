@@ -1,0 +1,86 @@
+{
+  "check": "tryon",
+  "checkedAt": "2026-10-18T07:53:29.477Z",
+  "baseUrl": "https://yce-api-01.makeupar.com",
+  "input": {
+    "source": "https://plugins-media.makeupar.com/strapi/assets/sample_Image_7_fa28b2618a.jpg",
+    "crop": null,
+    "normalised": {
+      "width": 1080,
+      "height": 1437,
+      "sha256": "f33fcae30492b9842f96a158f881b9962dba28ce45d8112c3ae070b0c4965d4c"
+    }
+  },
+  "request": {
+    "endpoint": "/s2s/v2.0/task/makeup-vto",
+    "shade": "hurraw-tinted-lip-balm/black-cherry",
+    "effects": {
+      "version": "1.0",
+      "effects": [
+        {
+          "category": "skin_smooth",
+          "skinSmoothStrength": 0,
+          "skinSmoothColorIntensity": 0
+        },
+        {
+          "category": "lip_color",
+          "shape": {
+            "name": "original"
+          },
+          "morphology": {
+            "fullness": 0,
+            "wrinkless": 0
+          },
+          "style": {
+            "type": "full"
+          },
+          "palettes": [
+            {
+              "color": "#C8524E",
+              "texture": "gloss",
+              "colorIntensity": 55,
+              "gloss": 55,
+              "transparencyIntensity": 40
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "outcome": {
+    "ok": true,
+    "latencyMs": 9386,
+    "taskIdPrefix": "5KGJxfWK",
+    "input": {
+      "width": 810,
+      "height": 1078
+    },
+    "output": {
+      "width": 810,
+      "height": 1078,
+      "mimeType": "image/png"
+    },
+    "outputSha256": "a637a8665c3606ce822bcfac88a20e9f6602116e9f8bf41c284fc0825f7170ee"
+  },
+  "diagnostics": {
+    "provider": "youcam",
+    "endpoint": "/s2s/v2.0/task/makeup-vto",
+    "fileApiStatus": 200,
+    "uploadStatus": 200,
+    "submitStatus": 200,
+    "polls": 3,
+    "statusesSeen": [
+      "running",
+      "success"
+    ],
+    "resultShape": "object_url",
+    "outputStatus": 200,
+    "outputBytes": 656265,
+    "totalMs": 9386
+  },
+  "units": {
+    "before": 1016,
+    "after": 1015,
+    "spent": 1
+  }
+}

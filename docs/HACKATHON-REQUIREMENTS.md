@@ -37,20 +37,20 @@ Status: **Done** (implemented and verified as described), **Partly**,
 
 | # | Requirement (source) | Product behaviour | Where | Verified by | Status |
 | --- | --- | --- | --- | --- | --- |
-| R1 | Working application that integrates at least one YouCam API (rules §4) | Skin Analysis drives goals and the Ledger; Makeup VTO previews lip tints | `src/lib/providers/youcam/` | Adapter contract tests; live check record in `docs/API-VERIFICATION.md` | **Partly**: both adapters built and contract-tested; SkinProof has not yet made a live call (needs approved units) |
+| R1 | Working application that integrates at least one YouCam API (rules §4) | Skin Analysis drives goals and the Ledger; Makeup VTO previews lip tints | `src/lib/providers/youcam/` | Adapter contract tests; live check record in `docs/API-VERIFICATION.md` | **Done**: both verified live on 2026-10-18 (Skin Analysis 14 units, try-on 1 unit, plus one full in-app live run) |
 | R2 | Clear consumer or eCommerce value (rules §4) | Shopper goes from a selfie to a short, explained list of real products, with retailer links and a try-on for colour products | `src/app/` journey | E2E journey test | Done |
-| R3 | Installs and runs consistently on its intended platform (rules §4) | Responsive web app, one Node process, SQLite, no other services | README setup | Fresh `npm ci` + build + tests | Done in fixture mode: install, build and tests verified (docs/TESTING.md) |
+| R3 | Installs and runs consistently on its intended platform (rules §4) | Responsive web app, one Node process, SQLite, no other services | README setup | Fresh `npm ci` + build + tests | Done: fresh install, build and tests verified; live mode verified (docs/TESTING.md) |
 | R4 | New, or significantly updated in the submission period (rules §4) | New repository, first commit 2026-10-18; infrastructure ported from the entrant's own TryOn project and stated as such | git history, README | — | Done |
-| R5 | Authorised use of third-party SDKs, APIs and data (rules §4) | Permissive open-source dependencies; product data are short factual ingredient lists with source links; no brand photography; no photos of people in the repo | `docs/CATALOGUE-METHOD.md` | Review | Done |
+| R5 | Authorised use of third-party SDKs, APIs and data (rules §4) | Permissive open-source dependencies; product data are short factual ingredient lists with source links; no brand photography; no photos of people in the repo except YouCam’s own documentation sample portrait in the live screenshots | `docs/CATALOGUE-METHOD.md` | Review | Done |
 | R6 | Repository URL with all source, assets, instructions; public with licence or shared with contact_event@PerfectCorp.com (rules §4) | Public GitHub repo, MIT licence | `LICENSE` | — | Done |
 | R7 | Text description of features, functionality and consumer value (rules §4) | Draft submission text | `docs/SUBMISSION.md` | — | Draft in docs/SUBMISSION.md |
-| R8 | Screenshots (overview page) | Captured from the running app, labelled fixture or live | `docs/screenshots/` | — | Done (fixture mode, labelled); live screenshots pending the live check |
+| R8 | Screenshots (overview page) | Captured from the running app, labelled fixture or live | `docs/screenshots/` | — | Done: a live set (`live-*`) and a fixture set (`fixture-*`) |
 | R9 | 1–3 minute public video on YouTube/Vimeo, explaining the YouCam API used, showing the project running (rules §4) | Script with timings built from the real journey | `docs/DEMO-SCRIPT.md` | — | Owner records and uploads |
 | R10 | No third-party trademarks or copyrighted music in the video without permission (rules §4) | Script avoids music; product names appear only as factual catalogue entries | `docs/DEMO-SCRIPT.md` | Check at capture | Owner |
 | R11 | Testing access free and unrestricted until judging ends (rules §4) | Fixture mode runs with no key; live mode is gated by a unit budget and an optional access code | README, `.env.example` | — | Hosting is the owner's decision |
 | R12 | English materials (rules §4) | All English | — | — | Done |
 | R13 | Original work solely owned by the entrant (rules §4, §7) | Written for this entry; botanical illustrations drawn as original SVG | — | — | Done |
-| R14 | Project must function as shown in the video (rules §4) | Demo script uses only implemented behaviour; fixture output is labelled on screen | `docs/DEMO-SCRIPT.md` | — | Done for fixture mode |
+| R14 | Project must function as shown in the video (rules §4) | Demo script uses only implemented behaviour; fixture output is labelled on screen | `docs/DEMO-SCRIPT.md` | — | Done, in fixture and live mode |
 
 ## Judging (rules §6)
 

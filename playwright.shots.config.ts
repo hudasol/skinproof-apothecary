@@ -1,6 +1,10 @@
 import { defineConfig } from '@playwright/test';
 
-/** Screenshot capture against its own production build in fixture mode (npm run screenshots). */
+/**
+ * Screenshot capture against its own production build (npm run screenshots).
+ * Fixture mode by default. SHOT_MODE=live calls YouCam (one analysis and one
+ * try-on, about 15 units) using the key in .env.local; use it only with approval.
+ */
 const PORT = 3200;
 
 export default defineConfig({
@@ -13,8 +17,8 @@ export default defineConfig({
     timeout: 600_000,
     reuseExistingServer: false,
     env: {
-      PROVIDER_MODE: 'fixture',
-      DATA_DIR: './.data-shots',
+      PROVIDER_MODE: process.env.SHOT_MODE === 'live' ? 'live' : 'fixture',
+      DATA_DIR: process.env.SHOT_MODE === 'live' ? './.data-shots-live' : './.data-shots',
       FIXTURE_DELAY_MS: '150',
       NEXT_DIST_DIR: '.next-shots',
       SKINPROOF_LOG: 'silent',
