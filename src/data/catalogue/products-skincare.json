@@ -1,0 +1,1135 @@
+[
+  {
+    "id": "la-roche-posay-cicaplast-balm-b5",
+    "brand": "La Roche-Posay",
+    "name": "Cicaplast Balm B5+",
+    "shelf": "skincare",
+    "category": "balm",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.laroche-posay.us/our-products/body/body-lotion/cicaplast-balm-b5-for-dry-skin-irritations-3606000437449.html",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": "https://www.laroche-posay.co.uk/en_GB/cicaplast-baume-b5-repairing-balm/LRP_035.html"
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "WATER • HYDROGENATED POLYISOBUTENE • DIMETHICONE • GLYCERIN • BUTYROSPERMUM PARKII (SHEA) BUTTER • PANTHENOL • ZEA MAYS (CORN) STARCH • PROPANEDIOL • BUTYLENE GLYCOL • CETYL PEG/PPG-10/1 DIMETHICONE • TRIHYDROXYSTEARIN • CENTELLA ASIATICA LEAF EXTRACT • POLYM NIA SONCHIFOLIA ROOT JUICE • ZINC GLUCONATE • MADECASSOSIDE • MANGANESE GLUCONATE • ALPHA-GLUCAN OLIGOSACCHARIDE • SILICA • ALUMINUM HYDROXIDE • MAGNESIUM SULFATE • MANNOSE • CAPRYLOYL GLYCINE • VITREOSCILLA FERMENT • CITRIC ACID • TRISODIUM ETHYLENEDIAMINE DISUCCINATE • LACTOBACILLUS • ACETYLATED GLYCOL STEARATE • MALTODEXTRIN • PENTYLENE GLYCOL • POLYGLYCERYL-4 ISOSTEARATE • TOCOPHEROL • PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE • PHENOXYETHANOL • TITANIUM DIOXIDE",
+    "actives": [
+      {
+        "name": "Dimethicone",
+        "percent": 1,
+        "wording": "ACTIVE INGREDIENTS: DIMETHICONE • 1%"
+      }
+    ],
+    "sourceConflicts": "This is the US label (an OTC skin protectant). The UK “Cicaplast Baume B5+” is sold as a cosmetic with a slightly different list (Caprylyl Glycol instead of Pentylene Glycol and Phenoxyethanol).",
+    "botanicals": [
+      {
+        "inci": "CENTELLA ASIATICA LEAF EXTRACT",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "MADECASSOSIDE",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "isolated_compound",
+          "compound": "madecassoside"
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "La Roche-Posay",
+        "url": "https://www.laroche-posay.us/our-products/body/body-lotion/cicaplast-balm-b5-for-dry-skin-irritations-3606000437449.html"
+      }
+    ],
+    "shades": [],
+    "description": "A thick barrier balm for dry, irritated patches, built on panthenol (stated as 5%) with Centella leaf extract and madecassoside. In the US it is an OTC skin protectant with 1% dimethicone."
+  },
+  {
+    "id": "dr-jart-cicapair-color-correcting-spf30",
+    "brand": "Dr.Jart+",
+    "name": "Cicapair Soothing Color Correcting Treatment Mineral SPF 30",
+    "shelf": "skincare",
+    "category": "treatment",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.drjart.com/product/29717/138113/color-corrector/cicapairtm-soothing-korean-color-correcting-treatment-mineral-spf-30-with-centella-asiatica-extracts-and-zinc-oxide",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "partial",
+    "verificationNote": "The page says zinc oxide provides SPF 30, but zinc oxide is missing from its ingredient list and no percentage is given. The page also spells several ingredients wrongly.",
+    "ingredientsVerbatim": "WATER\\AQUA\\EAU, ISONONYL ISONONANOATE, C12-15 ALKYL BENZOATE, GLYCERIN, BUTYLOCTYL SALICYLATE, LAURYL PEG-10 TRIS (TRIMETHYLSILOXY)SILYLETHYL DIMETHICONE, LAURL POLYGLYCERYL-3 POLYDIMETHYLSILOXYETHYL DIMENTHICONE, CAPRYLIC/CAPRIC TRIGLYCERIDE, TRHEPTANOIN, SYNETHIC FLUORPHLOGOPITE, DISTEARDIMONIUM HECTORITE, MAGNESIUM SULFATE, PENTYELENE GLYCOL, BEESWAX\\CEA ALBA\\CIRE D’ABEILLE, CENTELLA ASIATICA LEAF EXTRACT, NIACINAMIDE, ALLANTOIN, GLYCERYL CAPRYLATE, ASIATICOSIDE, MADECASSIC ACID, ASIATIC ACID, PALMITOYL TRIPEPTIDE-8, CAPRYLYL GLYCOL, BUTYLENE GLYCOL, POLYGLYCERYL-4 OLEATE, SODIUM STEAROYL GLUTAMATE, TOCOPHEROL, DIMETHICONE, ZEA MAYS (CORN) STARTCH, SILICA DIMETHYL SILYLATE, ALUMINUM HYDROXIDE, HYDROGENATED LECITHIN, STEARIC ACID, SODIUM AURFACTIN, ISOPENTYLDIOL, PROPANEDIOL, ZERIN, DEXTRAN, TRIETHOXYCAPRYLYLSILANE, IRON OXIDES (CI 77492), TITANIUM DIOXIDE (CI 77891), CHROMIUM OXIDE GREENS (CI 77288), IRON OXIDES (CI 77491)",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "CENTELLA ASIATICA LEAF EXTRACT",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "ASIATICOSIDE",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "isolated_compound",
+          "compound": "asiaticoside"
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Dr.Jart+",
+        "url": "https://www.drjart.com/product/29717/138113/color-corrector/cicapairtm-soothing-korean-color-correcting-treatment-mineral-spf-30-with-centella-asiatica-extracts-and-zinc-oxide"
+      }
+    ],
+    "shades": [],
+    "description": "A green-tinted mineral sunscreen that visually neutralises redness, with Centella leaf extract and its triterpenes. The tint hides redness on contact; that is a cosmetic effect, not a treatment."
+  },
+  {
+    "id": "skin1004-madagascar-centella-ampoule",
+    "brand": "SKIN1004",
+    "name": "Madagascar Centella Ampoule",
+    "shelf": "skincare",
+    "category": "serum",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.skin1004.com/products/skin1004-madagascar-centella-ampoule",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Water, Glycerin, Butylene Glycol, Centella Asiatica Extract, 1,2-Hexanediol, Cellulose Gum, Ethylhexylglycerin",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Centella Asiatica Extract",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "SKIN1004",
+        "url": "https://www.skin1004.com/products/skin1004-madagascar-centella-ampoule"
+      }
+    ],
+    "shades": [],
+    "description": "A short, fragrance-free formula: water, glycerin and Centella asiatica extract with two preservative-boosters. The amount of Centella is not stated."
+  },
+  {
+    "id": "purito-wonder-releaf-centella-serum",
+    "brand": "Purito Seoul",
+    "name": "Wonder Releaf Centella Serum Unscented",
+    "shelf": "skincare",
+    "category": "serum",
+    "use": "leave_on",
+    "source": {
+      "url": "https://purito.com/product/wonder-releaf-centella-serum-unscented/",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Water, Glycerin, Dipropylene Glycol, Propanediol, Centella Asiatica Extract(34,860ppm), Butylene Glycol, Niacinamide, 1,2-Hexanediol, Sodium Hyaluronate, Panthenol, Madecassoside, Asiaticoside, Madecassic Acid, Asiatic Acid, Centella Asiatica Callus Extracellular Vesicles(10ppm), Allantoin, Palmitoyl Tetrapeptide-7, Palmitoyl Hexapeptide-12, Palmitoyl Tripeptide-1, Palmitoyl Dipeptide-10, Carbomer, Polyglyceryl-10 Laurate, Polyglyceryl-10 Myristate, Hydrolyzed Jojoba Esters, Tromethamine, Ethylhexylglycerin, Xanthan Gum, Dipotassium Glycyrrhizate, Adenosine, Disodium EDTA, Sucrose Stearate, Glyceryl Stearate, Hydrogenated lecithin, Polyglyceryl-10 Stearate, Ceramide NP, Camellia Sinensis Leaf Extract, Pancratium Maritimum Extract",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Centella Asiatica Extract(34,860ppm)",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": {
+          "percent": 3.486,
+          "wording": "Centella Asiatica Extract(34,860ppm)"
+        },
+        "note": "34,860 ppm is 3.486% of the extract, not of its active compounds."
+      },
+      {
+        "inci": "Madecassoside",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "isolated_compound",
+          "compound": "madecassoside"
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Asiaticoside",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "isolated_compound",
+          "compound": "asiaticoside"
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Camellia Sinensis Leaf Extract",
+        "botanicalId": "green-tea",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Purito Seoul",
+        "url": "https://purito.com/product/wonder-releaf-centella-serum-unscented/"
+      }
+    ],
+    "shades": [],
+    "description": "An unscented serum that states its Centella extract strength (34,860 ppm), with niacinamide, panthenol and the four Centella triterpenes."
+  },
+  {
+    "id": "aveeno-daily-moisturizing-lotion",
+    "brand": "Aveeno",
+    "name": "Daily Moisturizing Lotion, Fragrance Free",
+    "shelf": "skincare",
+    "category": "moisturiser",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.aveeno.com/products/daily-moisturizing-lotion-with-soothing-oat",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": "https://www.amazon.com/dp/B005IHMEHM"
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Water, Glycerin, Distearyldimonium Chloride, Petrolatum, Isopropyl Palmitate, Cetyl Alcohol, Avena Sativa (Oat) Kernel Flour, Dimethicone, Benzyl Alcohol, Sodium Chloride",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Avena Sativa (Oat) Kernel Flour",
+        "botanicalId": "oat",
+        "preparation": {
+          "part": "kernel",
+          "form": "colloidal_flour",
+          "compound": null
+        },
+        "concentration": null,
+        "note": "Avena Sativa (Oat) Kernel Flour is the label (INCI) name for colloidal oatmeal."
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Aveeno",
+        "url": "https://www.aveeno.com/products/daily-moisturizing-lotion-with-soothing-oat"
+      }
+    ],
+    "shades": [],
+    "description": "A simple body lotion with colloidal oatmeal, petrolatum and dimethicone. The current US page shows no Drug Facts, so no oat percentage is stated. Benzyl Alcohol is used here, most likely as a preservative."
+  },
+  {
+    "id": "aveeno-eczema-therapy-daily-moisturizing-cream",
+    "brand": "Aveeno",
+    "name": "Eczema Therapy Daily Moisturizing Cream",
+    "shelf": "skincare",
+    "category": "moisturiser",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.amazon.com/dp/B00YPBI980",
+      "type": "retailer",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": "https://www.aveeno.com/products/eczema-therapy-daily-moisturizing-cream"
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Water, Glycerin, Panthenol, Distearyldimonium Chloride, Petrolatum, Isopropyl Palmitate, Cetyl Alcohol, Dimethicone, Avena Sativa (Oat) Kernel Oil, Steareth-20, Benzalkonium Chloride, Ceramide NP, Sodium Chloride, Avena Sativa (Oat) Kernel Extract",
+    "actives": [
+      {
+        "name": "Colloidal Oatmeal",
+        "percent": 1,
+        "wording": "Active ingredient Colloidal Oatmeal 1% Purpose Skin Protectant"
+      }
+    ],
+    "sourceConflicts": "The Drug Facts come from the Aveeno brand store on Amazon, because aveeno.com shows only a grouped ingredient explainer; that explainer names the same ingredients. The same Amazon page wrongly lists “Retinol” as the active in its specification table.",
+    "botanicals": [
+      {
+        "inci": "Colloidal Oatmeal",
+        "botanicalId": "oat",
+        "preparation": {
+          "part": "kernel",
+          "form": "colloidal_flour",
+          "compound": null
+        },
+        "concentration": {
+          "percent": 1,
+          "wording": "Active ingredient Colloidal Oatmeal 1%"
+        },
+        "note": null
+      },
+      {
+        "inci": "Avena Sativa (Oat) Kernel Oil",
+        "botanicalId": "oat",
+        "preparation": {
+          "part": "kernel",
+          "form": "oil",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Avena Sativa (Oat) Kernel Extract",
+        "botanicalId": "oat",
+        "preparation": {
+          "part": "kernel",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Aveeno",
+        "url": "https://www.aveeno.com/products/eczema-therapy-daily-moisturizing-cream"
+      },
+      {
+        "label": "Aveeno store on Amazon",
+        "url": "https://www.amazon.com/dp/B00YPBI980"
+      }
+    ],
+    "shades": [],
+    "description": "A fragrance-free cream sold as an OTC skin protectant with 1% colloidal oatmeal, plus ceramide NP. SkinProof lists it for dry skin; eczema itself is a medical condition for a clinician."
+  },
+  {
+    "id": "first-aid-beauty-ultra-repair-cream",
+    "brand": "First Aid Beauty",
+    "name": "Ultra Repair Cream Intense Hydration",
+    "shelf": "skincare",
+    "category": "moisturiser",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.firstaidbeauty.com/products/ultra-repair-cream-intense-hydration",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Water, Stearic Acid, Glycerin, C12-15 Alkyl Benzoate, Caprylic/Capric Triglyceride, Glyceryl Stearate, Glyceryl Stearate SE, Cetearylalcohol, Dimethicone, Squalane, Hydrogenated Shea Butter, Phenoxyethanol, Caprylyl Glycol, Xanthamgum, Allantoin, Sodium Hydroxide, Tetrasodium EDTA, Chrysanthemum Parthenium (Feverfew) Extract, Camellia Sinensis Leaf Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Ceramide NP, Eucalyptus Globulus Leaf Oil",
+    "actives": [
+      {
+        "name": "Colloidal Oatmeal",
+        "percent": 0.5,
+        "wording": "skin protectant 0.5% Colloidal Oatmeal"
+      }
+    ],
+    "sourceConflicts": "The page shows two lists: the visible list omits the oat active and has typing errors; the page’s product data gives “Active Ingredient: Colloidal Oatmeal 0.50%” and names the eucalyptus as Eucalyptus Globulus (Eucalyptus) Leaf Oil.",
+    "botanicals": [
+      {
+        "inci": "Colloidal Oatmeal",
+        "botanicalId": "oat",
+        "preparation": {
+          "part": "kernel",
+          "form": "colloidal_flour",
+          "compound": null
+        },
+        "concentration": {
+          "percent": 0.5,
+          "wording": "skin protectant 0.5% Colloidal Oatmeal"
+        },
+        "note": null
+      },
+      {
+        "inci": "Chrysanthemum Parthenium (Feverfew) Extract",
+        "botanicalId": "feverfew",
+        "preparation": {
+          "part": "unspecified",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Camellia Sinensis Leaf Extract",
+        "botanicalId": "green-tea",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Glycyrrhiza Glabra (Licorice) Root Extract",
+        "botanicalId": "licorice",
+        "preparation": {
+          "part": "root",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "First Aid Beauty",
+        "url": "https://www.firstaidbeauty.com/products/ultra-repair-cream-intense-hydration"
+      }
+    ],
+    "shades": [],
+    "description": "A rich whipped cream with 0.5% colloidal oatmeal, shea and ceramide NP, plus small botanical extracts and eucalyptus leaf oil."
+  },
+  {
+    "id": "aveeno-calm-restore-oat-gel-moisturizer",
+    "brand": "Aveeno",
+    "name": "Calm + Restore Oat Gel Moisturizer",
+    "shelf": "skincare",
+    "category": "gel",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.aveeno.com/products/calm-restore-oat-gel-moisturizer-sensitive-skin",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Water, Glycerin, Dimethicone, Cetearyl Olivate, Avena Sativa (Oat) Kernel Flour, Sorbitan Olivate, Polyacrylamide, Synthetic Beeswax, Phenoxyethanol, C13-14 Isoparaffin, Butylene Glycol, Dimethicone Crosspolymer, Panthenol, Chlorphenesin, Dimethiconol, Carbomer, Laureth-7, Chrysanthemum Parthenium (Feverfew) Flower/Leaf/Stem Juice, Ethylhexylglycerin, Sodium Hydroxide, Avena Sativa (Oat) Kernel Extract, Centella Asiatica Extract",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Avena Sativa (Oat) Kernel Flour",
+        "botanicalId": "oat",
+        "preparation": {
+          "part": "kernel",
+          "form": "colloidal_flour",
+          "compound": null
+        },
+        "concentration": null,
+        "note": "Avena Sativa (Oat) Kernel Flour is the label (INCI) name for colloidal oatmeal."
+      },
+      {
+        "inci": "Avena Sativa (Oat) Kernel Extract",
+        "botanicalId": "oat",
+        "preparation": {
+          "part": "kernel",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Chrysanthemum Parthenium (Feverfew) Flower/Leaf/Stem Juice",
+        "botanicalId": "feverfew",
+        "preparation": {
+          "part": "aerial_parts",
+          "form": "juice_or_gel",
+          "compound": null
+        },
+        "concentration": null,
+        "note": "A juice of the whole aerial plant, not the parthenolide-depleted extract that was studied."
+      },
+      {
+        "inci": "Centella Asiatica Extract",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Aveeno",
+        "url": "https://www.aveeno.com/products/calm-restore-oat-gel-moisturizer-sensitive-skin"
+      }
+    ],
+    "shades": [],
+    "description": "A light gel-cream for sensitive skin with oat flour and oat extract, feverfew juice and Centella. No fragrance is listed."
+  },
+  {
+    "id": "aveeno-positively-radiant-spf30",
+    "brand": "Aveeno",
+    "name": "Positively Radiant Daily Face Moisturizer SPF 30",
+    "shelf": "skincare",
+    "category": "moisturiser",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-15"
+    },
+    "verification": "unverified",
+    "verificationNote": "The brand page lists ingredient names in grouped blocks (“~97% of the formula…”), not in label order, and gives no sunscreen percentages. No full label list could be traced to a brand or retailer page.",
+    "ingredientsVerbatim": null,
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [],
+    "retailers": [
+      {
+        "label": "Aveeno",
+        "url": "https://www.aveeno.com/products/positively-radiant-daily-face-moisturizer-broad-spectrum-spf-30"
+      }
+    ],
+    "shades": [],
+    "description": "A daily moisturiser with sunscreen, marketed around soy extract for uneven tone. SkinProof could not trace its full label, so it is shown but never recommended."
+  },
+  {
+    "id": "eucerin-anti-redness-concealing-day-spf30",
+    "brand": "Eucerin",
+    "name": "Anti-Redness Concealing Day Care SPF30",
+    "shelf": "skincare",
+    "category": "moisturiser",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.eucerin.co.uk/products/hypersensitive-skin/antiredness-concealing-day-care-spf-30",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": "UK product page; the ingredients panel lists items one by one and they are joined in page order.",
+    "ingredientsVerbatim": "Aqua, Glycerin, C12-15 Alkyl Benzoate, Butyl Methoxydibenzoylmethane, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Ethylhexyl Triazone, Phenylbenzimidazole Sulfonic Acid, Dibutyl Adipate, Methylpropanediol, Butyrospermum Parkii Butter, Cetearyl Alcohol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Distarch Phosphate, Lauroyl Lysine, 4-t-Butylcyclohexanol (Trans-Isomer), Glycyrrhiza Inflata Root Extract, Xanthan Gum, Gellan Gum, Hydroxypropyl Starch Phosphate, Sodium Hydroxide, Potassium Cetyl Phosphate, Trisodium Ethylenediamine Disuccinate, Pentylene Glycol, 1,2-Hexanediol, Hydroxyacetophenone, Caprylyl Glycol, CI 77891, CI 77288",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Glycyrrhiza Inflata Root Extract",
+        "botanicalId": "licorice",
+        "preparation": {
+          "part": "root",
+          "form": "extract",
+          "compound": "licochalcone A"
+        },
+        "concentration": null,
+        "note": "Eucerin names Licochalcone A as this product’s key ingredient; on the label it appears as Glycyrrhiza Inflata Root Extract. No amount is stated."
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Eucerin",
+        "url": "https://www.eucerin.co.uk/products/hypersensitive-skin/antiredness-concealing-day-care-spf-30"
+      }
+    ],
+    "shades": [],
+    "description": "A tinted day cream with sunscreen for redness-prone skin. Its green and white pigments hide redness on contact; licochalcone A is the botanical active."
+  },
+  {
+    "id": "eucerin-anti-redness-soothing-care",
+    "brand": "Eucerin",
+    "name": "Anti-Redness Soothing Care",
+    "shelf": "skincare",
+    "category": "moisturiser",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.eucerin.co.uk/products/hypersensitive-skin/antiredness-soothing-care",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": "UK product page; the panel shows display names such as “Panthenol or Dexpanthenol” and “Vegetable Oil” instead of standard label names.",
+    "ingredientsVerbatim": "Aqua, Glycerin, Butyrospermum Parkii Butter, Cetyl Palmitate, Methyl Palmitate, Panthenol or Dexpanthenol, Vegetable Oil, Pentylene Glycol, Methylpropanediol, Sodium Polyacrylate, 4-t-Butylcyclohexanol (Trans-Isomer), Glycyrrhiza Inflata Root Extract, Pantolactone, Caprylyl Glycol, Sodium Hydroxide, Citric Acid",
+    "actives": [],
+    "sourceConflicts": "Two entries on the brand page (“Panthenol or Dexpanthenol”, “Vegetable Oil”) are not standard label names, so the exact ingredients behind them are unclear.",
+    "botanicals": [
+      {
+        "inci": "Glycyrrhiza Inflata Root Extract",
+        "botanicalId": "licorice",
+        "preparation": {
+          "part": "root",
+          "form": "extract",
+          "compound": "licochalcone A"
+        },
+        "concentration": null,
+        "note": "Eucerin names Licochalcone A as this product’s key ingredient; on the label it appears as Glycyrrhiza Inflata Root Extract. No amount is stated."
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Eucerin",
+        "url": "https://www.eucerin.co.uk/products/hypersensitive-skin/antiredness-soothing-care"
+      }
+    ],
+    "shades": [],
+    "description": "An untinted moisturiser for redness-prone skin with licochalcone A, shea and panthenol, and no listed fragrance."
+  },
+  {
+    "id": "innisfree-green-tea-seed-hyaluronic-serum",
+    "brand": "innisfree",
+    "name": "Green Tea Seed Hyaluronic Serum",
+    "shelf": "skincare",
+    "category": "serum",
+    "use": "leave_on",
+    "source": {
+      "url": "https://us.innisfree.com/products/green-tea-seed-hyaluronic-serum",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Water / Aqua / Eau, Propanediol, Glycerin, 1,2-Hexanediol, Niacinamide, Betaine, Saccharide Isomerate, Camellia Sinensis Seed Oil, Xylitol, Cetearyl Olivate, Hydrogenated Lecithin, Butylene Glycol, Sorbitan Olivate, Lactobacillus Ferment Lysate, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Squalane, Panthenol, Allantoin, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Tromethamine, Ethylhexylglycerin, Ceratonia Siliqua (Carob) Gum, Sodium Metaphosphate, Camellia Sinensis Leaf Extract, Dipotassium Glycyrrhizate, Sodium Hyaluronate, Hyaluronic Acid, Dextrin, Theobroma Cacao (Cocoa) Extract, 3-O-Ethyl Ascorbic Acid, Sorbitan Isostearate, Sodium Citrate, Citric Acid, Glyceryl Oleate, Tocopherol, Lecithin, Sucrose, Lauryl Glucoside, Polyglyceryl-6 Laurate, Myristyl Glucoside, Xanthan Gum, Lactic Acid, Hydrolyzed Hyaluronic Acid, Sodium Hyaluronate Crosspolymer, Sodium Acetylated Hyaluronate",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Camellia Sinensis Seed Oil",
+        "botanicalId": "green-tea",
+        "preparation": {
+          "part": "seed",
+          "form": "oil",
+          "compound": null
+        },
+        "concentration": null,
+        "note": "The ingredient the product is named after. The green tea studies used leaf extract, not seed oil."
+      },
+      {
+        "inci": "Camellia Sinensis Leaf Extract",
+        "botanicalId": "green-tea",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "innisfree",
+        "url": "https://us.innisfree.com/products/green-tea-seed-hyaluronic-serum"
+      }
+    ],
+    "shades": [],
+    "description": "A hydrating serum named for green tea seed oil, with niacinamide and several forms of hyaluronic acid. It also contains green tea leaf extract; neither amount is stated."
+  },
+  {
+    "id": "herbivore-bakuchiol-face-serum",
+    "brand": "Herbivore",
+    "name": "BAKUCHIOL Dual-Retinol Alternative Face Serum",
+    "shelf": "skincare",
+    "category": "serum",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.herbivorebotanicals.com/products/bakuchiol-dual-retinol-alternative-serum-1",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": "This replaced Herbivore’s earlier Bakuchiol Smoothing Serum; the page does not say whether the formula changed. The list is for the current product.",
+    "ingredientsVerbatim": "Water/aqua/eau, propanediol, glycerin, piroctone olamine, dicaprylyl carbonate, caprylic/capric triglyceride, bakuchiol, pisum sativum (pea) extract, morus alba bark extract, lentinous edodes mushroom extract, melia azadirachta flower extract, citrus aurantium dulcis (orange) fruit extract, radix polygoni multiflori root extract, haematococcus pluvialis extract, lavandula angustifolia (lavender) oil, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, 1,2-hexanediol, caprylyl glycol, sodium gluconate, ethylhexylglycerin, sodium acrylates copolymer, sorbitan olivate, coco-caprylate/caprate, caprylhydroxamic acid, hydroxyacetophenone, lecithin, coco-caprylate, triglyceride, ethylhexylglycerin, caprylate/caprate triglyceride, tetrasodium ethylenediamine disuccinate, citric acid, xanthan gum.",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "bakuchiol",
+        "botanicalId": "bakuchiol",
+        "preparation": {
+          "part": "seed",
+          "form": "isolated_compound",
+          "compound": "bakuchiol"
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Herbivore",
+        "url": "https://www.herbivorebotanicals.com/products/bakuchiol-dual-retinol-alternative-serum-1"
+      }
+    ],
+    "shades": [],
+    "description": "A water-based serum with bakuchiol and piroctone olamine, several plant extracts and lavender oil. The bakuchiol amount is not stated."
+  },
+  {
+    "id": "body-shop-tea-tree-facial-wash",
+    "brand": "The Body Shop",
+    "name": "Tea Tree Skin Clearing Facial Wash",
+    "shelf": "skincare",
+    "category": "cleanser",
+    "use": "rinse_off",
+    "source": {
+      "url": "https://www.thebodyshop.com/products/tea-tree-skin-clearing-facial-wash",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": "UK product page; the US page was not available.",
+    "ingredientsVerbatim": "Aqua/Water/Eau, Sodium Laureth Sulfate, Glycerin, Cocamidopropyl Betaine, Coco-Betaine, Decyl Glucoside, PEG-40 Hydrogenated Castor Oil, PEG-7 Glyceryl Cocoate, Citric Acid, Sodium Chloride, Sodium Benzoate, Melaleuca Alternifolia Leaf Oil/Melaleuca Alternifolia (Tea Tree) Leaf Oil, Coco-Glucoside, Glyceryl Oleate, PEG-120 Methyl Glucose Dioleate, Sodium Gluconate, Calophyllum Inophyllum Seed Oil, Allantoin, Menthol, Panthenol, Salicylic Acid, Sodium Hydroxide, Limonene, Leptospermum Petersonii Oil, Tocopherol, Hydrogenated Palm Glycerides Citrate, CI 19140/Yellow 5, CI 42090/Blue 1.",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Melaleuca Alternifolia Leaf Oil/Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+        "botanicalId": "tea-tree",
+        "preparation": {
+          "part": "leaf",
+          "form": "oil",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "The Body Shop",
+        "url": "https://www.thebodyshop.com/products/tea-tree-skin-clearing-facial-wash"
+      }
+    ],
+    "shades": [],
+    "description": "A foaming face wash with tea tree and lemon tea tree oils, menthol and a little salicylic acid. It is rinsed off within a minute."
+  },
+  {
+    "id": "body-shop-tea-tree-oil",
+    "brand": "The Body Shop",
+    "name": "Tea Tree Oil",
+    "shelf": "skincare",
+    "category": "treatment",
+    "use": "leave_on",
+    "source": {
+      "url": "https://us.thebodyshop.com/products/tea-tree-oil-for-face",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": "https://www.thebodyshop.com/products/tea-tree-oil-for-skin-10ml-face"
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Aqua/Water/Eau, Alcohol Denat., Polysorbate 60, Melaleuca Alternifolia Leaf Oil/Melaleuca Alternifolia (Tea Tree) Leaf Oil, Limonene, Calophyllum Inophyllum Seed Oil, Linalool, t-Butyl Alcohol, Citral, Citronellol, Leptospermum Petersonii Oil, Denatonium Benzoate, Tocopherol.",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Melaleuca Alternifolia Leaf Oil/Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+        "botanicalId": "tea-tree",
+        "preparation": {
+          "part": "leaf",
+          "form": "oil",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "The Body Shop",
+        "url": "https://us.thebodyshop.com/products/tea-tree-oil-for-face"
+      }
+    ],
+    "shades": [],
+    "description": "A spot treatment of tea tree oil in water and denatured alcohol. The amount of tea tree oil is not stated on the page."
+  },
+  {
+    "id": "thayers-unscented-witch-hazel-toner",
+    "brand": "Thayers",
+    "name": "Unscented Facial Toner",
+    "shelf": "skincare",
+    "category": "toner",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.thayers.com/shop-all/toners/unscented-facial-toner/12-oz",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "AQUA / WATER / EAU • GLYCERIN • HAMAMELIS VIRGINIANA BARK/LEAF/TWIG EXTRACT - WITCH HAZEL BARK/LEAF/TWIG EXTRACT • ALOE BARBADENSIS LEAF EXTRACT • POTASSIUM HYDROXIDE • CAPRYLYL GLYCOL • CITRIC ACID • ETHYLHEXYLGLYCERIN • POLYSORBATE 20 • PHENOXYETHANOL",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "HAMAMELIS VIRGINIANA BARK/LEAF/TWIG EXTRACT - WITCH HAZEL BARK/LEAF/TWIG EXTRACT",
+        "botanicalId": "witch-hazel",
+        "preparation": {
+          "part": "unspecified",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": "An extract of bark, leaf and twig. The witch hazel studies used a steam distillate."
+      },
+      {
+        "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+        "botanicalId": "aloe",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Thayers",
+        "url": "https://www.thayers.com/shop-all/toners/unscented-facial-toner/12-oz"
+      }
+    ],
+    "shades": [],
+    "description": "A short, alcohol-free toner of witch hazel extract and aloe leaf extract in water and glycerin."
+  },
+  {
+    "id": "thayers-rose-petal-witch-hazel-toner",
+    "brand": "Thayers",
+    "name": "Rose Petal Facial Toner",
+    "shelf": "skincare",
+    "category": "toner",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.thayers.com/shop-all/toners/rose-petal-facial-toner/12-oz",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "AQUA / WATER / EAU • GLYCERIN • HAMAMELIS VIRGINIANA BARK/LEAF/TWIG EXTRACT - WITCH HAZEL BARK/LEAF/TWIG EXTRACT • ROSA DAMASCENA FLOWER WATER • ALOE BARBADENSIS LEAF EXTRACT • POTASSIUM HYDROXIDE • CAPRYLYL GLYCOL • CITRIC ACID • ETHYLHEXYLGLYCERIN • POLYSORBATE 20 • POTASSIUM SORBATE • SODIUM BENZOATE • PHENOXYETHANOL • PARFUM / FRAGRANCE • GERANIOL • CITRONELLOL",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "HAMAMELIS VIRGINIANA BARK/LEAF/TWIG EXTRACT - WITCH HAZEL BARK/LEAF/TWIG EXTRACT",
+        "botanicalId": "witch-hazel",
+        "preparation": {
+          "part": "unspecified",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": "An extract of bark, leaf and twig. The witch hazel studies used a steam distillate."
+      },
+      {
+        "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+        "botanicalId": "aloe",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Thayers",
+        "url": "https://www.thayers.com/shop-all/toners/rose-petal-facial-toner/12-oz"
+      }
+    ],
+    "shades": [],
+    "description": "The same witch hazel and aloe base as the unscented toner, with rose flower water and added fragrance."
+  },
+  {
+    "id": "holika-holika-aloe-99-soothing-gel",
+    "brand": "Holika Holika",
+    "name": "Aloe 99% Soothing Gel",
+    "shelf": "skincare",
+    "category": "gel",
+    "use": "leave_on",
+    "source": {
+      "url": "https://holikaholika.com/products/aloe-99-soothing-gel-fresh-moisturizing",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "ALOE BARBADENSIS LEAF JUICE, ECTOIN, ALOE BARBADENSIS LEAF EXTRACT, MELISSA OFFICINALIS LEAF EXTRACT, CENTELLA ASIATICA EXTRACT, NELUMBIUM SPECIOSUM FLOWER EXTRACT, BAMBUSA VULGARIS EXTRACT, CUCUMIS SATIVUS (CUCUMBER) FRUIT EXTRACT, ZEA MAYS (CORN) LEAF EXTRACT, BRASSICA OLERACEA CAPITATA (CABBAGE) LEAF EXTRACT, CITRULLUS LANATUS (WATERMELON) FRUIT EXTRACT, DIOSCOREA JAPONICA ROOT EXTRACT, LAMINARIA JAPONICA EXTRACT, WATER, BUTYLENE GLYCOL, GLYCERIN, SODIUM POLYACRYLATE, CARBOMER, DISODIUM EDTA, PEG-60 HYDROGENATED CASTOR OIL, PENTYLENE GLYCOL, PROPANEDIOL, 1,2-HEXANEDIOL, SODIUM BENZOATE, CITRIC ACID, ETHYLHEXYLGLYCERIN, TRIETHANOLAMINE, PHENOXYETHANOL, FRAGRANCE, LIMONENE, LINALOOL",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "ALOE BARBADENSIS LEAF JUICE",
+        "botanicalId": "aloe",
+        "preparation": {
+          "part": "leaf",
+          "form": "juice_or_gel",
+          "compound": null
+        },
+        "concentration": {
+          "percent": 99,
+          "wording": "Infused with 99% Jeju Aloe Vera"
+        },
+        "note": "The brand states 99% aloe vera; the label lists aloe leaf juice first."
+      },
+      {
+        "inci": "ALOE BARBADENSIS LEAF EXTRACT",
+        "botanicalId": "aloe",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "CENTELLA ASIATICA EXTRACT",
+        "botanicalId": "centella",
+        "preparation": {
+          "part": "unspecified",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Holika Holika",
+        "url": "https://holikaholika.com/products/aloe-99-soothing-gel-fresh-moisturizing"
+      }
+    ],
+    "shades": [],
+    "description": "A water-light aloe gel the brand states is 99% aloe vera, with small amounts of many plant extracts. It contains added fragrance."
+  },
+  {
+    "id": "kiehls-calendula-toner",
+    "brand": "Kiehl's",
+    "name": "Calendula Herbal-Extract Toner, Alcohol-Free",
+    "shelf": "skincare",
+    "category": "toner",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.kiehls.com/skincare/facial-toners/calendula-herbal-extract-toner/254.html",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "AQUA / WATER,PROPYLENE GLYCOL,PROPANEDIOL,PHENOXYETHANOL,CHLORPHENESIN,ARCTIUM LAPPA ROOT EXTRACT,DISODIUM EDTA,CALENDULA OFFICINALIS FLOWER EXTRACT,CALENDULA OFFICINALIS FLOWER,HYDROLYZED CORN STARCH,ALLANTOIN,HEDERA HELIX EXTRACT - IVY LEAF/STEM EXTRACT,GLYCERIN,ALTHAEA OFFICINALIS ROOT EXTRACT,SODIUM HYDROXIDE,CITRIC ACID",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "CALENDULA OFFICINALIS FLOWER EXTRACT",
+        "botanicalId": "calendula",
+        "preparation": {
+          "part": "flower",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "CALENDULA OFFICINALIS FLOWER",
+        "botanicalId": "calendula",
+        "preparation": {
+          "part": "flower",
+          "form": "unspecified",
+          "compound": null
+        },
+        "concentration": null,
+        "note": "Whole petals suspended in the toner."
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Kiehl's",
+        "url": "https://www.kiehls.com/skincare/facial-toners/calendula-herbal-extract-toner/254.html"
+      }
+    ],
+    "shades": [],
+    "description": "An alcohol-free toner with calendula flower extract and whole petals, burdock root and ivy extracts. No fragrance is listed."
+  },
+  {
+    "id": "weleda-skin-food",
+    "brand": "Weleda",
+    "name": "Skin Food Original Ultra-Rich Cream",
+    "shelf": "skincare",
+    "category": "moisturiser",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.weleda.com/product/skin-food-original-ultra-rich-cream-g009398",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": "The page shows the list as a two-column table; the label-name column is joined in page order.",
+    "ingredientsVerbatim": "Water (Aqua), Helianthus Annuus (Sunflower) Seed Oil, Lanolin, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Beeswax (Cera Alba), Alcohol, Polyglyceryl-3 Polyricinoleate, Glycerin, Limonene, Viola Tricolor Extract, Hydrolyzed Beeswax, Sorbitan Olivate, Rosmarinus Officinalis (Rosemary) Leaf Extract, Chamomilla Recutita (Matricaria) Flower Extract, Calendula Officinalis Flower Extract, Arginine, Zinc Sulfate, Fragrance (Parfum), Linalool, Geraniol, Citral, Coumarin",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Calendula Officinalis Flower Extract",
+        "botanicalId": "calendula",
+        "preparation": {
+          "part": "flower",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Weleda",
+        "url": "https://www.weleda.com/product/skin-food-original-ultra-rich-cream-g009398"
+      }
+    ],
+    "shades": [],
+    "description": "A dense lanolin, sunflower and almond oil cream with pansy, chamomile, calendula and rosemary extracts, alcohol and fragrance."
+  },
+  {
+    "id": "trilogy-rosehip-oil",
+    "brand": "Trilogy",
+    "name": "Certified Organic Rosehip Oil",
+    "shelf": "skincare",
+    "category": "oil",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.trilogyproducts.com/products/certified-organic-rosehip-oil",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": null,
+    "ingredientsVerbatim": "Rosa canina (rosehip) seed oil*",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Rosa canina (rosehip) seed oil",
+        "botanicalId": "rosehip",
+        "preparation": {
+          "part": "seed",
+          "form": "oil",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Trilogy",
+        "url": "https://www.trilogyproducts.com/products/certified-organic-rosehip-oil"
+      }
+    ],
+    "shades": [],
+    "description": "A single-ingredient face oil: organic rosehip seed oil. Nothing else is in it."
+  },
+  {
+    "id": "paulas-choice-niacinamide-20",
+    "brand": "Paula's Choice",
+    "name": "CLINICAL 20% Niacinamide Treatment",
+    "shelf": "skincare",
+    "category": "serum",
+    "use": "leave_on",
+    "source": {
+      "url": "https://www.paulaschoice.com/clinical-niacinamide-20pct-treatment/803.html",
+      "type": "brand",
+      "checkedOn": "2026-10-18",
+      "secondaryUrl": null
+    },
+    "verification": "verified",
+    "verificationNote": "The ingredients accordion lists items one by one; they are joined in page order.",
+    "ingredientsVerbatim": "Water, Niacinamide, Pentylene Glycol, Butylene Glycol, Glycerin, Acetyl Glucosamine, Ascorbyl Glucoside, Glycyrrhiza Glabra (Licorice) Root Extract, Spiraea Ulmaria Extract, Portulaca Oleracea Extract, Camellia Japonica Flower Extract, Epigallocatechin Gallate, Boerhavia Diffusa Root Extract, Camellia Sinensis Leaf Extract, Allantoin, Lecithin, Pullulan, Panthenol, Silica, Xanthan Gum, Sclerotium Gum, Propanediol, Sodium Phytate, Phenoxyethanol, Ethylhexylglycerin",
+    "actives": [],
+    "sourceConflicts": null,
+    "botanicals": [
+      {
+        "inci": "Glycyrrhiza Glabra (Licorice) Root Extract",
+        "botanicalId": "licorice",
+        "preparation": {
+          "part": "root",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Epigallocatechin Gallate",
+        "botanicalId": "green-tea",
+        "preparation": {
+          "part": "leaf",
+          "form": "isolated_compound",
+          "compound": "epigallocatechin gallate"
+        },
+        "concentration": null,
+        "note": null
+      },
+      {
+        "inci": "Camellia Sinensis Leaf Extract",
+        "botanicalId": "green-tea",
+        "preparation": {
+          "part": "leaf",
+          "form": "extract",
+          "compound": null
+        },
+        "concentration": null,
+        "note": null
+      }
+    ],
+    "retailers": [
+      {
+        "label": "Paula's Choice",
+        "url": "https://www.paulaschoice.com/clinical-niacinamide-20pct-treatment/803.html"
+      }
+    ],
+    "shades": [],
+    "description": "A high-strength niacinamide serum (stated as 20%) with licorice root and green tea extracts in supporting roles. Its main active is not a botanical."
+  }
+]

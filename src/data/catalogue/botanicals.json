@@ -1,0 +1,373 @@
+[
+  {
+    "id": "centella",
+    "commonName": "Centella / gotu kola / cica",
+    "scientificName": "Centella asiatica",
+    "family": "Apiaceae",
+    "inciNames": [
+      "Centella Asiatica Extract",
+      "Centella Asiatica Leaf Extract",
+      "Madecassoside",
+      "Asiaticoside",
+      "Asiatic Acid",
+      "Madecassic Acid"
+    ],
+    "summary": "A creeping herb from the parsley family, sold as “cica”. Its triterpenes (madecassoside, asiaticoside) are widely used in barrier and soothing products. The published human studies test multi-ingredient products or medical patients; none isolates Centella in everyday cosmetic use.",
+    "safetyNotes": [
+      {
+        "note": "Allergic contact dermatitis to Centella asiatica extract in cosmetics has been reported in case reports, including two recent patients from Turkey.",
+        "source": {
+          "title": "Allergic contact dermatitis from Centella asiatica extract and fragrance allergens: Report of two patients from Turkey (Contact Dermatitis 2024)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38567908/"
+        }
+      },
+      {
+        "note": "In guinea pig testing, the raw extract and its triterpenes (asiaticoside, asiatic and madecassic acid) were very weak sensitisers, so sensitisation risk appears low.",
+        "source": {
+          "title": "Centella asiatica (Indian pennywort), an effective therapeutic but a weak sensitizer (Contact Dermatitis 1993)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8281778/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "oat",
+    "commonName": "Oat / colloidal oatmeal",
+    "scientificName": "Avena sativa",
+    "family": "Poaceae",
+    "inciNames": [
+      "Avena Sativa (Oat) Kernel Flour",
+      "Avena Sativa (Oat) Kernel Extract",
+      "Avena Sativa (Oat) Kernel Oil",
+      "Colloidal Oatmeal"
+    ],
+    "summary": "Finely milled whole oat (colloidal oatmeal) is a regulated skin protectant in the US and is labelled with its percentage. One vehicle-controlled trial supports it for dry skin; the other trials are in eczema or test whole products.",
+    "safetyNotes": [
+      {
+        "note": "Oat proteins in personal care products can cause immediate and delayed allergy, mostly reported in people with atopic dermatitis. Patch testing is suggested for atopic children.",
+        "source": {
+          "title": "Oat and wheat as contact allergens in personal care products (Dermatitis 2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24201466/"
+        }
+      },
+      {
+        "note": "In a double-blind patch study of 65 young children, colloidal oat caused no allergic reactions. About 12% of atopic children had irritant reactions.",
+        "source": {
+          "title": "An evaluation of the allergic contact dermatitis potential of colloidal grain suspensions (Am J Contact Dermat 1997)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9358111/"
+        }
+      },
+      {
+        "note": "Contact sensitisation from oat extracts in cosmetic creams has been reported in Belgium.",
+        "source": {
+          "title": "Sensitizing oat extracts in cosmetic creams: is there an alternative? (Contact Dermatitis 2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20690942/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "licorice",
+    "commonName": "Licorice",
+    "scientificName": "Glycyrrhiza glabra, Glycyrrhiza inflata",
+    "family": "Fabaceae",
+    "inciNames": [
+      "Glycyrrhiza Glabra (Licorice) Root Extract",
+      "Glycyrrhiza Inflata Root Extract",
+      "Dipotassium Glycyrrhizate",
+      "Glycyrrhetinic Acid",
+      "Stearyl Glycyrrhetinate",
+      "Glabridin"
+    ],
+    "summary": "Root extracts of two licorice species. Glycyrrhiza inflata supplies licochalcone A, studied for redness by its manufacturer; glabridin from G. glabra is studied for uneven tone. Most trials test multi-ingredient products.",
+    "safetyNotes": [
+      {
+        "note": "Allergic contact dermatitis to Glycyrrhiza inflata root extract has been reported, from an anti-acne cosmetic and from aftershave creams.",
+        "source": {
+          "title": "Allergic contact dermatitis to Glycyrrhiza inflata root extract in an anti-acne cosmetic product (Contact Dermatitis 2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33913165/"
+        }
+      },
+      {
+        "note": "Allergic contact dermatitis to licorice root extract has also been reported in a US case report.",
+        "source": {
+          "title": "Allergic Contact Dermatitis to Licorice Root Extract (Dermatitis 2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31045935/"
+        }
+      },
+      {
+        "note": "A case analysis identified licorice flavonoids as the contact allergens.",
+        "source": {
+          "title": "Contact allergy to liquorice flavonoids: analysis with liquid chromatography-mass spectrometry (Contact Dermatitis 2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26899813/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "green-tea",
+    "commonName": "Green tea",
+    "scientificName": "Camellia sinensis",
+    "family": "Theaceae",
+    "inciNames": [
+      "Camellia Sinensis Leaf Extract",
+      "Camellia Sinensis Leaf Water",
+      "Epigallocatechin Gallate"
+    ],
+    "summary": "Leaf extracts rich in catechins such as EGCG. A small meta-analysis supports topical extract for blemishes; other evidence is small, uncontrolled or combined with oral supplements.",
+    "safetyNotes": [
+      {
+        "note": "Immediate and delayed contact reactions to white and green tea blends have been reported.",
+        "source": {
+          "title": "Immediate and delayed contact reactions to white and green tea blends (Contact Dermatitis 2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34668202/"
+        }
+      },
+      {
+        "note": "In a placebo-controlled photoaging trial, participants given green tea cream plus oral supplement reported more irritation than the placebo group.",
+        "source": {
+          "title": "Double-blinded, placebo-controlled trial of green tea extracts in the clinical and histologic appearance of photoaging skin (Dermatol Surg 2005)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16029678/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "bakuchiol",
+    "commonName": "Bakuchiol (babchi)",
+    "scientificName": "Psoralea corylifolia (Cullen corylifolium)",
+    "family": "Fabaceae",
+    "inciNames": [
+      "Bakuchiol"
+    ],
+    "summary": "A single molecule extracted from the seeds of Psoralea corylifolia, marketed as a gentler retinol alternative. One randomised trial compared it with retinol; a 2024 review rated the wider trial evidence at high risk of bias.",
+    "safetyNotes": [
+      {
+        "note": "Bakuchiol has been reported as a new cosmetic allergen causing allergic contact dermatitis.",
+        "source": {
+          "title": "Bakuchiol-A new allergen in cosmetics (Contact Dermatitis 2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30644106/"
+        }
+      },
+      {
+        "note": "Further case reports describe contact dermatitis to bakuchiol in a cosmetic cream.",
+        "source": {
+          "title": "A new case of contact dermatitis to bakuchiol in a cosmetic cream (Contact Dermatitis 2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31423588/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "soy",
+    "commonName": "Soy / soybean",
+    "scientificName": "Glycine max",
+    "family": "Fabaceae",
+    "inciNames": [
+      "Glycine Soja (Soybean) Seed Extract",
+      "Glycine Soja (Soybean) Protein",
+      "Glycine Soja (Soybean) Oil"
+    ],
+    "summary": "Extracts of soybean seeds, including non-denatured soy with its protease inhibitors, studied for uneven tone and dullness. The main trial was vehicle-controlled but did not state randomisation.",
+    "safetyNotes": [
+      {
+        "note": "Protein contact dermatitis to soy has been reported to aggravate rosacea.",
+        "source": {
+          "title": "Aggravation of rosacea by protein contact dermatitis to soy (Contact Dermatitis 2005)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16191023/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "tea-tree",
+    "commonName": "Tea tree oil",
+    "scientificName": "Melaleuca alternifolia",
+    "family": "Myrtaceae",
+    "inciNames": [
+      "Melaleuca Alternifolia (Tea Tree) Leaf Oil"
+    ],
+    "summary": "A steam-distilled essential oil from the leaves of an Australian tree. Two randomised acne trials used a 5% gel; a 2023 systematic review judged the evidence modest. It is the essential oil most often reported to cause contact allergy.",
+    "safetyNotes": [
+      {
+        "note": "Among essential oils, tea tree oil has the most published allergic reactions. Oxidised (aged, air-exposed) oil is a stronger sensitiser than fresh oil.",
+        "source": {
+          "title": "Tea tree oil: contact allergy and chemical composition (Contact Dermatitis 2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27173437/"
+        }
+      },
+      {
+        "note": "DermNet lists tea tree oil among essential oils that commonly cause allergic contact dermatitis, and advises patch testing with patients' own products.",
+        "source": {
+          "title": "Allergic contact dermatitis to essential oils (DermNet)",
+          "url": "https://dermnetnz.org/topics/allergic-contact-dermatitis-to-essential-oils"
+        }
+      },
+      {
+        "note": "A systematic review found mostly minor side effects, except with topical concentrations of 25% or more.",
+        "source": {
+          "title": "Efficacy and safety of Melaleuca alternifolia (tea tree) oil for human health-A systematic review of randomized controlled trials (Front Pharmacol 2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37033604/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "aloe",
+    "commonName": "Aloe vera",
+    "scientificName": "Aloe barbadensis Miller",
+    "family": "Asphodelaceae",
+    "inciNames": [
+      "Aloe Barbadensis Leaf Juice",
+      "Aloe Barbadensis Leaf Extract",
+      "Aloe Barbadensis Leaf Juice Powder"
+    ],
+    "summary": "The inner-leaf gel of Aloe barbadensis, mostly water and carbohydrates. Small studies support hydration and acute redness models; the acne trial was an add-on to a prescription retinoid.",
+    "safetyNotes": [
+      {
+        "note": "Patch testing of 702 consecutive patients with three aloe preparations produced no reactions. The inner-leaf gel is mostly carbohydrate and unlikely to sensitise.",
+        "source": {
+          "title": "Absence of contact sensitization to Aloe vera (L.) Burm. f. (Contact Dermatitis 2005)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16364121/"
+        }
+      },
+      {
+        "note": "Allergic contact dermatitis has been reported with home-made whole-leaf aloe juice. Processed commercial gel usually excludes the irritant leaf-skin components.",
+        "source": {
+          "title": "Allergic contact dermatitis to Aloe vera (Contact Dermatitis 2007)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17868225/"
+        }
+      },
+      {
+        "note": "A 2023 report examined contact allergens found in commercial aloe vera gels. Check the full ingredient list, not just the aloe.",
+        "source": {
+          "title": "Better Left Aloe? Contact Allergens in Aloe Vera Gels (Dermatitis 2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35951424/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "witch-hazel",
+    "commonName": "Witch hazel",
+    "scientificName": "Hamamelis virginiana",
+    "family": "Hamamelidaceae",
+    "inciNames": [
+      "Hamamelis Virginiana (Witch Hazel) Water",
+      "Hamamelis Virginiana (Witch Hazel) Extract",
+      "Hamamelis Virginiana (Witch Hazel) Leaf Extract",
+      "Hamamelis Virginiana (Witch Hazel) Bark/Leaf/Twig Extract"
+    ],
+    "summary": "Distillate and extracts of the North American shrub Hamamelis virginiana. Human evidence is limited to short UV-redness tests of the distillate; acne evidence is from cell culture only.",
+    "safetyNotes": [
+      {
+        "note": "Contact allergy to witch hazel has been reported, though published cases are few.",
+        "source": {
+          "title": "Contact allergy to witch hazel (Contact Dermatitis 1994)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7821023/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "calendula",
+    "commonName": "Calendula / pot marigold",
+    "scientificName": "Calendula officinalis",
+    "family": "Asteraceae",
+    "inciNames": [
+      "Calendula Officinalis Flower Extract",
+      "Calendula Officinalis Flower Oil"
+    ],
+    "summary": "Pot marigold flowers, a member of the daisy family. A small irritation-model trial supports hydration; its best-known trials are in radiotherapy, where they disagree.",
+    "safetyNotes": [
+      {
+        "note": "Calendula is in the Compositae (Asteraceae) family. People with Compositae or sesquiterpene lactone allergy may react, and DermNet advises them to avoid Compositae-containing cosmetics.",
+        "source": {
+          "title": "Compositae allergy (DermNet)",
+          "url": "https://dermnetnz.org/topics/compositae-allergy"
+        }
+      },
+      {
+        "note": "In 443 consecutive patch-tested patients, about 2% reacted to marigold. Standard Compositae or sesquiterpene mixes missed many of these sensitisations.",
+        "source": {
+          "title": "The seamy side of natural medicines: contact sensitization to arnica (Arnica montana L.) and marigold (Calendula officinalis L.) (Contact Dermatitis 2001)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11722485/"
+        }
+      },
+      {
+        "note": "DermNet notes calendula sensitisation seems linked to medicinal use, and reports co-sensitisation to feverfew in a florist.",
+        "source": {
+          "title": "Marigold (DermNet)",
+          "url": "https://dermnetnz.org/topics/marigold"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "feverfew",
+    "commonName": "Feverfew (parthenolide-depleted)",
+    "scientificName": "Tanacetum parthenium",
+    "family": "Asteraceae",
+    "inciNames": [
+      "Chrysanthemum Parthenium (Feverfew) Extract"
+    ],
+    "summary": "A daisy-family herb. Cosmetic use relies on extracts with parthenolide (a potent allergen) removed. Human data are short redness tests inside manufacturer laboratory papers.",
+    "safetyNotes": [
+      {
+        "note": "Parthenolide in feverfew is a potent contact allergen and a main cause of Compositae allergy. DermNet suggests products labelled purified or parthenolide-free.",
+        "source": {
+          "title": "Feverfew (DermNet)",
+          "url": "https://dermnetnz.org/topics/feverfew"
+        }
+      },
+      {
+        "note": "Four of seven feverfew-allergic patients reacted on patch testing to a cream with parthenolide-depleted extract. Depleted does not guarantee tolerance for allergic people.",
+        "source": {
+          "title": "Patch test reactivity to feverfew-containing creams in feverfew-allergic patients (Contact Dermatitis 2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20690937/"
+        }
+      },
+      {
+        "note": "Feverfew is in the Compositae (Asteraceae) family. Cross-reactions with other Compositae plants such as chamomile and marigold are common.",
+        "source": {
+          "title": "Compositae allergy (DermNet)",
+          "url": "https://dermnetnz.org/topics/compositae-allergy"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "rosehip",
+    "commonName": "Rosehip seed oil",
+    "scientificName": "Rosa canina, Rosa rubiginosa",
+    "family": "Rosaceae",
+    "inciNames": [
+      "Rosa Canina Fruit Oil",
+      "Rosa Canina Seed Oil",
+      "Rosa Rubiginosa Seed Oil",
+      "Rosa Moschata Seed Oil"
+    ],
+    "summary": "Oil pressed from the seeds of wild roses. The only topical trial found no effect, in a medical setting; benefits often quoted for skin ageing come from an oral supplement study, which says nothing about the oil on skin.",
+    "safetyNotes": [
+      {
+        "note": "Allergic contact dermatitis to rosa mosqueta (rosehip) oil has been reported.",
+        "source": {
+          "title": "Allergic contact dermatitis caused by \"Rosa mosqueta\" oil (Contact Dermatitis 2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30022513/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-10-18"
+  }
+]
