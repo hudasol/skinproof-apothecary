@@ -7,8 +7,8 @@ import styles from './MaskViewer.module.css';
  * The photo with one YouCam detection mask laid over it at a time. Masks are
  * the provider's own output (PNG with transparency), shown as returned.
  */
-export function MaskViewer({ photoUrl, masks }: { photoUrl: string; masks: { concern: string; label: string; url: string }[] }) {
-  const [active, setActive] = useState<string | null>(masks[0]?.concern ?? null);
+export function MaskViewer({ photoUrl, masks, initial }: { photoUrl: string; masks: { concern: string; label: string; url: string }[]; initial?: string }) {
+  const [active, setActive] = useState<string | null>(initial && masks.some((m) => m.concern === initial) ? initial : (masks[0]?.concern ?? null));
   const current = masks.find((m) => m.concern === active);
   return (
     <figure className={styles.viewer}>
