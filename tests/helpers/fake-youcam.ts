@@ -67,7 +67,7 @@ export function pollSequence(path: string, ...bodies: unknown[]): Route {
 }
 
 export function binary(url: string, bytes: Uint8Array, contentType: string): Route {
-  return (c) => (c.url === url ? new Response(bytes, { status: 200, headers: { 'content-type': contentType } }) : undefined);
+  return (c) => (c.url === url ? new Response(new Uint8Array(bytes), { status: 200, headers: { 'content-type': contentType } }) : undefined);
 }
 
 export const fastClock = { pollIntervalMs: 1, sleep: async () => {} };

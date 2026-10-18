@@ -40,7 +40,7 @@ export type NormalisedPhoto = { data: Buffer; width: number; height: number; mim
 async function inspect(input: Uint8Array) {
   if (input.byteLength === 0) throw new ImageRejectedError('The file is empty.', 'empty');
   if (input.byteLength > PHOTO_LIMITS.maxUploadBytes) throw new ImageRejectedError('Photos must be under 10 MB.', 'too_large');
-  let meta: sharp.Metadata;
+  let meta: Awaited<ReturnType<ReturnType<typeof sharp>['metadata']>>;
   try {
     meta = await sharp(input, { limitInputPixels: PHOTO_LIMITS.maxInputPixels }).metadata();
   } catch {

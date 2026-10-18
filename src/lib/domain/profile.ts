@@ -62,7 +62,7 @@ const ingredientTerm = z
 
 export const ProfileSchema = z.object({
   goals: z.array(z.enum(GOALS)).min(1, 'Choose at least one goal').max(3, 'Choose up to three goals'),
-  goalOrigins: z.record(z.enum(GOALS), z.enum(['analysis', 'person'])).default({}),
+  goalOrigins: z.partialRecord(z.enum(GOALS), z.enum(['analysis', 'person'])).default({}),
   constraints: z.object({
     noFragrance: z.boolean(),
     noEssentialOils: z.boolean(),
