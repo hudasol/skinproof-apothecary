@@ -1,4 +1,4 @@
-# Submission text (draft)
+# Submission text
 
 ## Name
 
@@ -58,8 +58,16 @@ they contain.
 Next.js 16, SQLite/Drizzle, sharp and zod; 83 unit and integration tests and 18
 Playwright end-to-end tests. The catalogue holds 12 botanicals, 44
 PubMed-verified studies, 22 skincare products and 3 lip tints, with sources and
-check dates. The project started on 18 October 2026 and reuses infrastructure
-from the author's earlier TryOn entry, as described in the README.
+check dates.
+
+**New during the submission period.** SkinProof is a new project: its
+repository was created and its first commit made on 18 October 2026, inside the
+submission period. It reuses some infrastructure from the author's separate
+TryOn entry (the YouCam upload, task and polling client, image handling, the
+SQLite setup); the Skin Analysis integration, the Evidence Ledger, the
+catalogue and research, and every page are new. Details are in the README.
+
+Repository: https://github.com/hudasol/skinproof-apothecary (MIT licence).
 
 ## Testing instructions
 
@@ -69,8 +77,8 @@ runs in fixture mode: it makes no YouCam calls, and every analysis and try-on
 result is a labelled placeholder. It is on a free hosting plan, so the first
 load after 15 minutes idle takes about a minute, and consultations are reset
 whenever the service sleeps or redeploys. What the real YouCam service returns
-is shown in the live screenshots (`docs/screenshots/live-*`) and the live
-verification record (`docs/API-VERIFICATION.md`).
+is shown in the live screenshots (https://github.com/hudasol/skinproof-apothecary/tree/main/docs/screenshots) and the live
+verification record (https://github.com/hudasol/skinproof-apothecary/blob/main/docs/API-VERIFICATION.md).
 
 To run it yourself, clone the repository, then `npm ci`, `cp .env.example .env.local` and
 `npm run dev`. Fixture mode works with no API key and labels every placeholder
@@ -84,4 +92,4 @@ Both integrations were verified against the live YouCam service on 18 October
 mode. The responses matched the documented shapes, the masks align with the
 photo, and the try-on changed only the mouth region. That is one portrait and
 one shade: it shows the integration works, not how the model behaves across
-faces. The full record is in `docs/API-VERIFICATION.md`.
+faces. The full record: https://github.com/hudasol/skinproof-apothecary/blob/main/docs/API-VERIFICATION.md
