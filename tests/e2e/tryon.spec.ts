@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { agreeToAnalysis, syntheticPortrait } from './helpers';
+import { agreeToAnalysis, choosePhoto, syntheticPortrait } from './helpers';
 
 /** Lip colour try-on, fixture mode, on its own and as part of a consultation with limits. */
 
@@ -12,7 +12,7 @@ test('a shopper tries a shade on after agreeing to try-on', async ({ page }) => 
 
   await page.getByLabel(/Use my photo for lip colour try-on/).check();
   await page.getByRole('button', { name: 'Agree and continue' }).click();
-  await page.getByLabel('Your photo').setInputFiles({ name: 'p.jpg', mimeType: 'image/jpeg', buffer: await syntheticPortrait() });
+  await choosePhoto(page, await syntheticPortrait());
   await page.getByRole('button', { name: 'Use this photo' }).click();
   await expect(page).toHaveURL(/\/colour\/ilia-balmy-tint\?shade=lullaby/);
 

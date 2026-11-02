@@ -19,9 +19,20 @@ export async function agreeToAnalysis(page: Page, alsoTryOn = false) {
   await expect(page).toHaveURL(/\/consult\/photo$/);
 }
 
+/**
+ * Choose a photo and wait until the form shows its crop box. On a slow host
+ * the form can re-render just after a navigation, dropping a file set on the
+ * replaced input, so the choice is repeated until the form has taken it.
+ */
+export async function choosePhoto(page: Page, buffer: Buffer) {
+  await expect(async () => {
+    await page.getByLabel('Your photo').setInputFiles({ name: 'portrait.jpg', mimeType: 'image/jpeg', buffer });
+    await expect(page.getByRole('slider', { name: /Crop area/ })).toBeVisible({ timeout: 3_000 });
+  }).toPass({ timeout: 30_000 });
+}
+
 export async function uploadAndAnalyse(page: Page, dark = false) {
-  await page.getByLabel('Your photo').setInputFiles({ name: 'portrait.jpg', mimeType: 'image/jpeg', buffer: await syntheticPortrait({ dark }) });
-  await expect(page.getByRole('slider', { name: /Crop area/ })).toBeVisible();
+  await choosePhoto(page, await syntheticPortrait({ dark }));
   await page.getByRole('button', { name: 'Analyse my skin' }).click();
   await expect(page).toHaveURL(/\/consult\/analysis$/);
 }
