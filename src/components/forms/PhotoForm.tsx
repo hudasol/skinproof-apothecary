@@ -31,9 +31,20 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
     if (url) URL.revokeObjectURL(url);
   }, [url]);
 
+  // A photo chosen before the page became interactive fires no change event
+  // React can see (common on a slow first load), so read it once on mount.
+  const fileInput = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (fileInput.current?.files?.length) acceptFile(fileInput.current.files[0]);
+    // Runs once, on mount only.
+  }, []);
+
   function onFile(e: React.ChangeEvent<HTMLInputElement>) {
+    acceptFile(e.target.files?.[0]);
+  }
+
+  function acceptFile(f: File | undefined) {
     setClientError(null);
-    const f = e.target.files?.[0];
     setSize(null);
     setCrop(FULL);
     if (url) URL.revokeObjectURL(url);
@@ -96,7 +107,7 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
       <input type="hidden" name="crop" value={cropped ? JSON.stringify(crop) : ''} />
       <div className="field">
         <label htmlFor="photo">Your photo</label>
-        <input id="photo" name="photo" type="file" accept={ACCEPT.join(',')} onChange={onFile} className="input" aria-describedby="photo-hint" />
+        <input ref={fileInput} id="photo" name="photo" type="file" accept={ACCEPT.join(',')} onChange={onFile} className="input" aria-describedby="photo-hint" />
         <span className="hint" id="photo-hint">
           JPEG, PNG or WebP under 10 MB, at least 480 pixels on the shorter side.
         </span>
