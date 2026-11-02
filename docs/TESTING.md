@@ -47,6 +47,18 @@ Every result here was run and observed. Only the live checks section spent YouCa
   consent and re-use, refusal for excluded or unmeasured shades, phone menu
   and no sideways scrolling on 11 pages.
 
+## 2 November 2026: the hosted judging copy
+
+| Command | Result |
+| --- | --- |
+| `npm run test:e2e:hosted` against https://skinproof-apothecary.onrender.com | **18 passed** (6 desktop journeys, 12 phone checks), fixture mode |
+
+Running the suite against the hosted copy found that a photo chosen in the
+first seconds after a page change could be dropped on the slow free host. The
+form now also reads a file chosen before it became interactive, and the tests
+choose the photo once the form has settled. `npm test` (83) and
+`npm run test:e2e` (18) pass after the change.
+
 ## Live checks (approved, 30 units in total)
 
 | Run | Result |
