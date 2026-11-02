@@ -21,7 +21,8 @@
     "check": "npm run typecheck && npm run test",
     "catalogue:check": "tsx scripts/check-catalogue.ts",
     "lint": "tsc --noEmit",
-    "screenshots": "playwright test -c playwright.shots.config.ts"
+    "screenshots": "playwright test -c playwright.shots.config.ts",
+    "test:e2e:hosted": "playwright test -c playwright.hosted.config.ts"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.0",
