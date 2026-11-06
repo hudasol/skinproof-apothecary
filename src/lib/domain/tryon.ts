@@ -2,18 +2,19 @@
  * Makeup try-on payloads for colour-shelf shades, limited to the documented
  * `lip_color` contract (docs/API-VERIFICATION.md).
  *
- * Rendering settings are SkinProof's own, not brand data: tinted balms are
- * sheer and dewy, so they are rendered with the `gloss` texture (live-verified
- * by TryOn on the same account) at moderate intensity and transparency. The
- * `sheer` texture is documented but has not been verified live.
+ * Rendering settings are SkinProof's own, not brand data. The first values
+ * (intensity 55, transparency 40) came out too sheer to judge a shade, so the
+ * colour is now strong (intensity 90, transparency 10) with a light gloss, so
+ * the person can see the shade itself. Lip placement is done by YouCam's own
+ * lip detection, not by SkinProof.
  */
 
 export const LIP_RENDER = {
   shape: 'original',
   texture: 'gloss',
-  colorIntensity: 55,
-  gloss: 55,
-  transparencyIntensity: 40,
+  colorIntensity: 90,
+  gloss: 40,
+  transparencyIntensity: 10,
 } as const;
 
 export type MakeupEffect =
