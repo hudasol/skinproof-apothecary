@@ -1949,5 +1949,351 @@
     "limitations": "Cell and animal work with oral dosing, using a fruit extract rather than seed oil. First author contact email is at a company domain.",
     "funding": "First author's contact email is at mikiprune.co.jp (company); funding not stated.",
     "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "sunflower-danby-2013",
+    "botanicalId": "sunflower",
+    "citation": {
+      "authors": "Danby SG et al.",
+      "title": "Effect of olive and sunflower seed oil on the adult skin barrier: implications for neonatal skin care.",
+      "journal": "Pediatr Dermatol",
+      "year": 2013,
+      "pmid": "22995032",
+      "doi": "10.1111/j.1525-1470.2012.01865.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22995032/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "unclear",
+    "control": "The other forearm: olive oil in the second group, untreated in the first group",
+    "population": "Adult volunteers with and without a history of atopic dermatitis",
+    "n": 19,
+    "durationWeeks": 4,
+    "preparation": {
+      "part": "seed",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Six drops of sunflower seed oil applied to one forearm twice daily for 4 weeks (grade, brand and fatty acid profile not given in the abstract).",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Stratum corneum integrity and cohesion, hydration, skin pH and redness (forearm)",
+        "finding": "supports",
+        "summary": "Sunflower seed oil preserved the integrity of the outer skin layer, improved hydration and did not cause redness. Olive oil in the same study did the opposite on integrity and redness."
+      }
+    ],
+    "limitations": "A small mechanistic study of 19 adults on forearm skin, not the face. The abstract does not say who was blinded. The two cohorts were small and received different comparisons. Oil grade and composition are not described in the abstract.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "coconut-agero-2004",
+    "botanicalId": "coconut",
+    "citation": {
+      "authors": "Agero AL, Verallo-Rowell VM",
+      "title": "A randomized double-blind controlled trial comparing extra virgin coconut oil with mineral oil as a moisturizer for mild to moderate xerosis.",
+      "journal": "Dermatitis",
+      "year": 2004,
+      "pmid": "15724344",
+      "doi": "10.2310/6620.2004.04006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15724344/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "Mineral oil",
+    "population": "Adults with mild to moderate dry skin on the legs and negative patch tests",
+    "n": 34,
+    "durationWeeks": 2,
+    "preparation": {
+      "part": "unspecified",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Extra virgin coconut oil applied to the legs twice a day for 2 weeks.",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Corneometer skin hydration and Sebumeter skin lipids",
+        "finding": "mixed",
+        "summary": "Coconut oil significantly improved hydration and skin lipids, but so did mineral oil, and the two did not differ significantly. The trial cannot show that coconut oil beats an ordinary moisturiser, or beats no treatment."
+      }
+    ],
+    "limitations": "Only 34 people for 2 weeks, on the legs. The comparator was an active moisturiser, with no untreated group. Participants were screened by patch test, so reactive skin was excluded.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "coconut-evangelista-2014",
+    "botanicalId": "coconut",
+    "citation": {
+      "authors": "Evangelista MT et al.",
+      "title": "The effect of topical virgin coconut oil on SCORAD index, transepidermal water loss, and skin capacitance in mild to moderate pediatric atopic dermatitis: a randomized, double-blind, clinical trial.",
+      "journal": "Int J Dermatol",
+      "year": 2014,
+      "pmid": "24320105",
+      "doi": "10.1111/ijd.12339",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24320105/"
+    },
+    "design": "rct",
+    "setting": "medical",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "Mineral oil",
+    "population": "Children with mild to moderate atopic dermatitis",
+    "n": 117,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "unspecified",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Virgin coconut oil applied for 8 weeks.",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "support_hydration",
+        "measure": "Skin capacitance and transepidermal water loss",
+        "finding": "supports",
+        "summary": "Skin capacitance rose from 32.0 to 42.3 with coconut oil, against 31.31 to 37.49 with mineral oil, and water loss fell more. This was in children with atopic dermatitis."
+      }
+    ],
+    "limitations": "Children with a skin disease, so it does not show what coconut oil does for healthy adult skin. The comparator was mineral oil, not untreated skin.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "argan-boucetta-2015",
+    "botanicalId": "argan",
+    "citation": {
+      "authors": "Boucetta KQ et al.",
+      "title": "The effect of dietary and/or cosmetic argan oil on postmenopausal skin elasticity.",
+      "journal": "Clin Interv Aging",
+      "year": 2015,
+      "pmid": "25673976",
+      "doi": "10.2147/CIA.S71684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25673976/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": true,
+    "blinded": "unclear",
+    "control": "Dietary olive oil. Both groups applied argan oil to the left forearm",
+    "population": "Postmenopausal women",
+    "n": 60,
+    "durationWeeks": 8.6,
+    "preparation": {
+      "part": "kernel",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Cosmetic argan oil applied daily to the left volar forearm for 60 days (amount not stated in the abstract), alongside dietary argan oil or dietary olive oil.",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Skin elasticity (Cutometer R2, R5, R7 and resonance running time) on the forearm",
+        "finding": "mixed",
+        "summary": "Elasticity measures improved with dietary and with applied argan oil. The abstract does not show that the applied oil was compared with an untreated or placebo site, so the topical effect is not separated. Elasticity is related to, but not the same as, visible fine lines."
+      }
+    ],
+    "limitations": "Both groups used argan oil on the skin, so the abstract gives no topical control group. Forearm skin in postmenopausal women. Blinding and funding are not stated in the abstract.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "black-seed-soleymani-2020",
+    "botanicalId": "black-seed",
+    "citation": {
+      "authors": "Soleymani S et al.",
+      "title": "The effect of a hydrogel made by Nigella sativa L. on acne vulgaris: A randomized double-blind clinical trial.",
+      "journal": "Phytother Res",
+      "year": 2020,
+      "pmid": "32548864",
+      "doi": "10.1002/ptr.6739",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32548864/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "Placebo hydrogel",
+    "population": "People with acne vulgaris",
+    "n": 60,
+    "durationWeeks": 8.6,
+    "preparation": {
+      "part": "unspecified",
+      "form": "unspecified",
+      "compound": null
+    },
+    "preparationText": "Hydrogel of Nigella sativa standardised on thymoquinone, applied twice daily for 60 days (plant part and extraction not stated in the abstract).",
+    "concentration": null,
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Investigator Global Assessment, lesion counts, acne disability index",
+        "finding": "supports",
+        "summary": "The black seed gel reduced the global acne score by 78% on average against 3.3% with placebo, with fewer comedones, papules and pustules and no adverse events recorded."
+      }
+    ],
+    "limitations": "One trial of 60 people. The size of the effect is unusually large for acne trials and needs independent replication. The plant part, extraction and thymoquinone content are not given in the abstract. Funding is not stated in the abstract.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "jojoba-meier-2012",
+    "botanicalId": "jojoba",
+    "citation": {
+      "authors": "Meier L et al.",
+      "title": "Clay jojoba oil facial mask for lesioned skin and mild acne--results of a prospective, observational pilot study.",
+      "journal": "Forsch Komplementmed",
+      "year": 2012,
+      "pmid": "22585103",
+      "doi": "10.1159/000338076",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22585103/"
+    },
+    "design": "open_label",
+    "setting": "cosmetic",
+    "isolatesBotanical": false,
+    "randomised": false,
+    "blinded": "none",
+    "control": "None: before and after comparison",
+    "population": "Mostly women (192 of 194), mean age 32, acne prone skin or mild acne",
+    "n": 194,
+    "durationWeeks": 6,
+    "preparation": {
+      "part": "seed",
+      "form": "oil",
+      "compound": null
+    },
+    "preparationText": "Healing clay and jojoba oil facial mask applied 2 to 3 times a week for 6 weeks (composition not given in the abstract).",
+    "concentration": null,
+    "use": "rinse_off",
+    "outcomes": [
+      {
+        "goal": "blemish_care",
+        "measure": "Self reported lesion counts and dermatology quality of life",
+        "finding": "supports",
+        "summary": "Total lesion counts fell by 54% on average over 6 weeks among the 133 who returned complete counts. The mask contains clay as well as jojoba oil, so the result cannot be credited to jojoba."
+      }
+    ],
+    "limitations": "Uncontrolled, open pilot. People counted their own lesions from written instructions, with no contact with the study doctor. Only 133 of 194 returned complete counts. Clay is a confounder. Funding is not stated in the abstract.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "resveratrol-rao-2025",
+    "botanicalId": "resveratrol",
+    "citation": {
+      "authors": "Rao A et al.",
+      "title": "Trans-resveratrol reduces visible signs of skin ageing in healthy adult females over 40: an 8-week randomized placebo-controlled trial.",
+      "journal": "Front Aging",
+      "year": 2025,
+      "pmid": "41488277",
+      "doi": "10.3389/fragi.2025.1727244",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41488277/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "Placebo cream and placebo capsule",
+    "population": "Healthy women aged 40 and over",
+    "n": 134,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "unspecified",
+      "form": "isolated_compound",
+      "compound": "trans-resveratrol"
+    },
+    "preparationText": "Cream with trans-resveratrol, 1 g applied to the face twice daily, with or without a 75 mg capsule twice daily, for 8 weeks.",
+    "concentration": {
+      "percent": 1.5,
+      "wording": "cream (1.5% trans-resveratrol)"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "smooth_fine_lines",
+        "measure": "Wrinkle assessment and facial line measures",
+        "finding": "mixed",
+        "summary": "Wrinkle scores fell significantly only in the group that took the capsule and used the cream. The abstract reports no significant wrinkle change for the cream alone."
+      },
+      {
+        "goal": "balance_oil",
+        "measure": "Sebum levels",
+        "finding": "no_effect",
+        "summary": "Not a benefit: the cream groups had significantly higher sebum on the cheek and jaw area than the placebo groups."
+      },
+      {
+        "goal": "support_hydration",
+        "measure": "Skin moisture",
+        "finding": "no_effect",
+        "summary": "No significant difference from placebo, according to the abstract."
+      }
+    ],
+    "limitations": "The wrinkle benefit needs the capsule as well, so it is not a topical result. Healthy women over 40 only. 8 weeks. The abstract does not state funding or the source plant for the resveratrol.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "serratula-morag-2015",
+    "botanicalId": "serratula",
+    "citation": {
+      "authors": "Morag M et al.",
+      "title": "A double-blind, placebo-controlled randomized trial of Serratulae quinquefoliae folium, a new source of β-arbutin, in selected skin hyperpigmentations.",
+      "journal": "J Cosmet Dermatol",
+      "year": 2015,
+      "pmid": "26119285",
+      "doi": "10.1111/jocd.12147",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26119285/"
+    },
+    "design": "rct",
+    "setting": "cosmetic",
+    "isolatesBotanical": true,
+    "randomised": true,
+    "blinded": "double",
+    "control": "Placebo cream",
+    "population": "102 women aged 26 to 55 with melasma or lentigo solaris",
+    "n": 102,
+    "durationWeeks": 8,
+    "preparation": {
+      "part": "leaf",
+      "form": "extract",
+      "compound": null
+    },
+    "preparationText": "Cream with an aqueous extract of five leaf serratula leaf, applied twice a day to the discoloured area for 8 weeks.",
+    "concentration": {
+      "percent": 2.51,
+      "wording": "cream with the aqueous extract from leaf of five-leaf serratula containing 2.51% of arbutin"
+    },
+    "use": "leave_on",
+    "outcomes": [
+      {
+        "goal": "even_tone",
+        "measure": "Skin melanin level and clinical lightening of the discoloured area",
+        "finding": "supports",
+        "summary": "Melanin fell in the treated spots. Clinical lightening and evening of skin tone was seen in 75.86% of women with melasma and 56.00% of women with lentigo solaris in the study group."
+      }
+    ],
+    "limitations": "One trial in women with melasma or sun spots, which are pigmentation conditions, not everyday uneven tone. The abstract does not report the response rate in the placebo group, so the size of the benefit over placebo cannot be judged from it. Funding is not stated in the abstract.",
+    "funding": null,
+    "reviewedOn": "2026-11-06"
   }
 ]

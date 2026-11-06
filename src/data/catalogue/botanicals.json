@@ -369,5 +369,150 @@
       }
     ],
     "reviewedOn": "2026-10-18"
+  },
+  {
+    "id": "sunflower",
+    "commonName": "Sunflower seed oil",
+    "scientificName": "Helianthus annuus",
+    "family": "Asteraceae",
+    "inciNames": [
+      "Helianthus Annuus Seed Oil",
+      "Helianthus Annuus (Sunflower) Seed Oil"
+    ],
+    "summary": "A pressed seed oil, rich in linoleic acid in many grades, used as an emollient. One small randomised forearm trial found it kept the skin barrier intact and improved hydration, while olive oil tested in the same study damaged it. That is the clearest reminder in this library that natural oils are not interchangeable. The oil comes from a daisy family plant, but refined seed oils carry little plant protein.",
+    "safetyNotes": [
+      {
+        "note": "In the same trial, olive oil applied twice daily for 4 to 5 weeks reduced stratum corneum integrity and caused mild redness in adults with and without a history of atopic dermatitis. Sunflower seed oil did not.",
+        "source": {
+          "title": "Effect of olive and sunflower seed oil on the adult skin barrier (Pediatr Dermatol 2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22995032/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "coconut",
+    "commonName": "Coconut oil",
+    "scientificName": "Cocos nucifera",
+    "family": "Arecaceae",
+    "inciNames": [
+      "Cocos Nucifera Oil",
+      "Cocos Nucifera (Coconut) Oil"
+    ],
+    "summary": "A solid at room temperature seed oil used as a moisturiser. Two randomised trials compared virgin coconut oil with mineral oil: in mild to moderate dry skin the two performed comparably, and in children with atopic dermatitis coconut oil did better, but that is a medical setting. No trial tested it against no treatment on everyday healthy skin.",
+    "safetyNotes": [
+      {
+        "note": "Participants in the dry skin trial were patch tested first and only those with negative reactions took part. No adverse reactions were reported over 2 weeks. That says little about people who are prone to reacting.",
+        "source": {
+          "title": "Extra virgin coconut oil versus mineral oil as a moisturizer for xerosis (Dermatitis 2004)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15724344/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "argan",
+    "commonName": "Argan oil",
+    "scientificName": "Argania spinosa",
+    "family": "Sapotaceae",
+    "inciNames": [
+      "Argania Spinosa Kernel Oil"
+    ],
+    "summary": "A kernel oil from Morocco used on skin and hair. One randomised trial in postmenopausal women found better skin elasticity measurements with daily argan oil, eaten and applied to the forearm, but the published abstract does not show that the topical part was compared with a control.",
+    "safetyNotes": [
+      {
+        "note": "A case report describes anaphylaxis after skin application of argan oil. This is rare, but it is a reason to patch test an oil you have not used before, especially if you have nut or seed allergies.",
+        "source": {
+          "title": "Anaphylaxis After Cutaneous Application of Argan Oil (J Investig Allergol Clin Immunol 2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32938575/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "black-seed",
+    "commonName": "Black seed / black cumin",
+    "scientificName": "Nigella sativa",
+    "family": "Ranunculaceae",
+    "inciNames": [
+      "Nigella Sativa Seed Oil",
+      "Nigella Sativa Seed Extract"
+    ],
+    "summary": "The seed of an annual herb used in Persian and Middle Eastern traditional medicine. A single randomised trial of a thymoquinone standardised hydrogel in people with acne found a large reduction in acne severity compared with a placebo gel. The effect is much larger than most acne trials show, so independent replication matters before relying on it.",
+    "safetyNotes": [
+      {
+        "note": "Case reports describe allergic contact dermatitis from a black cumin oil ointment, and severe contact dermatitis from Nigella sativa seed oil in beard cosmetics.",
+        "source": {
+          "title": "Allergic contact dermatitis from black cumin (Nigella sativa) oil-containing ointment (Contact Dermatitis 2002)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12000337/"
+        }
+      },
+      {
+        "note": "A 2023 case report links severe allergic contact dermatitis to Nigella sativa seed oil in repeated contact with beard cosmetics.",
+        "source": {
+          "title": "Severe allergic contact connubial dermatitis to Nigella Sativa Seed Oil (Contact Dermatitis 2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36494318/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "jojoba",
+    "commonName": "Jojoba",
+    "scientificName": "Simmondsia chinensis",
+    "family": "Simmondsiaceae",
+    "inciNames": [
+      "Simmondsia Chinensis Seed Oil",
+      "Simmondsia Chinensis (Jojoba) Seed Oil"
+    ],
+    "summary": "A shrub whose seed yields a liquid wax, used as a light oil. The only human study found here is an uncontrolled pilot of a clay and jojoba oil mask on acne prone skin, so the effect of jojoba itself cannot be separated from the clay.",
+    "safetyNotes": [],
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "resveratrol",
+    "commonName": "Resveratrol",
+    "scientificName": "Source plant not stated in the trial (resveratrol occurs in grapes and Japanese knotweed)",
+    "family": "Isolated compound, various plant sources",
+    "inciNames": [
+      "Resveratrol",
+      "Trans-Resveratrol"
+    ],
+    "summary": "A single polyphenol found in grapes and some other plants, sold as an antioxidant. A recent randomised trial in women over 40 found fewer visible wrinkles only when resveratrol was both taken as a capsule and applied as a cream. The cream alone did not significantly change wrinkles, and it raised skin oil on the cheeks and jaw.",
+    "safetyNotes": [
+      {
+        "note": "In the 8 week trial, all products were safe with only minimal and mild adverse events in every group. The trial is short and in healthy women over 40.",
+        "source": {
+          "title": "Trans-resveratrol reduces visible signs of skin ageing in healthy adult females over 40 (Front Aging 2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41488277/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "serratula",
+    "commonName": "Five leaf serratula (a plant source of arbutin)",
+    "scientificName": "Serratula quinquefolia",
+    "family": "Asteraceae",
+    "inciNames": [
+      "Arbutin",
+      "Alpha-Arbutin"
+    ],
+    "summary": "A daisy family plant whose leaves are a natural source of beta arbutin, a skin lightening compound. One randomised trial in women with melasma or sun spots found a cream with the leaf extract lightened and evened skin tone more than placebo. Arbutin on ingredient lists is more often made in a lab than taken from this plant, so this trial supports the extract, not every arbutin product.",
+    "safetyNotes": [
+      {
+        "note": "Serratula belongs to the daisy family (Asteraceae or Compositae). Contact allergy to Compositae plants is among the commonest plant allergies in Europe, with sesquiterpene lactones the main sensitisers. Whether this extract contains them is not stated in the trial abstract.",
+        "source": {
+          "title": "[Compositae dermatitis] (Med Pregl 2003)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12793186/"
+        }
+      }
+    ],
+    "reviewedOn": "2026-11-06"
   }
 ]
