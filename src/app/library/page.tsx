@@ -26,7 +26,7 @@ export default function LibraryPage() {
       <header className="page-head">
         <h1>Botanical library</h1>
         <p>
-          Twelve plants that appear on botanical skincare labels, with every topical study we could verify. Each is graded by the
+          {cat.botanicals.length} plants and plant compounds that appear on botanical skincare labels, with every human study we could verify and read. Each is graded by the
           preparation that was actually tested: a leaf extract and a seed oil from the same plant are different things.
         </p>
       </header>
