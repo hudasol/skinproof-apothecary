@@ -1,0 +1,583 @@
+[
+  {
+    "id": "roselle",
+    "commonName": "Roselle / hibiscus flower",
+    "scientificName": "Hibiscus sabdariffa",
+    "family": "Malvaceae",
+    "part": "calyx",
+    "botanicalId": null,
+    "summary": "The tart, deep red calyx sold as hibiscus tea. It is the best tested drink on this page for skin moisture, though the evidence is a single trial of a branded drink plus a supplement pilot.",
+    "goals": [
+      {
+        "goal": "support_hydration",
+        "tier": "human_trial",
+        "headline": "A daily roselle drink raised skin moisture in a 6 month trial.",
+        "detail": "One randomised, placebo controlled trial found higher facial skin moisture after 6 months of a daily roselle drink. A separate 12 week trial of a hibiscus extract supplement also improved hydration. Drinking enough water and using a moisturiser remain the basics.",
+        "evidenceIds": [
+          "roselle-chiu-2022",
+          "roselle-baek-2025"
+        ],
+        "sources": []
+      },
+      {
+        "goal": "smooth_fine_lines",
+        "tier": "human_trial",
+        "headline": "A hibiscus extract supplement reduced wrinkle depth in a 12 week pilot.",
+        "detail": "This was a processed extract taken as a supplement, not a tea, so a cup of hibiscus tea has not been shown to do the same.",
+        "evidenceIds": [
+          "roselle-baek-2025"
+        ],
+        "sources": []
+      }
+    ],
+    "evidence": [
+      {
+        "id": "roselle-chiu-2022",
+        "citation": {
+          "authors": "Chiu HF et al.",
+          "title": "Improvement on blood pressure and skin using roselle drink: A clinical trial.",
+          "journal": "J Food Biochem",
+          "year": 2022,
+          "pmid": "35758855",
+          "doi": "10.1111/jfbc.14287",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35758855/"
+        },
+        "design": "rct",
+        "taken_as": "brewed_drink",
+        "population": "39 healthy adults",
+        "n": 39,
+        "durationWeeks": 26,
+        "summary": "Drinking 200 ml of a roselle drink every day for 6 months lowered blood pressure and raised skin moisture on the face compared with a placebo drink. The paper words its skin redness result in a way that is hard to read, so SkinProof makes no redness claim from it.",
+        "limitations": "A branded roselle drink, not a home brewed tea, so the amount of plant per cup is not comparable. Healthy adults, one trial, moisture measured on the face. Funded by a food company.",
+        "funding": "Stand Foods Corporation (listed as the funder in PubMed)."
+      },
+      {
+        "id": "roselle-baek-2025",
+        "citation": {
+          "authors": "Baek Y et al.",
+          "title": "Hibiscus Collagen Alternative (VC-H1) as an Oral Skin Rejuvenating Agent: A 12-Week Pilot Study.",
+          "journal": "Int J Mol Sci",
+          "year": 2025,
+          "pmid": "40806423",
+          "doi": "10.3390/ijms26157291",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40806423/"
+        },
+        "design": "rct",
+        "taken_as": "oral_extract",
+        "population": "98 people aged 35 to 60 with dry skin and wrinkles around the eyes",
+        "n": 98,
+        "durationWeeks": 12,
+        "summary": "A hibiscus enzyme extract taken as a supplement (1.5 g a day) increased skin hydration, lowered water loss, and reduced wrinkle depth compared with placebo.",
+        "limitations": "A processed enzyme extract in a supplement, not a tea. Described by the authors as a pilot. One trial.",
+        "funding": null
+      }
+    ],
+    "cautions": [
+      {
+        "note": "Roselle lowers blood pressure in a dose dependent way across 26 trials. If your blood pressure is already low, or you take blood pressure medicine, ask your clinician before drinking it daily.",
+        "source": {
+          "title": "Efficacy and safety of Hibiscus sabdariffa in cardiometabolic health (Complement Ther Med 2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39870328/"
+        }
+      }
+    ],
+    "daisyFamily": false,
+    "matchWords": [
+      "hibiscus",
+      "roselle"
+    ],
+    "blend": {
+      "eligible": true
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "rose-hip",
+    "commonName": "Rose hip",
+    "scientificName": "Rosa canina",
+    "family": "Rosaceae",
+    "part": "fruit",
+    "botanicalId": "rosehip",
+    "summary": "The fruit of the dog rose, tart and rich in vitamin C. The skin evidence is for a powder of seeds and shells, so a strained tea is a looser match.",
+    "goals": [
+      {
+        "goal": "support_hydration",
+        "tier": "human_trial",
+        "headline": "A rose hip powder improved skin moisture in an 8 week trial.",
+        "detail": "Moisture, elasticity and crow’s feet all improved in 34 adults, but the comparison group took another supplement rather than a placebo.",
+        "evidenceIds": [
+          "rosehip-phetcharat-2015"
+        ],
+        "sources": []
+      },
+      {
+        "goal": "smooth_fine_lines",
+        "tier": "human_trial",
+        "headline": "A rose hip powder improved crow’s feet wrinkles in an 8 week trial.",
+        "detail": "The effect was similar to the astaxanthin comparison. It was a powder of seeds and shells, not a tea.",
+        "evidenceIds": [
+          "rosehip-phetcharat-2015"
+        ],
+        "sources": []
+      }
+    ],
+    "evidence": [
+      {
+        "id": "rosehip-phetcharat-2015",
+        "citation": {
+          "authors": "Phetcharat L et al.",
+          "title": "The effectiveness of a standardized rose hip powder, containing seeds and shells of Rosa canina, on cell longevity, skin wrinkles, moisture, and elasticity.",
+          "journal": "Clin Interv Aging",
+          "year": 2015,
+          "pmid": "26604725",
+          "doi": "10.2147/CIA.S90092",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26604725/"
+        },
+        "design": "rct",
+        "taken_as": "oral_powder",
+        "population": "34 healthy adults aged 35 to 65 with crow’s feet wrinkles",
+        "n": 34,
+        "durationWeeks": 8,
+        "summary": "Eating a standardised rose hip powder (seeds and shells) for 8 weeks improved crow’s feet wrinkles, skin moisture and elasticity. The comparison group took astaxanthin, which improved the same measures to a similar degree.",
+        "limitations": "A powder of seeds and shells, not a tea made from the fruit, and a tea may carry less of those parts. The comparison was another supplement, not a placebo. Only 34 people.",
+        "funding": null
+      }
+    ],
+    "cautions": [],
+    "daisyFamily": false,
+    "matchWords": [
+      "rose hip",
+      "rosehip",
+      "rosa canina"
+    ],
+    "blend": {
+      "eligible": true
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "gotu-kola",
+    "commonName": "Gotu kola leaf",
+    "scientificName": "Centella asiatica",
+    "family": "Apiaceae",
+    "part": "leaf",
+    "botanicalId": "centella",
+    "summary": "A leafy herb known on skincare labels as cica. Taken by mouth as a standardised extract it showed small skin improvements in one 12 week trial, but it has also been linked to liver injury in case reports.",
+    "goals": [
+      {
+        "goal": "smooth_fine_lines",
+        "tier": "human_trial",
+        "headline": "An oral extract reduced wrinkle depth in a 12 week trial.",
+        "detail": "The wrinkle result is against the group’s own baseline, with minimal change in the placebo group.",
+        "evidenceIds": [
+          "gotukola-hur-2026"
+        ],
+        "sources": []
+      },
+      {
+        "goal": "refine_texture",
+        "tier": "human_trial",
+        "headline": "An oral extract reduced surface roughness in a 12 week trial.",
+        "detail": "Roughness fell about 10% against baseline. It was measured with 3D skin imaging, in a capsule extract, not a tea.",
+        "evidenceIds": [
+          "gotukola-hur-2026"
+        ],
+        "sources": []
+      },
+      {
+        "goal": "radiance",
+        "tier": "human_trial",
+        "headline": "An oral extract slightly raised skin brightness, more than placebo.",
+        "detail": "The authors call the effect modest, about 0.7% on a brightness scale.",
+        "evidenceIds": [
+          "gotukola-hur-2026"
+        ],
+        "sources": []
+      },
+      {
+        "goal": "support_hydration",
+        "tier": "human_trial",
+        "headline": "An oral extract slightly raised cheek hydration and lowered water loss.",
+        "detail": "Hydration rose about 2.7%, which the authors describe as small.",
+        "evidenceIds": [
+          "gotukola-hur-2026"
+        ],
+        "sources": []
+      }
+    ],
+    "evidence": [
+      {
+        "id": "gotukola-hur-2026",
+        "citation": {
+          "authors": "Hur N et al.",
+          "title": "A Randomized, Double-Blind, Placebo-Controlled Trial Assessing the Effects of Oral Centella asiatica Extract on Skin Aging-Related Parameters in Middle-Aged Korean Women.",
+          "journal": "Nutrients",
+          "year": 2026,
+          "pmid": "42196964",
+          "doi": "10.3390/nu18101505",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42196964/"
+        },
+        "design": "rct",
+        "taken_as": "oral_extract",
+        "population": "112 middle aged Korean women",
+        "n": 112,
+        "durationWeeks": 12,
+        "summary": "A standardised extract (200 mg a day) reduced wrinkle depth and surface roughness against the person’s own starting values, and raised skin elasticity and brightness slightly more than placebo. The authors call the changes in hydration, elasticity and brightness modest.",
+        "limitations": "A capsule extract, not a tea. The wrinkle result is compared with the group’s own baseline, while only elasticity and brightness were significantly better than placebo. Effects were small.",
+        "funding": null
+      }
+    ],
+    "cautions": [
+      {
+        "note": "Three women developed jaundice and liver injury after taking Centella asiatica for 20 to 60 days; one relapsed when she took it again.",
+        "source": {
+          "title": "Hepatotoxicity associated with the ingestion of Centella asiatica (Rev Esp Enferm Dig 2005)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15801887/"
+        }
+      },
+      {
+        "note": "A child developed liver injury after gotu kola, in a letter urging caution with alternative remedies. Do not use it if you have liver disease or take medicines that affect the liver.",
+        "source": {
+          "title": "Gotu Kola induced hepatotoxicity in a child (Dig Liver Dis 2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21334992/"
+        }
+      }
+    ],
+    "daisyFamily": false,
+    "matchWords": [
+      "gotu kola",
+      "centella"
+    ],
+    "blend": {
+      "eligible": false,
+      "reason": "Liver injury has been reported, and the skin benefit was small. It appears here for information, but SkinProof does not put it in a blend."
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "green-tea",
+    "commonName": "Green tea leaf",
+    "scientificName": "Camellia sinensis",
+    "family": "Theaceae",
+    "part": "leaf",
+    "botanicalId": "green-tea",
+    "summary": "The most studied tea. It is on this page because people often suggest it for oily or blemished skin, and the evidence says drinking it does little for either.",
+    "goals": [
+      {
+        "goal": "blemish_care",
+        "tier": "tested_not_helpful",
+        "headline": "Taken by mouth, green tea extract did little for acne.",
+        "detail": "A meta-analysis of five trials found topical green tea extract reduced lesions, but oral extract had minimal effect. Look in the topical library for green tea products instead.",
+        "evidenceIds": [
+          "greentea-kim-2021"
+        ],
+        "sources": []
+      },
+      {
+        "goal": "balance_oil",
+        "tier": "tested_not_helpful",
+        "headline": "No trial shows drinking green tea reduces skin oil.",
+        "detail": "We found no trial of oral green tea on skin oil, and the acne evidence for oral extracts is weak.",
+        "evidenceIds": [
+          "greentea-kim-2021"
+        ],
+        "sources": []
+      },
+      {
+        "goal": "smooth_fine_lines",
+        "tier": "tested_not_helpful",
+        "headline": "A cream and capsule together changed skin biopsies but not how skin looked.",
+        "detail": "In 40 women over 8 weeks there was no clinical improvement over placebo, and irritation was higher in the green tea group.",
+        "evidenceIds": [
+          "greentea-chiu-2005"
+        ],
+        "sources": []
+      }
+    ],
+    "evidence": [
+      {
+        "id": "greentea-kim-2021",
+        "citation": {
+          "authors": "Kim S et al.",
+          "title": "The effects of green tea on acne vulgaris: A systematic review and meta-analysis of randomized clinical trials.",
+          "journal": "Phytother Res",
+          "year": 2021,
+          "pmid": "32812270",
+          "doi": "10.1002/ptr.6809",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32812270/"
+        },
+        "design": "systematic_review",
+        "taken_as": "oral_extract",
+        "population": "Five randomised trials, 247 people with acne",
+        "n": 247,
+        "durationWeeks": null,
+        "summary": "Green tea extract put on the skin reduced acne lesions, but green tea extract taken by mouth had minimal effect on inflammatory spots and none on non-inflammatory ones.",
+        "limitations": "The oral trials used extracts, not brewed tea. The authors call for higher quality trials.",
+        "funding": null
+      },
+      {
+        "id": "greentea-chiu-2005",
+        "citation": {
+          "authors": "Chiu AE et al.",
+          "title": "Double-blinded, placebo-controlled trial of green tea extracts in the clinical and histologic appearance of photoaging skin.",
+          "journal": "Dermatol Surg",
+          "year": 2005,
+          "pmid": "16029678",
+          "doi": "10.1111/j.1524-4725.2005.31731",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16029678/"
+        },
+        "design": "rct",
+        "taken_as": "oral_extract_with_cream",
+        "population": "40 women with moderate photoaging",
+        "n": 40,
+        "durationWeeks": 8,
+        "summary": "A 10% green tea cream plus a 300 mg capsule twice a day for 8 weeks produced no clinical improvement over placebo, though skin biopsies showed more elastic tissue. Irritation scores were higher in the green tea group.",
+        "limitations": "Cream and capsule were combined, so the capsule alone is not isolated. Small, short, and extracts rather than tea.",
+        "funding": null
+      }
+    ],
+    "cautions": [
+      {
+        "note": "Brewed green tea was not linked to liver problems in a systematic review, but concentrated, catechin rich extracts taken as large single doses were. Avoid concentrated extracts.",
+        "source": {
+          "title": "The safety of green tea and green tea extract consumption in adults (Regul Toxicol Pharmacol 2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29580974/"
+        }
+      },
+      {
+        "note": "Green tea is among the foods and herbs reported to raise bleeding risk with warfarin. Ask your clinician if you take it.",
+        "source": {
+          "title": "Warfarin and food, herbal or dietary supplement interactions: A systematic review (Br J Clin Pharmacol 2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32478963/"
+        }
+      }
+    ],
+    "daisyFamily": false,
+    "matchWords": [
+      "green tea",
+      "camellia"
+    ],
+    "blend": {
+      "eligible": false,
+      "reason": "Drinking it did not help the goals it is usually suggested for."
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "chamomile",
+    "commonName": "Chamomile flower",
+    "scientificName": "Matricaria chamomilla (Matricaria recutita)",
+    "family": "Asteraceae",
+    "part": "flower",
+    "botanicalId": null,
+    "summary": "A gentle, widely drunk flower tea. It is traditionally taken to calm, but a review of the science found human studies limited. We found no trial of chamomile tea on skin redness.",
+    "goals": [
+      {
+        "goal": "calm_visible_redness",
+        "tier": "traditional",
+        "headline": "Traditional calming tea. No trial on skin redness.",
+        "detail": "Animal studies point to anti-inflammatory action, but a review of chamomile tea concludes that human studies are limited. This is a comforting choice, not a proven one.",
+        "evidenceIds": [],
+        "sources": [
+          {
+            "title": "A review of the bioactivity and potential health benefits of chamomile tea (Phytother Res 2006)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16628544/"
+          }
+        ]
+      }
+    ],
+    "evidence": [],
+    "cautions": [
+      {
+        "note": "Adverse reactions to chamomile, drunk or applied, have been reported in people allergic to other daisy family plants.",
+        "source": {
+          "title": "A review of the bioactivity and potential health benefits of chamomile tea (Phytother Res 2006)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16628544/"
+        }
+      },
+      {
+        "note": "Chamomile tea is among the items reported to increase bleeding risk with warfarin.",
+        "source": {
+          "title": "Warfarin and food, herbal or dietary supplement interactions: A systematic review (Br J Clin Pharmacol 2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32478963/"
+        }
+      }
+    ],
+    "daisyFamily": true,
+    "matchWords": [
+      "chamomile",
+      "camomile",
+      "matricaria"
+    ],
+    "blend": {
+      "eligible": true
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "licorice-root",
+    "commonName": "Licorice root",
+    "scientificName": "Glycyrrhiza glabra",
+    "family": "Fabaceae",
+    "part": "root",
+    "botanicalId": "licorice",
+    "summary": "Licorice has real topical evidence for redness in the library, but that is for compounds put on skin. Drinking the root has not been tested for skin and carries a known blood pressure risk.",
+    "goals": [
+      {
+        "goal": "calm_visible_redness",
+        "tier": "traditional",
+        "headline": "Traditional soothing root. Not tested as a drink for skin redness.",
+        "detail": "The topical evidence in the library does not carry over to a tea. Regular licorice root tea is not something we suggest for skin.",
+        "evidenceIds": [],
+        "sources": [
+          {
+            "title": "Toxicological Effects of Glycyrrhiza glabra (Licorice): A Review (Phytother Res 2017)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28833680/"
+          }
+        ]
+      }
+    ],
+    "evidence": [],
+    "cautions": [
+      {
+        "note": "The most important side effects of licorice and glycyrrhizin are high blood pressure and low potassium. Use it with caution in pregnancy.",
+        "source": {
+          "title": "Toxicological Effects of Glycyrrhiza glabra (Licorice): A Review (Phytother Res 2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28833680/"
+        }
+      }
+    ],
+    "daisyFamily": false,
+    "matchWords": [
+      "licorice",
+      "liquorice",
+      "glycyrrhiza"
+    ],
+    "blend": {
+      "eligible": false,
+      "reason": "A known blood pressure and potassium risk, with no skin evidence for drinking it."
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "dandelion",
+    "commonName": "Dandelion root or leaf",
+    "scientificName": "Taraxacum officinale",
+    "family": "Asteraceae",
+    "part": "root",
+    "botanicalId": null,
+    "summary": "A bitter tea long used in herbal traditions for “clearing” the skin. A review describes antioxidant and anti-inflammatory activity in the lab. We found no trial on blemishes.",
+    "goals": [
+      {
+        "goal": "blemish_care",
+        "tier": "traditional",
+        "headline": "Traditional use only. No trial on blemishes.",
+        "detail": "A review finds emerging evidence of antioxidant and anti-inflammatory activity in the lab, not an effect on skin in people.",
+        "evidenceIds": [],
+        "sources": [
+          {
+            "title": "Diverse biological activities of dandelion (Nutr Rev 2012)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22946853/"
+          }
+        ]
+      }
+    ],
+    "evidence": [],
+    "cautions": [
+      {
+        "note": "Dandelion is among the daisy family plants that commonly cause contact allergy in people who are sensitised to the family.",
+        "source": {
+          "title": "[Compositae dermatitis] (Med Pregl 2003)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12793186/"
+        }
+      }
+    ],
+    "daisyFamily": true,
+    "matchWords": [
+      "dandelion",
+      "taraxacum"
+    ],
+    "blend": {
+      "eligible": true
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "burdock-root",
+    "commonName": "Burdock root",
+    "scientificName": "Arctium lappa",
+    "family": "Asteraceae",
+    "part": "root",
+    "botanicalId": null,
+    "summary": "A root used in traditional Chinese medicine to “detoxify” the blood and improve skin. A review reports these traditional uses; it does not report skin trials in people.",
+    "goals": [
+      {
+        "goal": "blemish_care",
+        "tier": "traditional",
+        "headline": "Traditional use only. No trial on blemishes.",
+        "detail": "The review says traditional medicine uses the root to improve skin quality and treat conditions like eczema, which is a description of use, not proof it works.",
+        "evidenceIds": [],
+        "sources": [
+          {
+            "title": "A review of the pharmacological effects of Arctium lappa (burdock) (Inflammopharmacology 2011)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20981575/"
+          }
+        ]
+      }
+    ],
+    "evidence": [],
+    "cautions": [
+      {
+        "note": "Burdock is a daisy family plant, and the family is a common source of plant allergy.",
+        "source": {
+          "title": "[Compositae dermatitis] (Med Pregl 2003)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12793186/"
+        }
+      }
+    ],
+    "daisyFamily": true,
+    "matchWords": [
+      "burdock",
+      "arctium"
+    ],
+    "blend": {
+      "eligible": true
+    },
+    "reviewedOn": "2026-11-06"
+  },
+  {
+    "id": "marshmallow-root",
+    "commonName": "Marshmallow root",
+    "scientificName": "Althaea officinalis",
+    "family": "Malvaceae",
+    "part": "root",
+    "botanicalId": null,
+    "summary": "A root rich in mucilage, the slippery plant sugar that gives marshmallow tea its soft texture. It is traditionally taken to soothe. We found no trial of the root as a drink for skin.",
+    "goals": [
+      {
+        "goal": "support_hydration",
+        "tier": "traditional",
+        "headline": "Traditional soothing drink. No trial on skin moisture.",
+        "detail": "A review of its polysaccharides lists lab activities including antioxidant and wound healing effects. Those are not skin hydration results in people.",
+        "evidenceIds": [],
+        "sources": [
+          {
+            "title": "Isolation, structural properties, and bioactivities of polysaccharides from Althaea officinalis Linn.: A review (Int J Biol Macromol 2023)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37245776/"
+          }
+        ]
+      }
+    ],
+    "evidence": [],
+    "cautions": [],
+    "daisyFamily": false,
+    "matchWords": [
+      "marshmallow",
+      "althaea"
+    ],
+    "blend": {
+      "eligible": true
+    },
+    "reviewedOn": "2026-11-06"
+  }
+]
