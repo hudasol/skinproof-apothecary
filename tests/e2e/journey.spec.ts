@@ -19,7 +19,7 @@ test('a shopper goes from consent to a reasoned shortlist and can delete everyth
 
   // Suggested goals arrive ticked; add a hard limit.
   await expect(page.getByText(/Suggested by your analysis/)).toHaveCount(3);
-  await page.getByLabel(/No added fragrance/).check();
+  await page.getByRole("group", { name: /Skincare/ }).getByLabel(/No added fragrance/).check();
   await page.getByRole('button', { name: 'Show my shortlist' }).click();
 
   await expect(page).toHaveURL(/\/shortlist$/);
@@ -86,8 +86,8 @@ test('the goals form refuses an empty choice and keeps what was typed', async ({
   await page.getByRole('button', { name: 'Choose goals without a photo' }).click();
   await expect(page.getByRole('button', { name: 'Show my shortlist' })).toBeDisabled();
   await page.getByLabel(/Support hydration/).check();
-  await page.getByLabel('Other ingredients to avoid').fill('x');
+  await page.getByRole('group', { name: /Skincare/ }).getByLabel('Other ingredients to avoid').fill('x');
   await page.getByRole('button', { name: 'Show my shortlist' }).click();
   await expect(page.getByText('Use at least 3 characters')).toBeVisible();
-  await expect(page.getByLabel('Other ingredients to avoid')).toHaveValue('x');
+  await expect(page.getByRole('group', { name: /Skincare/ }).getByLabel('Other ingredients to avoid')).toHaveValue('x');
 });

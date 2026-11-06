@@ -37,7 +37,7 @@ test('shades without a brand swatch, or that break a limit, cannot be tried on',
   await agreeToAnalysis(page, true);
   await page.goto('/consult/goals');
   await page.getByLabel(/Support hydration/).check();
-  await page.getByLabel(/No added fragrance/).check();
+  await page.getByRole("group", { name: /Makeup/ }).getByLabel(/No added fragrance/).check();
   await page.getByRole('button', { name: 'Show my shortlist' }).click();
   await expect(page).toHaveURL(/\/shortlist$/);
 
