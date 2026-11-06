@@ -16,6 +16,54 @@ const CONSTRAINTS = [
   { name: 'avoidAsteraceae', label: 'Avoid the daisy family', detail: 'Excludes chamomile, calendula, arnica, feverfew, sunflower and other Asteraceae plants.' },
 ] as const;
 
+type LimitsProps = {
+  prefix: '' | 'makeup_';
+  legend: string;
+  hint: string;
+  flags: Set<string>;
+  avoid: string;
+  error?: string;
+  idBase: string;
+};
+
+function LimitsFieldset({ prefix, legend, hint, flags, avoid, error, idBase }: LimitsProps) {
+  return (
+    <fieldset aria-describedby={`${idBase}-hint`}>
+      <legend>{legend}</legend>
+      <p className="hint" id={`${idBase}-hint`}>
+        {hint}
+      </p>
+      <div className="choice-list">
+        {CONSTRAINTS.map((c) => (
+          <label key={c.name} className="choice">
+            <input type="checkbox" name={`${prefix}${c.name}`} defaultChecked={flags.has(`${prefix}${c.name}`)} />
+            <span>
+              <strong>{c.label}</strong>
+              <span className="small">{c.detail}</span>
+            </span>
+          </label>
+        ))}
+      </div>
+      <div className="field" style={{ marginTop: 'var(--space-4)' }}>
+        <label htmlFor={`${idBase}-avoid`}>Other ingredients to avoid</label>
+        <textarea
+          id={`${idBase}-avoid`}
+          name={`${prefix}avoidIngredients`}
+          className="input"
+          defaultValue={avoid}
+          placeholder={'One per line, as written on labels, for example:\nAlcohol Denat.\nLanolin'}
+          aria-describedby={`${idBase}-avoid-hint`}
+          aria-invalid={!!error}
+        />
+        <span className="hint" id={`${idBase}-avoid-hint`}>
+          Matched as whole words against every ingredient on the label, ignoring capitals. Up to ten.
+        </span>
+        <FieldError message={error} />
+      </div>
+    </fieldset>
+  );
+}
+
 export function ProfileForm({ profile, suggestions, categories }: { profile: ConsultationProfile | null; suggestions: Suggestion[]; categories: ProductCategory[] }) {
   const [state, action] = useActionState(saveProfileAction, initialState);
   const v = state.values;
@@ -28,12 +76,16 @@ export function ProfileForm({ profile, suggestions, categories }: { profile: Con
             ...Object.entries(profile.constraints)
               .filter(([k, val]) => val === true && k !== 'avoidIngredients')
               .map(([k]) => k),
+            ...Object.entries(profile.makeupConstraints ?? {})
+              .filter(([k, val]) => val === true && k !== 'avoidIngredients')
+              .map(([k]) => `makeup_${k}`),
             ...(profile.reactiveSkin ? ['reactiveSkin'] : []),
           ]
         : []),
   );
   const prefs = new Set<string>((v?.preferredCategories as string[] | undefined) ?? profile?.preferredCategories ?? []);
   const avoid = (v?.avoidIngredients as string | undefined) ?? profile?.constraints.avoidIngredients.join('\n') ?? '';
+  const makeupAvoid = (v?.makeupAvoidIngredients as string | undefined) ?? profile?.makeupConstraints?.avoidIngredients.join('\n') ?? '';
   const fe = state.fieldErrors ?? {};
   const suggested = new Map(suggestions.map((s) => [s.goal, s.reason]));
   const ordered = [...suggestions.map((s) => s.goal), ...GOALS.filter((g) => !suggested.has(g))];
@@ -78,39 +130,25 @@ export function ProfileForm({ profile, suggestions, categories }: { profile: Con
         <FieldError message={fe.goals} />
       </fieldset>
 
-      <fieldset aria-describedby="excl-hint">
-        <legend>Anything to rule out?</legend>
-        <p className="hint" id="excl-hint">
-          These are hard limits. A product that breaks one is excluded, whatever its evidence, and is never offered for try-on.
-        </p>
-        <div className="choice-list">
-          {CONSTRAINTS.map((c) => (
-            <label key={c.name} className="choice">
-              <input type="checkbox" name={c.name} defaultChecked={flags.has(c.name)} />
-              <span>
-                <strong>{c.label}</strong>
-                <span className="small">{c.detail}</span>
-              </span>
-            </label>
-          ))}
-        </div>
-        <div className="field" style={{ marginTop: 'var(--space-4)' }}>
-          <label htmlFor="avoidIngredients">Other ingredients to avoid</label>
-          <textarea
-            id="avoidIngredients"
-            name="avoidIngredients"
-            className="input"
-            defaultValue={avoid}
-            placeholder={'One per line, as written on labels, for example:\nAlcohol Denat.\nLanolin'}
-            aria-describedby="avoid-hint"
-            aria-invalid={!!fe.avoidIngredients}
-          />
-          <span className="hint" id="avoid-hint">
-            Matched as whole words against every ingredient on the label, ignoring capitals. Up to ten.
-          </span>
-          <FieldError message={fe.avoidIngredients} />
-        </div>
-      </fieldset>
+      <LimitsFieldset
+        prefix=""
+        idBase="skin"
+        legend="Skincare: anything to rule out?"
+        hint="These limits apply to skincare only. A skincare product that breaks one is excluded from your shortlist, whatever its evidence."
+        flags={flags}
+        avoid={avoid}
+        error={fe.avoidIngredients}
+      />
+
+      <LimitsFieldset
+        prefix="makeup_"
+        idBase="makeup"
+        legend="Makeup: anything to rule out?"
+        hint="A separate list for makeup, so you can accept in a lip colour what you would not put in a serum, or the other way round. A shade that breaks one is never offered for try-on."
+        flags={flags}
+        avoid={makeupAvoid}
+        error={fe.makeup_avoidIngredients}
+      />
 
       <fieldset>
         <legend>Anything else?</legend>

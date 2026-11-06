@@ -7,7 +7,7 @@ import { PreviewConsentForm } from '@/components/forms/PreviewConsentForm';
 import { TryOnPanel } from '@/components/forms/TryOnPanel';
 import { getProduct } from '@/lib/catalogue';
 import { getDb } from '@/lib/db/client';
-import { EMPTY_CONSTRAINTS } from '@/lib/domain/profile';
+import { makeupLimitsOf } from '@/lib/domain/profile';
 import { checkColourShade } from '@/lib/ledger/engine';
 import { providerState } from '@/lib/providers';
 import { currentPhoto } from '@/lib/services/consultations';
@@ -29,7 +29,7 @@ export default async function StudioPage({ params, searchParams }: { params: Pro
   const shade = product.shades.find((s) => s.id === requested) ?? product.shades.find((s) => s.render) ?? product.shades[0]!;
   const db = getDb();
   const c = await currentConsultation(db);
-  const constraints = c?.profile?.constraints ?? EMPTY_CONSTRAINTS;
+  const constraints = makeupLimitsOf(c?.profile);
   const checks = Object.fromEntries(product.shades.map((s) => [s.id, checkColourShade(product, s.id, constraints)]));
   const check = checks[shade.id]!;
   const photo = c ? currentPhoto(db, c.id) : undefined;

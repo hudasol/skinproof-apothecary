@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getCatalogue } from '@/lib/catalogue';
-import { EMPTY_CONSTRAINTS } from '@/lib/domain/profile';
+import { makeupLimitsOf } from '@/lib/domain/profile';
 import { checkColourShade } from '@/lib/ledger/engine';
 import { personalContext } from '@/lib/personal';
 import styles from './colour.module.css';
@@ -11,7 +11,7 @@ export const metadata: Metadata = { title: 'Lip colour' };
 export default async function ColourPage() {
   const products = getCatalogue().products.filter((p) => p.shelf === 'colour');
   const { consultation } = await personalContext();
-  const constraints = consultation?.profile?.constraints ?? EMPTY_CONSTRAINTS;
+  const constraints = makeupLimitsOf(consultation?.profile);
 
   return (
     <div className="wrap page">
@@ -22,7 +22,7 @@ export default async function ColourPage() {
           These are chosen for colour. SkinProof makes no claim about what they do for your lips.
         </p>
         {consultation?.profile && (
-          <p className="small">Shades that break the limits you set in your consultation are marked and cannot be tried on.</p>
+          <p className="small">Shades that break the makeup limits you set in your consultation are marked and cannot be tried on. Your skincare limits do not apply here.</p>
         )}
       </header>
       <div className={styles.shelf}>

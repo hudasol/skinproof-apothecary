@@ -96,7 +96,7 @@ export default async function ShortlistPage() {
             </dd>
           </div>
           <div>
-            <dt>Limits</dt>
+            <dt>Skincare limits</dt>
             <dd>{limits.length ? limits.join('; ') : 'None'}</dd>
           </div>
           {d.input.reactiveSkin && (

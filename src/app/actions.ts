@@ -92,14 +92,18 @@ export async function saveProfileAction(_prev: ActionState, form: FormData): Pro
   const values: ActionState['values'] = {
     goals: form.getAll('goals').map(String),
     avoidIngredients: String(form.get('avoidIngredients') ?? ''),
-    flags: ['noFragrance', 'noEssentialOils', 'noFragranceAllergens', 'avoidAsteraceae', 'reactiveSkin'].filter((k) => form.get(k) === 'on'),
+    makeupAvoidIngredients: String(form.get('makeup_avoidIngredients') ?? ''),
+    flags: [
+      ...['noFragrance', 'noEssentialOils', 'noFragranceAllergens', 'avoidAsteraceae', 'reactiveSkin'],
+      ...['noFragrance', 'noEssentialOils', 'noFragranceAllergens', 'avoidAsteraceae'].map((k) => `makeup_${k}`),
+    ].filter((k) => form.get(k) === 'on'),
     preferredCategories: form.getAll('preferredCategories').map(String),
   };
   const parsed = profileFromForm(form);
   if (!parsed.success) {
     const fieldErrors: Record<string, string> = {};
     for (const i of parsed.error.issues) {
-      const key = String(i.path[0] === 'constraints' ? i.path[1] : i.path[0]);
+      const key = i.path[0] === 'constraints' ? String(i.path[1]) : i.path[0] === 'makeupConstraints' ? `makeup_${String(i.path[1])}` : String(i.path[0]);
       fieldErrors[key] ??= i.message;
     }
     return { ok: false, message: 'Check the highlighted choices.', fieldErrors, values };

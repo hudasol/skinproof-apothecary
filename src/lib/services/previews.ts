@@ -4,7 +4,7 @@ import { getProduct } from '../catalogue';
 import type { Db } from '../db/client';
 import { artifacts, previews, type JobFailure, type JobStatus, type Preview } from '../db/schema';
 import { newId } from '../domain/ids';
-import { EMPTY_CONSTRAINTS } from '../domain/profile';
+import { makeupLimitsOf } from '../domain/profile';
 import { MAKEUP_PREVIEW_UNITS } from '../domain/skin';
 import { buildLipEffects } from '../domain/tryon';
 import { fitForPreview, inspectOutput } from '../images/normalize';
@@ -40,7 +40,7 @@ export async function startPreview(db: Db, consultationId: string, productId: st
   const shade = product?.shelf === 'colour' ? product.shades.find((s) => s.id === shadeId) : undefined;
   if (!product || !shade) throw notFound('That shade');
   if (!shade.render) throw new AppError('not_allowed', 'This shade cannot be previewed: the brand publishes no swatch to take a colour from.');
-  const check = checkColourShade(product, shadeId, c.profile?.constraints ?? EMPTY_CONSTRAINTS);
+  const check = checkColourShade(product, shadeId, makeupLimitsOf(c.profile));
   if (check.outcome === 'excluded') {
     throw new AppError('not_allowed', `This shade is excluded by your choices: ${check.factors.map((f) => f.ingredient).filter(Boolean).join(', ')}.`);
   }

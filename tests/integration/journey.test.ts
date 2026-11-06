@@ -88,7 +88,12 @@ describe('consultation journey (fixture providers)', () => {
 
     await expect(startPreview(db, c.id, 'ilia-balmy-tint', 'lullaby')).rejects.toMatchObject({ code: 'consent_required' });
     recordConsent(db, c.id, 'preview');
-    // Hurraw! lists Flavor/Aroma, which this person excluded: no try-on is offered.
+    // A skincare limit does not apply to makeup: with only the skincare limit set, Hurraw! shades are still offered.
+    const sk = await startPreview(db, c.id, 'hurraw-tinted-lip-balm', 'raspberry');
+    await waitForPreview(sk.id);
+    // Makeup limits are their own list. Set the same limit for makeup and Hurraw! is refused.
+    saveProfile(db, c.id, profile({ makeupConstraints: { ...EMPTY_CONSTRAINTS, noFragrance: true } }));
+    // Hurraw! lists Flavor/Aroma, which this person excluded for makeup: no try-on is offered.
     await expect(startPreview(db, c.id, 'hurraw-tinted-lip-balm', 'raspberry')).rejects.toMatchObject({ code: 'not_allowed' });
     // Burt's Bees publishes no swatch, so it has no colour to render.
     await expect(startPreview(db, c.id, 'burts-bees-tinted-lip-balm', 'rose')).rejects.toThrow(/no swatch/);
