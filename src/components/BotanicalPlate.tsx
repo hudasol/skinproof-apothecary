@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
 /**
- * Original line drawings of the catalogue's twelve plants, in the manner of a
+ * Original line drawings of the catalogue's plants, in the manner of a
  * herbarium plate. They are built from a few generators (leaves, petals,
  * stems) so the set shares one consistent pen. Decorative: the accessible
  * name is the plant's name, passed by the caller.
@@ -308,6 +308,93 @@ const plates: Record<string, () => ReactNode> = {
           <path d="M-5,13 L-9,24 M0,15 L0,26 M5,13 L9,24" stroke={INK} strokeWidth={0.8} />
           <path d="M-4,-6 Q0,-11 4,-6" fill="none" stroke={INK} strokeWidth={0.5} />
         </g>
+      ))}
+    </>
+  ),
+  sunflower: () => (
+    <>
+      <Stem d="M100,250 C98,200 104,150 100,92" w={1.6} />
+      <Leaf at={{ x: 100, y: 214 }} angle={-62} l={44} w={17} />
+      <Leaf at={{ x: 100, y: 170 }} angle={58} l={38} w={15} />
+      <Flower at={{ x: 100, y: 62 }} petals={18} r={34} petalW={4.4} centre={14} centreFill="var(--amber-600)" />
+    </>
+  ),
+  coconut: () => (
+    <>
+      <Stem d="M96,252 C98,200 100,150 104,104" w={2.4} />
+      {[-78, -52, -26, 26, 52, 78].map((a) => (
+        <Pinnate key={a} at={{ x: 104, y: 104 }} angle={a} pairs={5} l={13} w={4.5} step={10} />
+      ))}
+      <circle cx={92} cy={112} r={9} fill={WASH} stroke={INK} strokeWidth={1} />
+      <circle cx={112} cy={116} r={9} fill={WASH} stroke={INK} strokeWidth={1} />
+    </>
+  ),
+  argan: () => (
+    <>
+      <Stem d="M30,236 C70,200 110,160 170,104" w={2} />
+      <Stem d="M84,194 C100,214 112,226 130,230" w={1.2} />
+      {[
+        { x: 70, y: 196, a: -50 },
+        { x: 112, y: 160, a: 40 },
+        { x: 142, y: 128, a: -45 },
+        { x: 100, y: 214, a: 70 },
+      ].map((l, i) => (
+        <Leaf key={i} at={{ x: l.x, y: l.y }} angle={l.a} l={30} w={7} />
+      ))}
+      {[
+        { x: 126, y: 174 },
+        { x: 152, y: 140 },
+      ].map((f, i) => (
+        <g key={i}>
+          <ellipse cx={f.x} cy={f.y} rx={11} ry={14} fill="var(--amber-100)" stroke={INK} strokeWidth={1} />
+          <path d={`M${f.x - 5},${f.y - 10} Q${f.x},${f.y - 15} ${f.x + 5},${f.y - 10}`} fill="none" stroke={INK} strokeWidth={0.7} />
+        </g>
+      ))}
+    </>
+  ),
+  'black-seed': () => (
+    <>
+      <Stem d="M100,250 C102,200 98,150 100,100" w={1.2} />
+      {[-40, 38].map((a, i) => (
+        <g key={a} transform={`translate(100 ${200 - i * 40}) rotate(${a})`}>
+          <path d="M0,0 L0,-36 M0,-14 L-10,-26 M0,-14 L10,-26 M0,-26 L-8,-36 M0,-26 L8,-36" fill="none" stroke={INK} strokeWidth={0.8} />
+        </g>
+      ))}
+      <Flower at={{ x: 100, y: 78 }} petals={5} r={26} petalW={9} centre={7} centreFill="var(--sage-300)" />
+      <path d="M82,36 L86,22 M100,32 L100,16 M118,36 L114,22" stroke={INK} strokeWidth={0.8} />
+    </>
+  ),
+  jojoba: () => (
+    <>
+      <Stem d="M100,252 C98,200 102,150 100,60" w={1.6} />
+      {[210, 170, 130, 90].map((y, i) => (
+        <g key={y}>
+          <Leaf at={{ x: 100, y }} angle={-70 + (i % 2) * 8} l={32} w={10} vein={false} />
+          <Leaf at={{ x: 100, y }} angle={70 - (i % 2) * 8} l={32} w={10} vein={false} />
+        </g>
+      ))}
+      <ellipse cx={116} cy={146} rx={7} ry={10} fill="var(--amber-100)" stroke={INK} strokeWidth={0.9} />
+    </>
+  ),
+  resveratrol: () => (
+    <>
+      <Stem d="M100,30 C100,50 104,64 100,80" w={1.6} />
+      <Leaf at={{ x: 100, y: 52 }} angle={-64} l={34} w={16} />
+      {[
+        [100, 90], [88, 100], [112, 100], [78, 114], [100, 114], [122, 114], [88, 128], [112, 128], [100, 142], [100, 158],
+      ].map(([x, y], i) => (
+        <circle key={i} cx={x} cy={y} r={9} fill="var(--madder-100)" stroke={INK} strokeWidth={0.9} />
+      ))}
+    </>
+  ),
+  serratula: () => (
+    <>
+      <Stem d="M100,252 C98,200 102,140 100,100" w={1.4} />
+      <Leaf at={{ x: 100, y: 206 }} angle={-58} l={46} w={12} />
+      <Leaf at={{ x: 100, y: 162 }} angle={60} l={40} w={10} />
+      <path d="M80,100 C80,78 120,78 120,100 C120,112 80,112 80,100 Z" fill={WASH} fillOpacity={0.6} stroke={INK} strokeWidth={1} />
+      {[-18, -9, 0, 9, 18].map((dx) => (
+        <path key={dx} d={`M${100 + dx * 0.6},84 L${100 + dx * 1.6},56`} stroke="var(--madder-100)" strokeWidth={2.4} strokeLinecap="round" />
       ))}
     </>
   ),
