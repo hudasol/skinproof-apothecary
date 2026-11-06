@@ -10,6 +10,7 @@ const LINKS = [
   { href: '/shortlist', label: 'Your shortlist' },
   { href: '/products', label: 'Apothecary' },
   { href: '/library', label: 'Botanical library' },
+  { href: '/tea', label: 'Herbal teas' },
   { href: '/colour', label: 'Lip colour' },
   { href: '/ledger', label: 'The Ledger' },
 ];
