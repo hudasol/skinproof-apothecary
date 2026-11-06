@@ -30,7 +30,7 @@ Entry for the [YouCam API Skin AI & eCommerce VTO Hackathon](https://youcam-api-
 | Scope of that check | One portrait (YouCam’s own documentation sample) and one shade. It shows the integration works, not how the model behaves across faces, skin tones or light |
 | Everything else | Implemented and tested end to end, also with a clearly labelled offline fixture provider for development and judging without a key |
 | Screenshots below | The analysis and try-on images are **live YouCam output** on the documentation sample portrait. A full fixture-mode set is in `docs/screenshots/fixture-*` |
-| Catalogue | 12 botanicals, 44 PubMed-verified topical studies, 22 skincare products and 3 lip tints, ingredient lists checked against brand pages on 18 October 2026 |
+| Catalogue | 19 botanicals, 52 PubMed-verified studies, 9 herbal teas (with 6 trials and reviews read for them), 22 skincare products and 3 lip tints, ingredient lists checked against brand pages on 18 October 2026 |
 
 Live checks spend YouCam units and are run only with the owner's explicit
 approval (`npm run verify:live`, see below).
@@ -210,13 +210,13 @@ npm run test:e2e
 npm run catalogue:check
 ```
 
-* `npm test`: 83 unit and integration tests. They cover the Ledger rules, label
+* `npm test`: 93 unit and integration tests. They cover the Ledger rules, label
   reading, focus suggestion, image normalisation, adapter contract tests with a
   scripted fetch (no network), the service journey, and Ledger invariants on
   the real catalogue.
-* `npm run test:e2e`: 18 Playwright tests against a production build in fixture
+* `npm run test:e2e`: 20 Playwright tests against a production build in fixture
   mode, desktop and phone.
-* `npx tsx scripts/verify-citations.ts` re-checks all 44 PubMed citations (needs network).
+* `npx tsx scripts/verify-citations.ts` re-checks all 58 PubMed citations (needs network).
 * `npm run screenshots` regenerates the screenshots from a production build.
 
 Record of runs: [docs/TESTING.md](docs/TESTING.md).

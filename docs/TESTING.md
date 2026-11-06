@@ -11,7 +11,7 @@ Every result here was run and observed. Only the live checks section spent YouCa
 | Fresh clone of the repository: `npm ci`, `npm test`, `npm run typecheck`, `npm run build` | **all pass** |
 | `npm run test:e2e` (Playwright, production build, fixture mode) | **18 passed** (6 desktop, 12 phone) |
 | `npm run catalogue:check` | all schema and cross-reference checks pass; 25 products (22 verified, 2 partial, 1 unverified) |
-| `npx tsx scripts/verify-citations.ts` | **44 of 44** citations match PubMed |
+| `npx tsx scripts/verify-citations.ts` | **58 of 58** citations match PubMed |
 | `npm run screenshots` (production build) | 15 screenshots captured |
 | `npm run verify:live -- skin … ` and `… tryon …` without `--spend` | dry runs print the plan; nothing sent |
 | TryOn baseline (`tryon-trust`, `npx vitest run`) before porting | 125 passed |

@@ -38,7 +38,7 @@ Botanical skincare is sold on ingredients whose research usually tested a
 different preparation, at an unstated strength, often inside a multi-ingredient
 formula or a medical population. Shoppers, especially those with reactive skin,
 cannot see that from a product page. SkinProof makes it visible. In its own
-catalogue, only 4 of 44 studies are randomised everyday-use trials that isolate
+catalogue, only 9 of 52 studies are randomised everyday-use trials that isolate
 the botanical, and only 5 of 22 skincare products state how much of an active
 they contain.
 
@@ -55,9 +55,9 @@ they contain.
 
 ## How it was built
 
-Next.js 16, SQLite/Drizzle, sharp and zod; 83 unit and integration tests and 18
-Playwright end-to-end tests. The catalogue holds 12 botanicals, 44
-PubMed-verified studies, 22 skincare products and 3 lip tints, with sources and
+Next.js 16, SQLite/Drizzle, sharp and zod; 93 unit and integration tests and 20
+Playwright end-to-end tests. The catalogue holds 19 botanicals, 52
+PubMed-verified studies, 9 herbal teas, 22 skincare products and 3 lip tints, with sources and
 check dates.
 
 **New during the submission period.** SkinProof is a new project: its

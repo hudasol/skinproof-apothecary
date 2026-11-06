@@ -4,13 +4,14 @@ The catalogue is small on purpose: every record had to be traceable.
 
 ## Botanicals and studies
 
-* 12 botanicals that appear on botanical skincare labels.
-* 44 studies, found in PubMed and read from their abstracts on 18 October 2026
-  (three details were checked in PMC full texts: PMC7471832, PMC5504505,
+* 19 botanicals that appear on botanical skincare labels.
+* 52 studies, found in PubMed and read from their abstracts (44 on 18 October 2026, 8 more on 6 November 2026;
+  three details were checked in PMC full texts: PMC7471832, PMC5504505,
   PMC7603542). Every PMID, title and year was then checked against NCBI's
   E-utilities; `npx tsx scripts/verify-citations.ts` repeats that check.
 * Summaries and limitations are written in SkinProof's own words.
-* One oral rosehip supplement trial was left out: it is not topical evidence.
+* One oral rosehip supplement trial was left out of the topical library because it is not topical evidence. It is used on the herbal tea page, where oral evidence belongs.
+* The 8 studies added on 6 November 2026 were found with PubMed searches by plant and read from their abstracts only. Details an abstract does not give (country, funding, product grade, blinding) are recorded as not stated, never inferred. Several have limits that are written into the record: a study that cannot separate the plant from a clay mask, an abstract that does not show a topical control group, and a trial whose effect size is unusually large. Plants searched without finding a usable human trial (for example mulberry, sea buckthorn, ginseng and pomegranate) were not added.
 * For each study the curator recorded: setting (cosmetic, acute irritation
   model, medical), whether it isolates the botanical, the structured
   preparation (part, form, compound), and a concentration only when the study
@@ -21,6 +22,18 @@ The catalogue is small on purpose: every record had to be traceable.
 * Label (INCI) names listed for each botanical are common names for display.
   Product links never rely on them: every product-to-botanical mapping must
   match an entry on that product's own published list (`npm run catalogue:check`).
+
+## Herbal teas
+
+`src/data/catalogue/teas.json`, validated by `src/lib/catalogue/tea-schema.ts`.
+
+* Nine plants: roselle, rose hip, gotu kola, green tea, chamomile, licorice root, dandelion, burdock root and marshmallow root. Drinking a plant is a different exposure from putting it on skin, so these are kept apart from the topical library.
+* Each goal claim has a tier: **tried in people** (a trial in people measured a skin change), **traditional use only** (a review describes the use, no skin trial found) or **tested, did not help**. A traditional claim must cite a source, and a human trial claim must cite a trial; the loader refuses to start otherwise.
+* Every trial records what people actually took (a brewed drink, a powder, an extract). Only one trial used a brewed drink. The page says so beside each result.
+* Cautions come from PubMed reviews or case reports. A plant with no caution recorded means none was found, which the page states.
+* Green tea is shown because it is often suggested for oily and blemished skin. The meta-analysis found oral extract had minimal effect, so it is never put in a blend.
+* The blend is a rule, not a recipe (`src/lib/tea/plan.ts`): greedy cover of the person's goals, trials weighted above tradition, at most four plants, no amounts, because no study tested these plants together.
+* Trial citations are checked against PubMed by `scripts/verify-citations.ts`.
 
 ## Products
 
