@@ -11,6 +11,10 @@ const FULL: Crop = { x: 0, y: 0, width: 1, height: 1 };
 const ACCEPT = ['image/jpeg', 'image/png', 'image/webp'];
 const MAX_BYTES = 10 * 1024 * 1024 - 1;
 const MIN_SHORT_SIDE = 480;
+const HARD_MIN_SIDE = 200;
+const MIN_FRACTION = 0.1;
+type Edge = 'n' | 's' | 'e' | 'w' | 'nw' | 'ne' | 'sw' | 'se';
+const EDGES: Edge[] = ['nw', 'n', 'ne', 'e', 'se', 's', 'sw', 'w'];
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
 
@@ -25,7 +29,7 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
   const [crop, setCrop] = useState<Crop>(FULL);
   const [clientError, setClientError] = useState<string | null>(null);
   const frame = useRef<HTMLDivElement>(null);
-  const drag = useRef<{ mode: 'move' | 'resize'; startX: number; startY: number; start: Crop } | null>(null);
+  const drag = useRef<{ mode: 'move' | Edge; startX: number; startY: number; start: Crop } | null>(null);
 
   useEffect(() => () => {
     if (url) URL.revokeObjectURL(url);
@@ -64,7 +68,20 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
     if (d.mode === 'move') {
       setCrop({ ...d.start, x: clamp(d.start.x + dx, 0, 1 - d.start.width), y: clamp(d.start.y + dy, 0, 1 - d.start.height) });
     } else {
-      setCrop({ ...d.start, width: clamp(d.start.width + dx, 0.1, 1 - d.start.x), height: clamp(d.start.height + dy, 0.1, 1 - d.start.y) });
+      let { x, y, width, height } = d.start;
+      const right = x + width;
+      const bottom = y + height;
+      if (d.mode.includes('w')) {
+        x = clamp(x + dx, 0, right - MIN_FRACTION);
+        width = right - x;
+      }
+      if (d.mode.includes('e')) width = clamp(width + dx, MIN_FRACTION, 1 - x);
+      if (d.mode.includes('n')) {
+        y = clamp(y + dy, 0, bottom - MIN_FRACTION);
+        height = bottom - y;
+      }
+      if (d.mode.includes('s')) height = clamp(height + dy, MIN_FRACTION, 1 - y);
+      setCrop({ x, y, width, height });
     }
   }, []);
 
@@ -74,7 +91,7 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
     window.removeEventListener('pointerup', endDrag);
   }, [onPointerMove]);
 
-  function startDrag(mode: 'move' | 'resize', e: React.PointerEvent) {
+  function startDrag(mode: 'move' | Edge, e: React.PointerEvent) {
     e.preventDefault();
     e.stopPropagation();
     drag.current = { mode, startX: e.clientX, startY: e.clientY, start: crop };
@@ -90,13 +107,14 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
     e.preventDefault();
     setCrop((c) =>
       e.shiftKey
-        ? { ...c, width: clamp(c.width + m[0], 0.1, 1 - c.x), height: clamp(c.height + m[1], 0.1, 1 - c.y) }
+        ? { ...c, width: clamp(c.width + m[0], MIN_FRACTION, 1 - c.x), height: clamp(c.height + m[1], MIN_FRACTION, 1 - c.y) }
         : { ...c, x: clamp(c.x + m[0], 0, 1 - c.width), y: clamp(c.y + m[1], 0, 1 - c.height) },
     );
   }
 
   const px = size ? { w: Math.round(crop.width * size.w), h: Math.round(crop.height * size.h) } : null;
-  const tooSmall = px ? Math.min(px.w, px.h) < MIN_SHORT_SIDE : false;
+  const tooSmall = px ? Math.min(px.w, px.h) < HARD_MIN_SIDE : false;
+  const willEnlarge = px ? !tooSmall && Math.min(px.w, px.h) < MIN_SHORT_SIDE : false;
   const cropped = crop.x !== 0 || crop.y !== 0 || crop.width !== 1 || crop.height !== 1;
 
   return (
@@ -109,7 +127,7 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
         <label htmlFor="photo">Your photo</label>
         <input ref={fileInput} id="photo" name="photo" type="file" accept={ACCEPT.join(',')} onChange={onFile} className="input" aria-describedby="photo-hint" />
         <span className="hint" id="photo-hint">
-          JPEG, PNG or WebP under 10 MB, at least 480 pixels on the shorter side.
+          JPEG, PNG or WebP under 10 MB. A sharp, front facing photo in even light works best.
         </span>
         <FieldError message={clientError ?? state.fieldErrors?.photo} />
       </div>
@@ -129,17 +147,24 @@ export function PhotoForm({ next, submitLabel, returnTo }: { next: 'analysis' | 
               onPointerDown={(e) => startDrag('move', e)}
             >
               <span className={styles.oval} aria-hidden="true" />
-              <span className={styles.handle} onPointerDown={(e) => startDrag('resize', e)} aria-hidden="true" />
+              {EDGES.map((edge) => (
+                <span key={edge} className={`${styles.handle} ${styles[edge]}`} onPointerDown={(e) => startDrag(edge, e)} aria-hidden="true" />
+              ))}
             </div>
           </div>
           <div className={styles.cropInfo}>
             <p className="small">
-              Drag the frame so your face fills most of its width, then drag the corner to resize. The analysis needs your face to be wider
-              than 60% of the photo.
+              Drag inside the frame to move it, and drag any corner or edge to resize it freely. Keep your whole face, forehead to chin, inside
+              the frame. Hair and neck can be left in or out. A face that fills at least half the frame gives the best results.
             </p>
             {px && (
               <p className={`small ${tooSmall ? 'field-error' : ''}`}>
-                Selected area: {px.w} × {px.h} pixels{tooSmall ? `. Too small: the shorter side must be at least ${MIN_SHORT_SIDE}.` : '.'}
+                Selected area: {px.w} × {px.h} pixels
+                {tooSmall
+                  ? `. Too small to use: select a larger area, or choose a sharper photo (at least ${HARD_MIN_SIDE} pixels on the shorter side).`
+                  : willEnlarge
+                    ? `. This will be enlarged to ${MIN_SHORT_SIDE} pixels for the analysis. It still works, but a sharper photo gives more reliable scores.`
+                    : '.'}
               </p>
             )}
             <button type="button" className="btn quiet" onClick={() => setCrop(FULL)} disabled={!cropped}>
