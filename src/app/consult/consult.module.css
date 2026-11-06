@@ -39,7 +39,7 @@
 }
 .chartRow {
   display: grid;
-  grid-template-columns: 9.5rem minmax(0, 1fr) 3rem;
+  grid-template-columns: 11rem minmax(0, 1fr) 5rem;
   gap: var(--space-3);
   align-items: center;
   font-size: var(--step--1);
@@ -88,7 +88,7 @@
 }
 .axis {
   display: grid;
-  grid-template-columns: 9.5rem minmax(0, 1fr) 3rem;
+  grid-template-columns: 11rem minmax(0, 1fr) 5rem;
   gap: var(--space-3);
   font-size: var(--step--1);
   color: var(--ink-faint);
@@ -154,6 +154,54 @@
 @media (max-width: 640px) {
   .chartRow,
   .axis {
-    grid-template-columns: 6.5rem minmax(0, 1fr) 2.5rem;
+    grid-template-columns: 6.5rem minmax(0, 1fr) 3.5rem;
   }
+}
+
+.chartPlain {
+  display: block;
+  font-weight: 400;
+  color: var(--ink-faint);
+  font-size: var(--step--2, 0.75rem);
+}
+.avg {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 0;
+  border-left: 2px dashed var(--amber-700);
+  z-index: 0;
+}
+.value {
+  display: grid;
+  justify-items: end;
+}
+.delta {
+  font-size: var(--step--2, 0.75rem);
+  color: var(--ink-faint);
+}
+.skinType {
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  padding: var(--space-4);
+}
+.skinTypeList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-3);
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+.skinTypeList li {
+  display: grid;
+  gap: 2px;
+}
+.skinTypeList strong {
+  font-size: var(--step-1, 1.2rem);
+}
+.readingNote {
+  margin-top: var(--space-5);
+  border-left: 3px solid var(--green-700);
+  padding-left: var(--space-4);
 }

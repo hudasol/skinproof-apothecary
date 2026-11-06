@@ -8,7 +8,9 @@ import { MaskViewer } from '@/components/MaskViewer';
 import { ProvenanceMark } from '@/components/marks';
 import { completedSteps } from '@/lib/consult-progress';
 import { getDb } from '@/lib/db/client';
-import { CONCERN_LABELS, CONCERN_TO_GOAL, GOAL_LABELS, suggestFocus } from '@/lib/domain/skin';
+import { readScores, standingWords } from '@/lib/domain/reading';
+import { CONCERN_LABELS, CONCERN_TO_GOAL, GOAL_LABELS, SKIN_TYPE_PLAIN, suggestFocus } from '@/lib/domain/skin';
+import { maskNotes } from '@/lib/services/mask-notes';
 import { latestAnalysis } from '@/lib/services/analyses';
 import { currentPhoto } from '@/lib/services/consultations';
 import { currentConsultation } from '@/lib/session';
@@ -63,11 +65,14 @@ export default async function AnalysisPage() {
         </>
       )}
 
-      {a.status === 'succeeded' && a.result && (() => {
-        const result = a.result;
+      {a.status === 'succeeded' && a.result && await (async () => {
+        const result = a.result!;
         const focus = suggestFocus(result);
         const focusConcerns = new Set(focus.map((f) => f.concern));
         const sorted = result.scores.slice().sort((x, y) => x.rawScore - y.rawScore);
+        const reading = readScores(result);
+        const notes = a.providerMode === 'live' ? await maskNotes(db, result.scores) : {};
+        const lowThree = reading.scores.slice(0, 3);
         const masks = photo
           ? sorted.filter((s) => s.maskArtifactId).map((s) => ({ concern: s.concern, label: CONCERN_LABELS[s.concern].label, url: `/api/artifacts/${s.maskArtifactId}` }))
           : [];
@@ -86,33 +91,94 @@ export default async function AnalysisPage() {
             </header>
             <div className="aside-layout">
               <section aria-labelledby="scores">
-                <h2 id="scores">Scores, lowest first</h2>
+                {Object.keys(result.skinType).length > 0 ? (
+                  <div className={styles.skinType} aria-labelledby="skintype">
+                    <h2 id="skintype">Your skin type</h2>
+                    <ul className={styles.skinTypeList}>
+                      {(Object.entries(result.skinType) as [keyof typeof ZONE_LABEL, string][]).map(([zone, t]) => (
+                        <li key={zone}>
+                          <span className="small">{ZONE_LABEL[zone]}</span>
+                          <strong>{t}</strong>
+                          <span className="small">{SKIN_TYPE_PLAIN[t as keyof typeof SKIN_TYPE_PLAIN] ?? ''}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="small">
+                      This is how the model classed your skin in this one photo, not a diagnosis. It is shown for your information and does not
+                      change which products are eligible.
+                    </p>
+                  </div>
+                ) : (
+                  <div className={styles.skinType}>
+                    <h2>Your skin type</h2>
+                    <p className="small">
+                      {a.providerMode === 'live'
+                        ? 'The model did not return a skin type for this photo. Try again in even daylight with no makeup.'
+                        : 'Skin type is not available in the offline demo analysis.'}
+                    </p>
+                  </div>
+                )}
+
+                <h2 id="scores" style={{ marginTop: 'var(--space-6)' }}>Your scores, lowest first</h2>
                 <p className="small">
-                  Each dot is the model’s raw score from 1 to 100. Higher means the model rated that area healthier. YouCam publishes no
-                  cut-off for “good” or “bad”, so neither do we: compare the scores with each other, not with a target.
+                  <strong>How to read this.</strong> Each row is one thing the model looked at. The dot shows its score from 1 to 100, where
+                  a higher score means the model rated that area healthier. The thin vertical line is <em>your own average</em> ({Math.round(reading.average)}).
+                  A dot to the left of the line is lower than your other areas; a dot to the right is higher. YouCam publishes no cut off for a
+                  good or poor score, so compare areas with each other, not with a target.
                 </p>
                 <ol className={styles.chart}>
-                  {sorted.map((s) => (
+                  {reading.scores.map((s) => (
                     <li key={s.concern} className={`${styles.chartRow} ${focusConcerns.has(s.concern) ? styles.focus : ''}`}>
                       <span className={styles.chartName}>
                         {CONCERN_LABELS[s.concern].label}
                         {focusConcerns.has(s.concern) && <span className={styles.focusTag}>Suggested focus</span>}
+                        <span className={styles.chartPlain}>{CONCERN_LABELS[s.concern].plain}</span>
                       </span>
-                      <span className={styles.track} title={CONCERN_LABELS[s.concern].plain}>
+                      <span className={styles.track}>
+                        <span className={styles.avg} style={{ left: `${reading.average}%` }} />
                         <span className={styles.dot} style={{ left: `${s.rawScore}%` }} />
                       </span>
-                      <span className={styles.value}>{Math.round(s.rawScore)}</span>
+                      <span className={styles.value}>
+                        <strong>{Math.round(s.rawScore)}</strong>
+                        <span className={styles.delta}>{s.standing === 'near' ? 'near average' : `${s.delta < 0 ? '−' : '+'}${Math.abs(Math.round(s.delta))}`}</span>
+                      </span>
                     </li>
                   ))}
                 </ol>
                 <div className={styles.axis} aria-hidden="true">
                   <span />
                   <span className={styles.axisLabels}>
-                    <span>1</span>
+                    <span>1 lower</span>
                     <span>50</span>
-                    <span>100</span>
+                    <span>100 healthier</span>
                   </span>
                   <span />
+                </div>
+
+                <div className={styles.readingNote}>
+                  <h3>In plain words</h3>
+                  {reading.lowest && reading.highest && (
+                    <p>
+                      Your lowest score is <strong>{CONCERN_LABELS[reading.lowest.concern].label.toLowerCase()}</strong> ({Math.round(reading.lowest.rawScore)},{' '}
+                      {standingWords(reading.lowest)}) and your highest is <strong>{CONCERN_LABELS[reading.highest.concern].label.toLowerCase()}</strong> (
+                      {Math.round(reading.highest.rawScore)}). Across your {reading.scores.length} scores the average is {Math.round(reading.average)}.
+                    </p>
+                  )}
+                  {lowThree.length > 0 && (
+                    <ul className="small">
+                      {lowThree.map((s) => (
+                        <li key={s.concern}>
+                          <strong>{CONCERN_LABELS[s.concern].label}</strong>: {CONCERN_LABELS[s.concern].plain.replace(/\.$/, '')}.{' '}
+                          {notes[s.concern]
+                            ? `In your photo the model marked ${notes[s.concern]}.`
+                            : a.providerMode === 'live'
+                              ? 'The model returned no map for this area, so we cannot say where.'
+                              : 'The offline demo draws no map, so there is no location to point to.'}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {a.providerMode === 'live' && masks.length > 0 && <p className="small">Use the photo on the right to see each marked area, one at a time.</p>}
                 </div>
                 {result.missing.length > 0 && (
                   <p className="small" style={{ marginTop: 'var(--space-4)' }}>
@@ -120,35 +186,31 @@ export default async function AnalysisPage() {
                     Missing scores are left out, not guessed.
                   </p>
                 )}
-                {Object.keys(result.skinType).length > 0 && (
-                  <>
-                    <h3 style={{ marginTop: 'var(--space-6)' }}>Skin type, as the model classed it</h3>
-                    <ul className="small">
-                      {(Object.entries(result.skinType) as [keyof typeof ZONE_LABEL, string][]).map(([zone, t]) => (
-                        <li key={zone}>
-                          {ZONE_LABEL[zone]}: {t}
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="small">Skin type is shown for your information. It does not change which products are eligible.</p>
-                  </>
-                )}
               </section>
               <aside>
                 <h3>Where to focus</h3>
                 {focus.length ? (
                   <>
-                    <p className="small">Your three lowest scores, relative to each other, point to these goals. You can change them next.</p>
-                    <ul className={styles.suggest}>
-                      {focus.map((f) => (
-                        <li key={f.goal}>
-                          <strong>{GOAL_LABELS[f.goal].label}</strong>
-                          <span className="small" style={{ display: 'block' }}>
-                            From {CONCERN_LABELS[f.concern].label.toLowerCase()}, score {Math.round(f.rawScore)}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="small">
+                      We take your three lowest scores that match a goal and suggest working on those first. “Where to focus” means the areas where
+                      the model scored you lowest compared with your own other scores. It does not mean something is wrong. You can change these
+                      on the next step.
+                    </p>
+                    <ol className={styles.suggest}>
+                      {focus.map((f, i) => {
+                        const r = reading.scores.find((x) => x.concern === f.concern);
+                        return (
+                          <li key={f.goal}>
+                            <span className="small">Focus {i + 1}</span>
+                            <strong>{GOAL_LABELS[f.goal].label}</strong>
+                            <span className="small" style={{ display: 'block' }}>
+                              Because {CONCERN_LABELS[f.concern].label.toLowerCase()} scored {Math.round(f.rawScore)}
+                              {r ? `, ${standingWords(r)}` : ''}.
+                            </span>
+                          </li>
+                        );
+                      })}
+                    </ol>
                   </>
                 ) : (
                   <p className="small">No score maps to a goal the catalogue covers. Choose your goals yourself.</p>
