@@ -13,8 +13,9 @@ import type { CommonRequest, MakeupProvider, MakeupSuccess, ProviderFailure, Ski
  *   nothing about the skin. No masks are produced.
  * - A very dark photo (mean brightness under 40/255) returns the documented
  *   engine error `error_lighting_dark`, so the failure path can be exercised.
- * - Makeup: tints a fixed ellipse in the lower centre and stamps
- *   "FIXTURE · not a YouCam result" on the image.
+ * - Makeup: the offline demo cannot find lips, so it does not paint any
+ *   colour on the face (a guess would land on the wrong place). It adds a
+ *   swatch of the chosen shade and stamps "FIXTURE · not a YouCam result".
  */
 
 async function pause(ms: number, signal?: AbortSignal): Promise<void> {
@@ -88,10 +89,11 @@ export class FixtureMakeup implements MakeupProvider {
     const meta = await sharp(req.image.data).metadata();
     const w = meta.width!;
     const h = meta.height!;
-    const opacity = (((palette?.colorIntensity ?? 50) / 100) * 0.6).toFixed(3);
     const font = Math.max(12, Math.round(Math.min(w, h) * 0.032));
+    const chip = Math.round(Math.min(w, h) * 0.12);
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
-      <ellipse cx="${Math.round(w * 0.5)}" cy="${Math.round(h * 0.7)}" rx="${Math.round(w * 0.12)}" ry="${Math.round(h * 0.04)}" fill="${palette?.color ?? '#A8323E'}" fill-opacity="${opacity}"/>
+      <rect x="${w - chip - font}" y="${font}" width="${chip}" height="${chip}" rx="${Math.round(chip * 0.2)}" fill="${palette?.color ?? '#A8323E'}" stroke="#FFFFFF" stroke-width="${Math.max(2, font * 0.16)}"/>
+      <text x="${font * 0.7}" y="${h - font * 2.4}" font-family="Arial, sans-serif" font-size="${font}" font-weight="700" fill="#FFFFFF" stroke="#1E1B1A" stroke-width="${Math.max(2, font * 0.16)}" paint-order="stroke">Offline demo: lips are only found in live mode</text>
       <text x="${font * 0.7}" y="${h - font * 0.8}" font-family="Arial, sans-serif" font-size="${font}" font-weight="700" fill="#FFFFFF" stroke="#1E1B1A" stroke-width="${Math.max(2, font * 0.16)}" paint-order="stroke">FIXTURE · not a YouCam result</text>
     </svg>`;
     const output = await sharp(req.image.data).composite([{ input: Buffer.from(svg), top: 0, left: 0 }]).jpeg({ quality: 92 }).toBuffer();
