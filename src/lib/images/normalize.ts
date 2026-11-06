@@ -16,7 +16,10 @@ import sharp from 'sharp';
 
 export const PHOTO_LIMITS = {
   maxUploadBytes: 10 * 1024 * 1024 - 1,
+  /** What YouCam's Skin Analysis requires. Smaller photos are enlarged to this before upload. */
   minShortSide: 480,
+  /** Below this the photo is too small to enlarge without inventing detail, so it is refused. */
+  minSourceShortSide: 200,
   maxLongSide: 2560,
   maxInputPixels: 40_000_000,
   acceptedFormats: ['jpeg', 'png', 'webp'] as const,
@@ -79,13 +82,23 @@ export async function normalisePhoto(input: Uint8Array, crop?: Crop | null): Pro
     w = cw;
     h = ch;
   }
-  if (Math.min(w, h) < PHOTO_LIMITS.minShortSide) {
+  if (Math.min(w, h) < PHOTO_LIMITS.minSourceShortSide) {
     throw new ImageRejectedError(
       crop
-        ? `The cropped area is ${w} × ${h} pixels; skin analysis needs at least ${PHOTO_LIMITS.minShortSide} on the shorter side. Select a larger area or use a sharper photo.`
-        : `This photo is ${w} × ${h} pixels; skin analysis needs at least ${PHOTO_LIMITS.minShortSide} on the shorter side.`,
+        ? `The selected area is ${w} × ${h} pixels, which is too small to use. Select a larger area, or use a sharper photo (at least ${PHOTO_LIMITS.minSourceShortSide} pixels on the shorter side after cropping).`
+        : `This photo is ${w} × ${h} pixels, which is too small to use. Choose one that is at least ${PHOTO_LIMITS.minSourceShortSide} pixels on the shorter side.`,
       'too_small',
     );
+  }
+  // YouCam needs at least 480 pixels on the shorter side. A smaller but usable crop is enlarged
+  // (Lanczos) rather than refused: it adds no detail, so a sharper photo still gives better scores.
+  if (Math.min(w, h) < PHOTO_LIMITS.minShortSide) {
+    const scale = PHOTO_LIMITS.minShortSide / Math.min(w, h);
+    const up = await pipeline.toBuffer();
+    w = Math.ceil(w * scale);
+    h = Math.ceil(h * scale);
+    // Materialise so the final fit below does not replace this resize.
+    pipeline = sharp(await sharp(up).resize(w, h, { kernel: 'lanczos3' }).toBuffer());
   }
   const { data, info } = await pipeline
     .flatten({ background: '#ffffff' })

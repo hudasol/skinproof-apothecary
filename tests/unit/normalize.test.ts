@@ -17,18 +17,22 @@ describe('normalisePhoto', () => {
     expect(Math.max(out.width, out.height)).toBe(2560);
   });
 
-  it('applies a crop and refuses a crop smaller than the analysis minimum', async () => {
+  it('applies a crop, enlarges a usable small crop and refuses a tiny one', async () => {
     const big = await syntheticPng(1000, 1200);
     const out = await normalisePhoto(big, { x: 0.1, y: 0.1, width: 0.6, height: 0.6 });
     expect([out.width, out.height]).toEqual([600, 720]);
-    await expect(normalisePhoto(big, { x: 0, y: 0, width: 0.3, height: 0.3 })).rejects.toMatchObject({ code: 'too_small' });
+    const small = await normalisePhoto(big, { x: 0, y: 0, width: 0.3, height: 0.3 });
+    expect(Math.min(small.width, small.height)).toBe(480);
+    await expect(normalisePhoto(big, { x: 0, y: 0, width: 0.1, height: 0.1 })).rejects.toMatchObject({ code: 'too_small' });
   });
 
   it('rejects invalid crops, non-images, empty files and small photos with plain messages', async () => {
     await expect(normalisePhoto(await syntheticJpeg(800, 800), { x: 0.9, y: 0, width: 0.5, height: 0.5 })).rejects.toMatchObject({ code: 'bad_crop' });
     await expect(normalisePhoto(Buffer.from('not an image'))).rejects.toMatchObject({ code: 'not_an_image' });
     await expect(normalisePhoto(new Uint8Array())).rejects.toBeInstanceOf(ImageRejectedError);
-    await expect(normalisePhoto(await syntheticJpeg(400, 600))).rejects.toThrow(/at least 480/);
+    await expect(normalisePhoto(await syntheticJpeg(150, 600))).rejects.toThrow(/at least 200/);
+    const enlarged = await normalisePhoto(await syntheticJpeg(400, 600));
+    expect(Math.min(enlarged.width, enlarged.height)).toBe(480);
   });
 
   it('accepts only sane crop fractions', () => {
