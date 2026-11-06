@@ -140,6 +140,12 @@ export default async function ShortlistPage() {
 
       {shortlist.length > 0 && (
         <form action="/compare" method="get">
+          <p className={styles.compareHelp}>
+            <strong>Want to weigh products against each other?</strong> Tick the “Compare” box on two to four products below, then press{' '}
+            <em>Compare selected</em> at the bottom. You will see them in one table, in the same order: your verdict, the ingredient list, how
+            much of the plant is stated, fragrance and essential oils, and the studies behind each botanical. Nothing is bought or saved, and
+            you can come back and choose different products.
+          </p>
           <ol className={styles.list}>
             {shortlist.map((p) => (
               <ShortlistEntry key={p.productId} p={p} goals={d.input.goals} />
@@ -158,7 +164,9 @@ export default async function ShortlistPage() {
             </details>
           )}
           <div className={styles.compareBar}>
-            <p className="small">Tick two to four products to compare them side by side.</p>
+            <p className="small">
+              <strong>Compare selected</strong> opens the products you ticked (two to four) in one side by side table.
+            </p>
             <button type="submit" className="btn secondary">
               Compare selected
             </button>
