@@ -97,6 +97,18 @@ export const SKIN_TYPES = [
   'Combination & Redness',
 ] as const;
 
+/** What each model skin type means in everyday words. Descriptive only, never a diagnosis. */
+export const SKIN_TYPE_PLAIN: Record<(typeof SKIN_TYPES)[number], string> = {
+  Normal: 'Neither especially oily nor dry in the photo.',
+  Oily: 'More surface shine and oil than average, most often across the forehead, nose and chin.',
+  Dry: 'Less surface oil and moisture than average, so the skin can look or feel tight.',
+  Combination: 'Oilier in some areas, usually the T-zone (forehead and nose), and drier on the cheeks.',
+  Redness: 'Visible redness is the main feature in the photo.',
+  'Dry & Redness': 'Dry, with visible redness.',
+  'Oily & Redness': 'Oily, with visible redness.',
+  'Combination & Redness': 'Oily in some areas and dry in others, with visible redness.',
+};
+
 /** One concern score as YouCam returned it. Higher scores mean the model rated the area healthier. */
 export type ConcernScore = {
   concern: ScoredConcern;
