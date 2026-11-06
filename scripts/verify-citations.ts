@@ -5,13 +5,15 @@
  *   npx tsx scripts/verify-citations.ts
  */
 import { getCatalogue } from '../src/lib/catalogue';
+import { getTeas } from '../src/lib/catalogue/teas';
 
 type Summary = { title: string; pubdate: string; source: string };
 
 const norm = (s: string) => s.replace(/<[^>]+>/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
 
 async function main() {
-  const studies = getCatalogue().studies.filter((s) => s.citation.pmid);
+  const tea = getTeas().flatMap((t) => t.evidence.map((e) => ({ id: e.id, citation: e.citation })));
+  const studies = [...getCatalogue().studies.filter((s) => s.citation.pmid), ...tea];
   const ids = studies.map((s) => s.citation.pmid!).join(',');
   const res = await fetch(`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=${ids}`, {
     signal: AbortSignal.timeout(30_000),
